@@ -1,0 +1,9 @@
+userName : 当前用户登陆名
+ticket : 当前用户ticket
+
+_osskey : 质检平台 附件缓存 （单个文件）
+osskey : 质检平台 附件缓存 （多个文件）
+
+zjpt_dzj_order_info_edit : 质检平台 带质检列表 订单信息缓存
+zjpt_zjd_zjd_info_edit : 质检平台 质检单列表  质检单信息缓存
+zjpt_yzj_zjd_info_edit ：质检平台 已质检列表 质检单信息缓存

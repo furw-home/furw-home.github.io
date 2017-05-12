@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>个人中心</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../../styles/default/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/amazeui.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/svg.css" />
+		<link rel="stylesheet" href="../../styles/default/css/base.css" />
+		<link rel="stylesheet" href="css/grzx.css" />
+		<link rel="stylesheet" href="css/char.css" />
+		<link rel="stylesheet" href="../../styles/default/css/font-awesome.css" />
+		<script src="../../styles/default/js/jquery-2.1.0.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--导航-->
+		<header>
+			<nav class="navbar navbar-fixed-top" style="background: #555;">
+				<div class="container">
+					<h1>个人中心</h1>
+					<ul id="menu"></ul>
+				</div>
+			</nav>
+		</header>
+
+		<!--工具栏-->
+		<nav class="nav-top">
+			<div class="toolbar">
+				<div>
+					<img src="img/iconfont-servant.png" />
+					<span class="user_name">Administrator</span>
+				</div>
+				<div>
+					<span class="svg-icon flat-filled" id="filled-message"></span>
+					<span class="number">3</span> 消息
+				</div>
+				<div>
+					<span class="svg-icon flat-filled" id="filled-lightning"></span>
+					<span class="number" id="yujing">15</span> 预警
+				</div>
+				<div>
+					<span class="svg-icon flat-filled" id="filled-email"></span>
+					<span class="number">11</span> 邮件
+				</div>
+			</div>
+		</nav>
+
+		<!--主体容器-->
+		<section>
+			<div class='content'>
+				<div class="echarts">
+					<div class="btns">
+						<ul>
+							<li class="ypjl" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}">烟片加料</li>
+							<li class="yphsl" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}">烟片含水率</li>
+							<li class="zeng">45%</li>
+							<li class="jian">-2%</li>
+						</ul>
+					</div>
+					<div id="quyu"></div>
+				</div>
+
+				<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+					<div class="am-modal-dialog">
+						<div class="am-modal-hd">烟片
+							<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+						</div>
+						<div class="am-modal-bd"></div>
+					</div>
+				</div>
+
+				<!--业务域-->
+				<div class="ywy">
+
+					<ul class="shengc">
+						<p>生产</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-xitongxiaoxi.png" />
+							</li>
+						</ul>
+					</ul>
+
+					<ul class="zl">
+						<p>质量</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-xitongxiaoxi.png" />
+							</li>
+
+							<li>
+								<img src="img/iconfont-biao.png" />
+							</li>
+						</ul>
+					</ul>
+					<ul class="xh">
+						<p>消耗</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-add-round.png" />
+							</li>
+
+							<li>
+								<img src="img/iconfont-biao.png" />
+							</li>
+						</ul>
+					</ul>
+					<ul class="sb">
+						<p>设备</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-add-round.png" />
+							</li>
+
+							<li>
+								<img src="img/iconfont-biao.png" />
+							</li>
+						</ul>
+					</ul>
+					<ul class="ny">
+						<p>能源</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-add-round.png" />
+							</li>
+
+							<li>
+								<img src="img/iconfont-biao.png" />
+							</li>
+						</ul>
+					</ul>
+					<ul class="cw">
+						<p>财务</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-add-round.png" />
+							</li>
+
+							<li>
+								<img src="img/iconfont-biao.png" />
+							</li>
+						</ul>
+					</ul>
+					<ul class="yx">
+						<p>营销</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-add-round.png" />
+							</li>
+
+							<li>
+								<img src="img/iconfont-biao.png" />
+							</li>
+						</ul>
+					</ul>
+					<ul class="wl">
+						<p>物流</p>
+						<li class="good">5</li>
+						<li class="newGood">+3</li>
+						<li class="bad">3</li>
+						<li class="continuityBad">!1</li>
+
+						<ul class="card">
+							<li>
+								<img src="img/iconfont-tuijiandamuzhi.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-wenti.png" />
+							</li>
+							<li>
+								<img src="img/iconfont-add-round.png" />
+							</li>
+
+							<li>
+								<img src="img/iconfont-biao.png" />
+							</li>
+						</ul>
+					</ul>
+				</div>
+
+				<div class="am-panel tbgz">
+					<div class="am-panel-hd">特别关注<span class="btn">编辑</span></div>
+					<div class="am-panel-bd">
+						<ul>
+							<li>
+								<img src="img/1.png" />
+								<span class="close">X</span>
+							</li>
+							<li>
+								<img src="img/2.png" />
+								<span class="close">X</span>
+							</li>
+							<li>
+								<img src="img/3.png" />
+								<span class="close">X</span>
+							</li>
+							<li>
+								<img src="img/4.png" />
+								<span class="close">X</span>
+							</li>
+							<li>
+								<img src="img/5.png" />
+								<span class="close">X</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="am-panel am-panel-primary sc">
+					<div class="am-panel-hd">生产</div>
+					<div class="am-panel-bd">
+						<ul>
+							<li>年生产计划量 100</li>
+							<li class="meter">计</li>
+							<li class="rise">同比</li>
+						</ul>
+						<ul>
+							<li>年计划工业销量 100</li>
+							<li class="meter">计</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>年累计产量 66</li>
+							<li class="rise">同比</li>
+							<li class="rise">环比</li>
+						</ul>
+						<ul>
+							<li>年执行工业销量 66</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>年度目标执行率 66%</li>
+							<li class="drop">同比</li>
+							<li class="rise">环比</li>
+						</ul>
+						<ul>
+							<li>工业销量进度 66%</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>月生产计划量 10</li>
+							<li class="meter">计</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>谁被产能贡献率 75%</li>
+							<li class="rise">指</li>
+							<li class="drop">同比</li>
+							<li class="rise">环比</li>
+						</ul>
+						<ul>
+							<li>月累计产量 8</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>设备实际/额定产量</li>
+						</ul>
+						<ul>
+							<li>月度目标执行率 80%</li>
+							<li class="drop">指</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>设备运行时间</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>月打码量 79998</li>
+							<li class="meter">计</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>设备有效作业率</li>
+							<li class="drop">指</li>
+							<li class="drop">同比</li>
+							<li class="rise">环比</li>
+						</ul>
+						<ul>
+							<li>月打码量 2</li>
+							<li class="rise">同比</li>
+							<li class="drop">环比</li>
+						</ul>
+						<ul>
+							<li>齐开齐停</li>
+							<li class="drop">指</li>
+							<li class="drop">同比</li>
+							<li class="rise">环比</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="am-panel am-panel-primary ydxl">
+					<div class="am-panel-hd">月度产量</div>
+					<div class="am-panel-bd">
+						<div id="ydxl"></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<div class="mainChar">聊天</div>
+
+		<div class="char_window">
+
+			<div class="char_window_content">
+				<div class="char_head">
+					<h3>即时通讯</h3>
+					<input type="text" placeholder="搜索联系人, 群组" />
+				</div>
+				<div class="left_menu">
+					<!--头像及用户名-->
+					<div class="char_tx">
+						<img src="img/me.png" />
+						<p class="char_name">张三</p>
+					</div>
+					<!--左侧导航-->
+					<ul class="menu_list">
+						<li class="menu_color char_message first_left_menu"><i class="icon-comments-alt"></i><span>消息</span></li>
+						<li class="menu_color chat_contacts"><i class="icon-cloud"></i><span>记录</span></li>
+						<li class="menu_color chat_contacts"><i class="icon-group"></i><span>联系人</span></li>
+					</ul>
+					<!--底部导航-->
+					<div class="menu_bottom">
+						<li><i class="icon-envelope"></i>邮件</li>
+						<li class="create"><i class="icon-plus-sign"></i>创建</li>
+						<li class="setting"><i class="icon-cog"></i>设置</li>
+					</div>
+				</div>
+				<div class="message_window">
+					<div class="message_list"></div>
+					<div class="message_content">您没有消息记录！</div>
+				</div>
+				<div class="contacts_window">
+					<div class="contacts_list"></div>
+					<div class="contacts_content">
+						<div class="defaylt_page">请选择好友进行聊天！</div>
+						<div class="caht_window">
+							<div class="chat_head"></div>
+							<div class="chat_window"></div>
+							<div class="input_box">
+								<div class="operation">
+									<li><span class="selectFile icon-paper-clip"></span></li>
+									<li><span class="emotion icon-github-alt"></span></li>
+								</div>
+								<textarea type="input" id="text1" name="text1"></textarea>
+								<button>发送</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="record_window">
+					<div class="record_list">
+						<ul>
+							<li class="record_menu_first"><i class="icon-envelope"></i><span>我接收的</span></li>
+							<li><i class="icon-plane"></i><span>我发出的</span></li>
+						</ul>
+					</div>
+					<div class="record_content">
+						<div class="record_content_head">我收到的消息</div>
+						<div class="send">
+							<img src="img/file1.png" />
+							<br />
+							<br /> 暂时没收到任何消息
+						</div>
+						<div class="received">
+							<img src="img/file1.png" />
+							<br />
+							<br /> 暂时没发出任何消息
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--创建浮动导航-->
+		<div class="create_menu">
+			<li class="groupChat">发起群聊</li>
+			<li class="adadd_friends">添加好友</li>
+		</div>
+
+		<!--设置浮动导航-->
+		<div class="setting_menu">
+			<li>设置</li>
+		</div>
+
+		<!--设置窗口-->
+		<div class="setting_window">
+			<div class="setting_content">
+				<div class="setting_head">设置<span class="glyphicon glyphicon-remove"></span></div>
+			</div>
+		</div>
+
+		<!--添加好友-->
+		<div class="addFriends">
+			<div class="addFriends_content">
+				<div class="addFriends_head">添加好友<span class="glyphicon glyphicon-remove"></span></div>
+				<input type="text" placeholder="请输入手机号" />
+				<button>确定</button>
+			</div>
+		</div>
+
+		<!--群组聊天-->
+		<div class="group_chat">
+			<div class="group_chat_content">
+				<div class="group_chat_head">群聊<span class="glyphicon glyphicon-remove"></span></div>
+				<div class="left_content">
+					<p>群成员：</p>
+					<p class="selected_list">已选0人</p>
+					<div class="selected_list_content"></div>
+					<label>群昵称：</label>
+					<input type="text" placeholder="请输入群名称 (非必填)" />
+				</div>
+
+				<div class="right_content">
+					<p>选择群成员：</p>
+					<div class="select_members"></div>
+				</div>
+				<button>确定</button>
+			</div>
+		</div>
+
+		<input type="file" class="file" style="FILTER: alpha(opacity=0); moz-opacity: 0; opacity: 0;" />
+		<script src="../../styles/default/js/amazeui.min.js"></script>
+		<script src="../../styles/default/js/highcharts.js"></script>
+		<script src="../../styles/default/js/common.js"></script>
+		<script src="../../styles/default/js/svg.js"></script>
+		<script src="../../styles/default/js/jquery.qqFace.js"></script>
+		<script src="js/strophe.js"></script>
+		<script src="js/im.js"></script>
+		<script src="js/grzx.js"></script>
+		<script src="js/char.js"></script>
+	</body>
+
+</html>

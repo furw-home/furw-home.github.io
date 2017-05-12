@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>质检统计表</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/zjtjb.css" />
+	</head>
+
+	<body ng-app="zjtjbModule" ng-controller="zjtjbCtrl" ng-init="init()">
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<li>
+					<label>供应商：</label>
+					<input type="text" class="k-textbox" ng-model="project.Supplier" />
+				</li>
+				<li>
+					<label>质检日期：</label>
+					<input id="start_dataTime" style="width: 120px;" />
+					<span>至</span>
+					<input id="end_dataTime" style="width: 120px;" />
+				</li>
+				<li>
+					<button class="btn btn-info" ng-click="search(project)">搜索</button>
+					<button class="btn btn-success" ng-click="export(project)">导出</button>
+
+				</li>
+			</ul>
+		</div>
+
+		<h1>质检数据分析</h1>
+		<h6>
+			<span class="start_date"></span>
+			<label>-</label>
+			<span class="end_date"></span>
+		</h6>
+
+		<!--质检模版列表-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<!--总计-->
+		<div id="sum">
+			<ul>
+				<li class="hj">
+					<label>合计：</label>
+				</li>
+				<li>
+					<label>质检单数：</label>
+					<span class="zjds"></span>
+				</li>
+				<li>
+					<label>不接收：</label>
+					<span class="bjs"></span>
+				</li>
+				<li>
+					<label>接收：</label>
+					<span class="js"></span>
+				</li>
+				<li>
+					<label>供应商直发：</label>
+					<span class="gyszf"></span>
+				</li>
+				<li>
+					<label>未检直发：</label>
+					<span class="wjzf"></span>
+				</li>
+				<li>
+					<label>未检率：</label>
+					<span class="wjl"></span>
+				</li>
+				<li style="width: 150px;">
+					<label>不合格率：</label>
+					<span class="bhgl"></span>
+				</li>
+				<li>
+					<label>合格率：</label>
+					<span class="hgl"></span>
+				</li>
+			</ul>
+		</div>
+
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../modules/zjgl/zjtjb.module.js"></script>
+	</body>
+
+</html>

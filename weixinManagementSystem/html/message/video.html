@@ -1,0 +1,29 @@
+<div class="video">
+	<label>视频</label>
+	<br />
+	<div class="uploader green">
+		<input type="text" class="filename" readonly/>
+		<input type="button" name="file" class="push-button" value="浏览..." />
+		<input type="file" size="30" onchange="showPreview(this)" />
+	</div>
+
+	<label>标题</label>
+	<input class="title" type="text" name="text" />
+
+	<label>简介(选填)</label>
+	<textarea class="brief"></textarea>
+</div>
+
+<!--预览-->
+<script>
+	$(function() {
+		$("input[type=file]").change(function() {
+			$(this).parents(".uploader").find(".filename").val($(this).val());
+		});
+		$("input[type=file]").each(function() {
+			if ($(this).val() == "") {
+				$(this).parents(".uploader").find(".filename").val("请选择视频...");
+			}
+		});
+	});
+</script>

@@ -1,0 +1,59 @@
+body{
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.operation {
+	float: left;
+	width: 98%;
+	margin: 25px 0 0 1%;
+}
+
+.operation button {
+	float: right;
+	margin-left: 10px;
+}
+
+.contnet {
+	float: left;
+	width: 98%;
+	margin: 25px 0 0 1%;
+}
+td{
+	text-align: center;
+}
+.progress{
+	height: 5px;
+}
+
+.caoz{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.caoz button{
+	width: 100px;
+}
+
+.fieldlist li {
+	float: left;
+	width: 90%;
+	height: 30px;
+	margin-top: 15px;
+	margin-right: 30px;
+}
+
+
+.fieldlist label {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	float: left;
+}
+#file-list{
+	float: left;
+	height: 30px;
+	width: 255px;
+}

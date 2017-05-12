@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>条件配置</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/tjpz.css" />
+	</head>
+
+	<body ng-app="tjpzModule" ng-controller="tjpzCtrl" ng-init="init()">
+
+		<!--质检条件配置列表-->
+		<div id="content">
+			<div id="grid"></div>
+			<button class="btn btn-info" ng-click="save()">保存</button>
+		</div>
+		
+		<!--操作通知-->
+		<span id="notification" style="display:none;"></span>
+
+		<!--成功模板-->
+		<script id="successTemplate" type="text/x-kendo-template">
+			<div class="upload-success">
+				<img src="../../../lib/images/notification/success-icon.png" />
+				<h3>#= message #</h3>
+			</div>
+		</script>
+
+		<!--失败模板-->
+		<script id="errorTemplate" type="text/x-kendo-template">
+			<div class="wrong-pass">
+				<img src="../../../lib/images/notification/error-icon.png" />
+				<h3>#= title #</h3>
+				<p>#= message #</p>
+			</div>
+		</script>
+		
+
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../modules/zjgl/tjpz.module.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,137 @@
+body {
+	border: 0px;
+}
+
+.query_conditions {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+}
+
+.fieldlist li {
+	height: 28px;
+	float: left;
+	margin: 25px 20px 0 0;
+}
+
+.fieldlist label {
+	width: 62px;
+	text-align: right;
+}
+
+.operation {
+	float: left;
+	width: 96%;
+	margin: 20px 2% 0 0;
+}
+
+.operation button {
+	float: right;
+	margin-left: 10px;
+}
+
+#content {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+
+.query_conditions input {
+	width: 120px;
+}
+
+.head {
+	float: left;
+	height: 85px;
+	width: 96%;
+	margin-left: 2%;
+	border-bottom: 1px solid #eee;
+}
+
+.head .fieldlist li {
+	height: 28px;
+	float: left;
+	margin: 10px 20px 0 0;
+}
+
+.head .fieldlist label {
+	width: 62px;
+	text-align: right;
+}
+
+._body {
+	float: left;
+	width: 96%;
+	float: left;
+	margin-left: 2%;
+	height: 40px;
+}
+
+._body p {
+	float: left;
+	line-height: 40px;
+}
+
+._body span {
+	float: left;
+	line-height: 40px;
+	color: red;
+	margin-left: 100px;
+	font-size: 18px;
+}
+
+._body button {
+	float: right;
+	margin-top: 7px;
+}
+
+#tjdd_window .fieldlist input {
+	width: 120px;
+}
+
+#cont1 {
+	float: left;
+	width: 100%;
+}
+
+#zjfa_window li {
+	float: left;
+	width: 100%;
+}
+
+#zjfa_window button {
+	float: right;
+	margin-right: 95px;
+}
+
+#zjfa_window li label {
+	margin-left: 60px;
+}
+
+#zjfa_window li textarea {
+	width: 260px;
+	height: 80px;
+	resize: none;
+}
+
+#plzj_window li {
+	float: left;
+	width: 100%;
+}
+
+#plzj_window button {
+	float: right;
+	margin-right: 95px;
+}
+
+#plzj_window li label {
+	margin-left: 25px;
+	width: 100px;
+}
+
+#plzj_window li textarea {
+	width: 260px;
+	height: 80px;
+	resize: none;
+}

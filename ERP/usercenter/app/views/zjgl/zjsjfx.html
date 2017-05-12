@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>质检数据分析</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/zjsjfx.css" />
+	</head>
+
+	<body ng-app="zjsjfxModule" ng-controller="zjsjfxCtrl" ng-init="init()">
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<li>
+					<label>供应商：</label>
+					<input id="supplier" value="-2" style="width: 220px;" />
+				</li>
+				<li>
+					<label style="width: 150px;">统计月份（默认3年）：</label>
+					<input id="start_dataTime" style="width: 120px;" />
+					<span>至</span>
+					<input id="end_dataTime" style="width: 120px;" />
+				</li>
+				<li>
+					<button class="btn btn-info" ng-click="search()">搜索</button>
+					<button class="btn btn-success" ng-click="export()">导出</button>
+				</li>
+			</ul>
+		</div>
+
+		<h1>供应商质检数据分析</h1>
+		<h6>供应商：
+			<span class="gys">全部</span>
+		</h6>
+
+		<!--质检模版列表-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../modules/zjgl/zjsjfx.module.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,42 @@
+body {
+	border: 0px;
+}
+
+.query_conditions {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+}
+
+.fieldlist li {
+	float: left;
+	height: 28px;
+	margin: 25px 20px 0 0;
+}
+
+.fieldlist label {
+	width: 62px;
+	text-align: right;
+}
+
+.operation {
+	float: left;
+	width: 96%;
+	margin: 10px 2% 0 0;
+}
+
+.operation button {
+	float: right;
+	margin-left: 10px;
+}
+
+#content {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+
+.query_conditions input {
+	width: 120px;
+}

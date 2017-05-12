@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>绩效分配明细</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/jxgl/jxfpmx.css" />
+	</head>
+
+	<body ng-app="jxfpmxModule" ng-controller="jxfpmxCtrl" ng-init="init()">
+
+		<!--表格-->
+		<div class="contnet">
+			<div id="grid"></div>
+		</div>
+
+		<!--上传-->
+		<div id="sc_window" style="display: none;">
+
+			<ul class="fieldlist">
+				<li>
+					<label>文件：</label>
+					<button type="button" class="btn btn-warning" id="browse" style="float: left;">选取文件</button>
+					<div id="file-list" style="float: left;"></div>
+				</li>
+				<li style="height: 150px;">  
+					<label>备注：</label>
+					<textarea style="width: 340px;height: 120px;float: left;resize:none" id="remark"></textarea>
+				</li>
+			</ul>
+
+			<div class="caoz">
+				<button type="button" class="btn btn-success" id="upload-btn">上传</button>
+				<button type="button" class="btn btn-primary" ng-click="close()">取消</button>
+			</div>
+		</div>
+
+		<!--操作记录-->
+		<div id="czjl_window" style="display: none;">
+			<div id="recordGrid"></div>
+		</div>
+
+	</body>
+
+	<!--js-->
+	<script src="../../../lib/js/loadjsfile.js"></script>
+	<script src="../../../lib/js/plupload/plupload.full.min.js"></script>
+	<script src="../../modules/jxgl/jxfpmx.mudole.js"></script>
+
+</html>

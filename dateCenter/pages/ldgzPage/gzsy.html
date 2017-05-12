@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>领导关注</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../../styles/default/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/base.css" />
+		<link rel="stylesheet" href="css/gzsy.css" />
+		<script src="../../styles/default/js/jquery-2.1.0.min.js" ></script>
+		<script	src="../../styles/default/js/bootstrap.min.js" ></script>
+		<script src="../../styles/default/js/common.js" ></script>
+		<script src="../../styles/default/js/echarts-all.js" ></script>
+		<script src="../../styles/default/js/highcharts.js" ></script>
+		<script src="../../styles/default/js/highcharts-3d.js" ></script>
+		<script src="js/gzsy.js"></script>
+	</head>
+
+	<body>
+		<!--顶部导航-->
+		<header>
+			<nav class="navbar navbar-fixed-top">
+				<div class="container">
+					<h1>领导关注</h1>
+					<ul id="menu"></ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container-fluid">
+
+			<div class="content">
+				<div class="ndmb">
+
+					<p class="pp">泰山年度目标 146 万箱：已售 83.62 万箱， 还差 62.38 万箱</p>
+
+					<div class="zxl">
+						<p class="left">0箱</p>
+						<p class="right">146万箱</p>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped active" style="width: 70%;">
+								已售 83.62
+							</div>
+							<div class="progress-bar progress-bar-warning" style="width: 30%;">
+								还差 62.38
+							</div>
+						</div>
+
+					</div>
+
+					<div class="sn">
+						<label>省内<span style="font-size: 14px; color: #666;">（目标38万箱， 已售24，还差14万箱）</span></label>
+						<div id="snPie"></div>
+					</div>
+
+					<div class="sw">
+							<label>省外<span style="font-size: 14px; color: #666;">（目108万箱， 已售54.65，还差53.35万箱）</span></label>
+						<div id="swPie"></div>
+					</div>
+				</div>
+
+				<div class="bymbsx">
+					<p class="titles">泰山本月目标实现情况</p>
+					<ul>
+						<li><span class="glyphicon glyphicon-stop"></span> <span class="text"> 截止8月6日，泰山本月商业销售100万箱，距离12万箱目标，还差20万箱。</span></li>
+						<li><span class="glyphicon glyphicon-stop"></span> <span class="text"> 月度目标完成率为12%；其中省内目标完成7%，省外目标完成5.2%</span> </li>
+						<li><span class="glyphicon glyphicon-stop"></span> <span class="text"> 7月份泰山销售98820.61箱，与120万箱目标相差110万箱，月度目标完成率为12%比上月增加3%</span> </li>
+					</ul>
+
+				</div>
+
+				<div class="jpxsqk">
+					<p class="titles">年度主要高档竞品销售情况</p>
+					<div id="gdjpxsqk"></div>
+				</div>
+
+				<div class="zdcsxsqk">
+					<p class="titles">领导挂点及重点城市年度销售情况（万箱）</p>
+					<div class="city">
+						<div class="left_nav">
+							<ul>
+								<li>北京</li>
+								<li>上海</li>
+								<li>广州</li>
+								<li>成都</li>
+								<li>南京</li>
+								<li style="border:0px">杭州</li>
+							</ul>
+						</div>
+						<div class="right_content">
+							<li><span class="glyphicon glyphicon-stop"></span> <span class="text"> 截止8月6日北京市泰山累计销售16万箱，距离30万箱，还差14万箱</span></li>
+							<li><span class="glyphicon glyphicon-stop"></span> <span class="text"> 年度目标完成56.90，低于时间进度（59.84）2.94个百分点，本月销售10万箱，目标完成3%，与目标还差3万箱</span></li>
+							<li><span class="glyphicon glyphicon-stop"></span> <span class="text"> 7月份泰山销售8万箱，与目标还相差3万箱，月度目标完成80%，比上月增加8% （更多目标实现情况，参看品牌培育专题-销售区域分析及行业销售分析）</span></li>
+						</div>
+					</div>
+
+					<div class="charts">
+						<div id="zdxsqk"></div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

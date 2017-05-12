@@ -1,0 +1,74 @@
+{
+  "index.html": {
+    "resources": [
+      "css/index.css",
+      "img/2.jpg",
+      "img/4.jpg",
+      "khbf.html",
+      "fonts/glyphicons-halflings-regular.woff",
+      "js/amazeui.min.js",
+      "css/amazeui.min.css",
+      "img/3.jpg",
+      "js/index.js",
+      "img/5.jpg",
+      "css/bootstrap.min.css",
+      "jggl.html",
+      "ppgl.html"
+    ],
+    "refer": [
+      "khbf.html",
+      "jggl.html",
+      "ppgl.html"
+    ]
+  },
+  "login.html": {
+    "resources": [
+      "index.html",
+      "css/base.css",
+      "css/login.css",
+      "js/login.js",
+      "js/jquery-2.1.0.js"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "khbf.html": {
+    "resources": [
+      "js/base.js",
+      "img/user2.png",
+      "img/user4.png",
+      "css/khbf.css",
+      "js/khbf.js",
+      "img/user3.png",
+      "img/user5.png",
+      "img/user1.png",
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "jggl.html": {
+    "resources": [
+      "index.html",
+      "js/echarts-all.js",
+      "js/jggl.js",
+      "css/jggl.css"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "ppgl.html": {
+    "resources": [
+      "img/yh1.png",
+      "css/ppgl.css",
+      "js/ppgl.js",
+      "index.html"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
+}

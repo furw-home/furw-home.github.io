@@ -1,0 +1,135 @@
+.content {
+	width: 81%;
+	margin: auto;
+}
+.left_nav {
+	float: left;
+	width: 20%;
+	height: 300px;
+	margin-top: 20px;
+	border: 1px solid #31B0D5;
+}
+.left_nav p {
+	width: 100%;
+	height: 45px;
+	text-align: center;
+	line-height: 43px;
+	font-size: 25px;
+	background: #02BD85;
+	color: white;
+}
+.left_nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+.left_nav li {
+	width: 80%;
+	height: 40px;
+	margin-left: 10%;
+	padding-top: 10px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	color: #666;
+}
+.article_content {
+	float: left;
+	width: 79%;
+	margin: 20px 0 20px 1%;
+	border: 1px solid #31B0D5;
+}
+.article_content ul {
+	width: 100%;
+	height: 30px;
+	background: #31B0D5;
+	color: white;
+}
+.article_content .name {
+	float: left;
+	line-height: 28px;
+	font-size: 15px;
+}
+.article_content .return a {
+	float: right;
+	margin-right: 20px;
+	font-size: 15px;
+	line-height: 27px;
+	color: white;
+}
+.article_list .return a {
+	float: right;
+	margin-right: 20px;
+	font-size: 15px;
+	line-height: 27px;
+	color: white;
+}
+.article_content .head {
+	width: 86%;
+	height: 60px;
+	padding: 0px;
+	margin-left: 7%;
+	border-bottom: 1px solid #ccc;
+	line-height: 70px;
+	background: white;
+}
+.article_content .title {
+	float: left;
+	width: 60%;
+	font-size: 20px;
+	text-align: right;
+	color: #666;
+}
+.article_content .date {
+	float: left;
+	width: 38%;
+	font-size: 13px;
+	text-align: right;
+	line-height: 90px;
+	color: #666;
+}
+.article_list {
+	float: left;
+	width: 79%;
+	margin: 20px 0 20px 1%;
+	border: 1px solid #31B0D5;
+}
+.article_list .heads {
+	width: 100%;
+	height: 30px;
+	background: #31B0D5;
+	color: white;
+}
+.article_list .name {
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+}
+.article_list .list {
+	padding: 0px;
+	background: white;
+}
+.article_list .list li {
+	width: 96%;
+	height: 30px;
+	margin: 0 0 10px 2%;
+	border-bottom: 1px dashed #ccc;
+	cursor: pointer;
+}
+.article_list .tate_time {
+	float: right;
+}
+.article_content #content_of_the_article {
+	width: 86%;
+	margin: 0 0 30px 7%;
+	font-size: 14px;
+	line-height: 30px;
+	text-indent: 2em;
+	color: #666;
+}
+.article_list #content_of_the_article {
+	width: 86%;
+	margin: 0 0 30px 1%;
+	font-size: 13px;
+	color: #666;
+	line-height: 30px;
+}

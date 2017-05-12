@@ -1,0 +1,260 @@
+.bottom-menu li {
+	float: left;
+	width: 33.3%;
+	height: 50px;
+	margin-top: -1px;
+	padding-top: 9px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.bottom-menu label {
+	margin: 0px;
+	width: 100%;
+}
+
+.wksyqd {
+	width: 100%;
+	height: 100vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #F2F6F5;
+	display: block;
+}
+
+.wklx {
+	width: 100%;
+	height: 100vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: #F2F6F5;
+	overflow: auto;
+	display: none;
+}
+
+.kcbj {
+	width: 100%;
+	height: 100vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: none;
+}
+
+.condition {
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 40px;
+	background: #009CDA;
+}
+
+.condition li {
+	float: left;
+	width: 33.3%;
+	height: 40px;
+	border-right: 1px solid #0A6999;
+	text-align: center;
+	line-height: 40px;
+}
+
+.condition label {
+	font-size: 16px;
+	color: white;
+}
+
+.condition span {
+	font-size: 12px;
+	color: #eee;
+}
+
+.wklx p {
+	width: 94%;
+	height: 30px;
+	margin: 5vh 0 0 3%;
+	font-size: 17px;
+	border-bottom: 1px solid #ccc;
+}
+
+.wklx_tb {
+	width: 94%;
+	height: 200px;
+	margin-left: 3%;
+}
+
+.barChart div {
+	width: 100%;
+}
+
+.wklx_qyfb {
+	width: 94%;
+	height: 200px;
+	margin-left: 3%;
+}
+
+.wklx_hbbl {
+	width: 94%;
+	height: 200px;
+	margin: 0 0 30px 3%;
+}
+
+.kcbj .head {
+	width: 100%;
+	height: 30px;
+	background: #009CDA;
+	color: white;
+}
+
+.kcbj .head li {
+	float: left;
+	width: 33.3%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.kcbj .list {
+	height: 100px;
+	background: #F2F6F5;
+	border-bottom: 1px solid #ddd;
+}
+
+.kcbj .list li {
+	float: left;
+	width: 33.3%;
+	margin-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.kcbj .list p {
+	width: 80px;
+	height: 80px;
+	margin: auto;
+	border-radius: 100px;
+}
+
+.kcbj .list img {
+	width: 100%;
+	border-radius: 100px;
+}
+
+.wksyqd_head {
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-top: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+}
+
+.wksyqd_head li {
+	float: left;
+	width: 25%;
+	height: 30px;
+	border-left: 0px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: bold;
+	color: #666;
+}
+
+.wwksyqd_list {
+	float: left;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ddd;
+}
+
+.wwksyqd_list li {
+	float: left;
+	height: 49px;
+	width: 25%;
+	line-height: 50px;
+	background: #EEEEEE;
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+}
+
+.tool {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+	width: 100px;
+	height: 110px;
+	margin: 50px 10px 0 0;
+	background: #E8E8E8;
+	box-shadow: 1px 1px 10px #666;
+	display: none;
+}
+
+.tool p {
+	width: 90%;
+	height: 40px;
+	margin: 10px 0 0 5%;
+	line-height: 40px;
+	text-align: center;
+	background: #5CB85C;
+	color: whitesmoke;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.select1 button {
+	height: 30px;
+	width: 150px;
+	margin: 20px 0 0 20px;
+	background: #00BFFF;
+	font-weight: bold;
+	color: white;
+	border: 0px;
+}
+
+.add1 button {
+	height: 30px;
+	width: 150px;
+	margin: 20px 0 0 20px;
+	background: #00BFFF;
+	color: white;
+	font-weight: bold;
+	border: 0px;
+}
+
+.add1 div {
+	text-align: left;
+}
+
+.add1 label {
+	width: 70px;
+}
+
+.lp2 li {
+	float: left;
+	width: 50%;
+	height: 100px;
+}
+
+.lp2 p {
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	border-radius: 50px;
+}
+
+.lp2 img {
+	border-radius: 50px;
+	width: 100%;
+}
+
+.dq2 li {
+	float: left;
+	width: 25%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}

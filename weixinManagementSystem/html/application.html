@@ -1,0 +1,129 @@
+<!--应用列表-->
+<div class="app_list">
+	<p class="head">应用管理</p>
+	<div class="my_application">
+		<p>我的应用</p>
+		<ul>
+			<img src="img/bebo.png" alt="泰山品牌产品推广" title="泰山品牌产品推广" />
+			<li class="app_name" title="泰山品牌产品推广">泰山品牌产品推广</li>
+		</ul>
+
+		<ul>
+			<img src="img/2.jpg" alt="问候消息推送" title="问候消息推送" />
+			<li class="app_name" title="问候消息推送">问候消息推送</li>
+		</ul>
+	</div>
+	<ul class="add_app">
+		<img src="img/iconfont-add.png" alt="添加应用" title="添加应用" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 600, height: 600}" />
+		<li class="app_name" title="添加应用">添加应用</li>
+	</ul>
+	<div class="base_application"></div>
+</div>
+
+<!--删除应用提醒-->
+<div class="am-modal am-modal-confirm" tabindex="-1" id="my-confirm">
+	<div class="am-modal-dialog">
+		<div class="am-modal-bd">
+			你，确定要删除这个和应用吗？
+		</div>
+		<div class="am-modal-footer">
+			<span class="am-modal-btn" data-am-modal-cancel>取消</span>
+			<span class="am-modal-btn" data-am-modal-confirm>确定</span>
+		</div>
+	</div>
+</div>
+
+<!--应用编辑页面-->
+<div class="app_edit">
+	<p class="head">
+		<span class="back"><button type="button" class="btn"><span class="icon-arrow-left"></span></button>
+		</span>
+		<span class="application_name">应用编辑页面</span>
+		<span class="disabled"></span>
+		<span class="delete_app"><button id="doc-confirm-toggle" type="button" class="btn">删除</button></span>
+	</p>
+	<div class="app_edit_content">
+		<div class="application_logo">
+			<p>应用Logo</p>
+			<img src="img/iconfont-ren.png" />
+			<a href="###" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 400, height: 425}">修改</a>
+		</div>
+
+		<div class="application_names">
+			<p>应用名称</p>
+			<span>泰山品牌产品推广</span>
+			<a href="###" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 400, height: 425}">修改</a>
+		</div>
+
+		<div class="application_id">
+			<p>应用ID</p>
+			<span>8</span>
+			<a href="###" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 400, height: 425}">修改</a>
+		</div>
+
+		<div class="application_introduce">
+			<p>应用介绍</p>
+			<span>泰山品牌产品推广</span>
+			<a href="###" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 400, height: 425}">修改</a>
+		</div>
+
+		<div class="application_range">
+			<p>应用范围</p>
+			<span>滕州营销</span>
+			<a href="###" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 400, height: 425}">修改</a>
+		</div>
+
+		<div class="application_range">
+			<p>应用管理组</p>
+			<span>区域1</span>
+			<a href="###" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 400, height: 425}">修改</a>
+		</div>
+
+		<div class="application_realm_name">
+			<p>可信域名</p>
+			<a href="###" data-am-modal="{target: '#doc-modal-2', closeViaDimmer: 0, width: 400, height: 425}">修改</a>
+		</div>
+	</div>
+</div>
+
+<!--应用修改弹框-->
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-2">
+	<div class="am-modal-dialog">
+		<div class="am-modal-hd">Edit
+			<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+		</div>
+		<div class="am-modal-bd">
+
+		</div>
+	</div>
+</div>
+
+<!--创建新应用-->
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+	<div class="am-modal-dialog">
+		<div class="am-modal-hd">创建新应用
+			<a href="javascript: void(0)" class="am-close am-close-spin add_app_close" data-am-modal-close>&times;</a>
+		</div>
+		<div class="am-modal-bd add_app_content">
+			<span class="error">请上传应用LOGO</span>
+			<div class="logo">
+				<div class="outside">
+					<img id="portrait" src="img/iconfont-personalcenter.png" />
+				</div>
+				<input class="files" type="file" value="0" onchange="addApplication(this)" />
+				<p>添加Logo</p>
+			</div>
+			<p class="advice">建议上传图片尺寸为640x640，大小不超过5M。</p>
+			<label>应用名称</label><span class="name_validate">请输入名称</span>
+			<input class="appName" type="text" placeholder="2-6个字" style="padding-left: 10px;" />
+
+			<label>功能描述</label><span class="describe_validate">请输入介绍</span>
+			<textarea class="describe" type="text" name="" id="" value="" placeholder="描述应用的功能与特色,内容为4-120个字" />
+
+			<label>应用可见范围</label><span class="scope_validate">请输入可见范围</span>
+			<input class="scope" type="text" />
+
+			<button type="button" class="am-btn am-btn-primary">提交</button>
+		</div>
+	</div>
+</div>

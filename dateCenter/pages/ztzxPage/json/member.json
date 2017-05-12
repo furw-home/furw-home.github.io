@@ -1,0 +1,273 @@
+[
+	{
+		"name": "营销主题",
+		"children": [
+			{
+				"name": "上柜率",
+				"img": "img/psg.png"
+			}, {
+				"name": "断货率",
+				"img": "img/psg.png"
+			}, {
+				"name": "在购率",
+				"img": "img/psg.png"
+			}
+		]
+	}, {
+		"name": "生产主题",
+		"children": [
+			{
+				"name": "制丝车间等柜时间类指标",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "制丝车间等柜时间"
+					}, {
+						"name": "叶片线"
+					}
+				]
+			}, {
+				"name": "原料投料精度类指标",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "单等级片烟投料精度"
+					}, {
+						"name": "单批次片烟投料精度"
+					}, {
+						"name": "单批次烟梗投料精度"
+					}
+				]
+			}, {
+				"name": "制丝故障停机率类指标",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "制丝故障停机率"
+					}, {
+						"name": "梗丝线故障停机率"
+					}, {
+						"name": "叶片线故障停机率"
+					}, {
+						"name": "叶丝线故障停机率"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "消耗主题",
+		"children": [
+			{
+				"name": "各类设备运行效率",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "卷接设备运行效率"
+					}, {
+						"name": "包装设备运行效率"
+					}
+				]
+			}, {
+				"name": "锅炉吨蒸汽消耗类指标",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "锅炉吨蒸汽天然气消耗"
+					}, {
+						"name": "锅炉吨蒸汽柴油消耗"
+					}, {
+						"name": "锅炉吨蒸汽水消耗"
+					}
+				]
+			}, {
+				"name": "年度（月度）日均产量",
+				"img": "img/psg.png"
+			}
+		]
+	}, {
+		"name": "设备主题",
+		"children": [
+			{
+				"name": "各类能源单耗类指标",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "电单耗"
+					}, {
+						"name": "水单耗"
+					}
+				]
+			}, {
+				"name": "单箱耗烟叶量",
+				"img": "img/psg.png"
+			}, {
+				"name": "单箱耗嘴棒量",
+				"img": "img/psg.png"
+			}
+		]
+	}, {
+		"name": "财务主题",
+		"children": [
+			{
+				"name": "设备运维1",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "设备运维1.1"
+					}, {
+						"name": "设备运维1.2"
+					}
+				]
+			}, {
+				"name": "设备运维2",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "设备运维2.1"
+					}, {
+						"name": "设备运维2.2"
+					}, {
+						"name": "设备运维2.3"
+					}
+				]
+			}, {
+				"name": "设备运维3",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "设备运维3.1"
+					}, {
+						"name": "设备运维3.2"
+					}, {
+						"name": "设备运维3.3"
+					}, {
+						"name": "设备运维3.4"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "物流主题",
+		"children": [
+			{
+				"name": "设备费用1",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "设备费用1.1"
+					}, {
+						"name": "设备费用1.2"
+					}
+				]
+			}, {
+				"name": "设备费用2",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "设备费用2.1"
+					}, {
+						"name": "设备费用2.2"
+					}, {
+						"name": "设备费用2.3"
+					}
+				]
+			}, {
+				"name": "设备费用3",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "设备费用3.1"
+					}, {
+						"name": "设备费用3.2"
+					}, {
+						"name": "设备费用3.3"
+					}, {
+						"name": "设备费用3.4"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "动力能源",
+		"children": [
+			{
+				"name": "备件管理1",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "备件管理1.1"
+					}, {
+						"name": "备件管理1.2"
+					}
+				]
+			}, {
+				"name": "备件管理2",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "备件管理2.1"
+					}, {
+						"name": "备件管理2.2"
+					}, {
+						"name": "备件管理2.3"
+					}
+				]
+			}, {
+				"name": "备件管理3",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "备件管理3.1"
+					}, {
+						"name": "备件管理3.2"
+					}, {
+						"name": "备件管理3.3"
+					}, {
+						"name": "备件管理3.4"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "人员行为",
+		"children": [
+			{
+				"name": "产品质量1",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "产品质量1.1"
+					}, {
+						"name": "产品质量1.2"
+					}
+				]
+			}, {
+				"name": "产品质量2",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "产品质量2.1"
+					}, {
+						"name": "产品质量2.2"
+					}, {
+						"name": "产品质量2.3"
+					}
+				]
+			}, {
+				"name": "产品质量3",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "产品质量3.1"
+					}, {
+						"name": "产品质量3.2"
+					}, {
+						"name": "产品质量3.3"
+					}, {
+						"name": "产品质量3.4"
+					}
+				]
+			}
+		]
+	}
+]

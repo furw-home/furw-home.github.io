@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新版ERP系统</title>
+		<link rel="stylesheet" href="../lib/css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="../lib/css/ztree/zTreeStyle.css" />
+		<!--kendo ui-->
+		<link rel="stylesheet" href="http://nbcjs3.98ep.com/nbcssjs/publiccss/kendo.common.min.css" />
+		<link rel="stylesheet" href="http://nbcjs3.98ep.com/nbcssjs/publiccss/kendo.rtl.min.css" />
+		<link rel="stylesheet" href="../lib/css/kendo_ui/kendo.blueopal.min.css" />
+
+		<link rel="stylesheet" href="style/base.css" />
+		<link rel="stylesheet" href="style/home/index.css" />
+		<link rel="stylesheet" href="../lib/css/showBo/showBo.css" />
+		<link rel="stylesheet" href="../lib/css/font_awesome/font-awesome.min.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/index/www.ico.ico">
+	</head>
+
+	<body ng-app="indexModule" ng-controller="indexCtrl" ng-init="init()">
+
+		<!--记录tab 宽度-->
+		<input id="theOffset" data-theOffset="0" style="display: none;" />
+
+		<!--加载动画-->
+		<div id="loading">
+			<img src="images/index/loading1.gif" />
+		</div>
+
+		<!--导航容器-->
+		<div class="navContainer">
+			<ul></ul>
+		</div>
+
+		<!--导航条-->
+		<header>
+			<div class="logo">
+				<div class="logo_bj" style="text-align: center;color: white;">
+					<h3 style="line-height: 50px;"> 某某ERP 系统 </h3>
+					<!--<img src="images/index/mod_logo.png" />-->
+				</div>
+			</div>
+
+			<!--导航容器-->
+			<ul id="menu"></ul>
+
+			<ul id="operation">
+				<li style="padding-left: 10px;padding-right: 10px;" class="fullscreen"><span class="glyphicon glyphicon-fullscreen"></span> 全屏</li>
+				<li style="padding-left: 10px;padding-right: 10px;" class="refresh"><span class="glyphicon glyphicon-refresh"></span> 刷新当前</li>
+				<!--<li style="padding-left: 10px;padding-right: 10px;" class="bxt"><span class="glyphicon glyphicon-bitcoin"></span> B系统</li>-->
+				<li style="padding-left: 10px;padding-right: 10px;"><span class="glyphicon glyphicon-cog"></span> 设置</li>
+				<li class="drop_down">
+					<span class="glyphicon glyphicon-user"></span>
+					<span class="userName">98ep_cj</span>
+					<span class="caret"></span>
+				</li>
+			</ul>
+
+			<div class="drop-down-menu">
+				<ul>
+					<li ng-click="loggedOut()"><span class="glyphicon glyphicon-off"></span>注销</li>
+					<!--<li>语言</li>-->
+					<li><span class="glyphicon glyphicon-user"></span>我的资料</li>
+					<li ng-click="modifyPwd()"><span class="glyphicon glyphicon-lock"></span>修改密码</li>
+					<li><span class="glyphicon glyphicon-align-justify"></span>其它</li>
+				</ul>
+			</div>
+		</header>
+
+		<!--主体-->
+		<div id="wrap">
+
+			<div id="sidebar" data-type="open">
+				<ul id="menuTree" class="ztree"></ul>
+				<label>
+					<i class="icon-double-angle-left"></i>
+				</label>
+			</div>
+
+			<div id="tab">
+				<div class="left">
+					<i class="glyphicon glyphicon-backward"></i>
+				</div>
+
+				<div class="right">
+					<i class="glyphicon glyphicon-forward"></i>
+				</div>
+
+				<div class="tab_content">
+					<ul>
+						<div>
+							<li class="selected" data-code="">
+								<span>欢迎首页</span>
+							</li>
+						</div>
+					</ul>
+				</div>
+			</div>
+
+			<!--面包屑导航-->
+			<div id="breadcrumb">
+				<ul>
+					<li>首页</li>
+				</ul>
+			</div>
+
+			<div id="content">
+				<!--加载动画-->
+				<div class="animation">
+					<img src="images/index/loading1.gif" />
+				</div>
+				<iframe data-code="" class="defaultPage" src="views/home/home.html"></iframe>
+			</div>
+		</div>
+
+		<!--修改密码窗口-->
+		<div id="window_pwd" style="display: none;">
+			<form id="save_validForm">
+				<ul class="fieldlist">
+					<p>
+						<label>账户名称：</label>
+						<input type="text" class="k-textbox" ng-model="_userInfo.name" datatype="*" nullmsg="用户名不能为空！" />
+					</p>
+					<p>
+						<label>性别：</label>
+						<input id="_sex" value="1" style="width: 230px;" />
+					</p>
+					<p>
+						<label>新密码：</label>
+						<input type="password" class="k-textbox" name="password" ng-model="_userInfo.password" datatype="*" nullmsg="密码不能为空！" />
+					</p>
+					<p>
+						<label>确认密码：</label>
+						<input type="password" class="k-textbox" ng-model="_userInfo.confirmPassword" name="repassword" recheck="password" datatype="*" errormsg="两次输入的密码不一致！" nullmsg="确认密码不能为空！" />
+					</p>
+					<p>
+						<label>电话：</label>
+						<input type="text" class="k-textbox" ng-model="_userInfo.userPhone" datatype="*,/^1[34587]\d{9}$/" nullmsg="电话不能为空！" errormsg="请输入正确的手机号码！" />
+					</p>
+					<p style="margin-top: 10px;">
+						<span class="editValidMsg1"></span>
+					</p>
+					<p style="text-align: center;margin: 0px;">
+						<button class="btn btn-warning" ng-click="save_userinfo(_userInfo)">保存</button>
+						<button class="btn btn-primary" ng-click="cancel()">取消</button>
+					</p>
+				</ul>
+			</form>
+		</div>
+
+		<script src="http://nbcjs1.98ep.com/nbcssjs/publicjs/jquery-2.1.0.js"></script>
+		<script src="http://nbcjs1.98ep.com/nbcssjs/publicjs/jquery.cookie.js"></script>
+		<script src="http://nbcjs1.98ep.com/nbcssjs/publicjs/jquery.ztree.core.min.js"></script>
+		<script src="http://nbcjs1.98ep.com/nbcssjs/publicjs/angular.min.js"></script>
+		<script src="http://nbcjs2.98ep.com/nbcssjs/publicjs/validform.min.js"></script>
+		<script src="http://nbcjs2.98ep.com/nbcssjs/publicjs/jszip.min.js"></script>
+		<script src="http://nbcjs3.98ep.com/nbcssjs/publicjs/kendo.all.min.js"></script>
+		<script src="http://nbcjs3.98ep.com/nbcssjs/publicjs/console.js"></script>
+
+		<script src="../lib/js/showBo/showBo.js"></script>
+		<script src="config.js"></script>
+
+		<script src="../lib/common/module/mian.module.js"></script>
+		<script src="../lib/common/service/util.service.js"></script>
+		<script src="../lib/common/service/ui.service.js"></script>
+
+		<script src="../lib/js/theOffset.js"></script>
+		<script src="script/home/index.js"></script>
+		<script src="modules/home/inedx.module.js"></script>
+	</body>
+
+</html>

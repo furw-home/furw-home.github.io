@@ -1,0 +1,161 @@
+body {}
+
+.bottom-menu li {
+	float: left;
+	width: 33.3%;
+	height: 50px;
+	padding-top: 8px;
+	margin-top: -1px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.bottom-menu label {
+	margin: 0px;
+	width: 100%;
+}
+
+.body {
+	overflow: hidden;
+}
+
+.jbxx {
+	width: 100%;
+	height: 100vh;
+}
+
+.gylfx {
+	width: 100%;
+	height: 100vh;
+}
+
+.wdhy {
+	width: 100%;
+	height: 100vh;
+}
+
+.brand_list {
+	float: left;
+	width: 20%;
+	height: 100vh;
+	padding: 50px 0 50px 0;
+	background: #F2F6F5;
+}
+
+.brand_list li {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 1px solid #9D9D9D;
+}
+
+.content {
+	float: left;
+	width: 80%;
+	height: 100vh;
+	padding: 50px 0 50px 0;
+	box-shadow: 1px 1px 15px #999;
+	overflow: auto;
+}
+
+.content li {
+	float: left;
+	width: 33.3%;
+	height: 120px;
+	margin-top: 20px;
+	background: white;
+}
+
+.content li p {
+	width: 80px;
+	height: 120px;
+	margin: auto;
+	background: #E9E9E9;
+	text-align: center;
+	line-height: 150px;
+	background-image: url(../img/yh1.png);
+	background-size: 100% 100%;
+	color: #009CDA;
+	padding-left: 8px;
+	font-weight: bold;
+}
+
+.content .head {
+	width: 94%;
+	margin: 15px 0 5px 3%;
+	font-size: 16px;
+	color: #666;
+	font-weight: bold;
+}
+
+.content .title {
+	float: left;
+	width: 94%;
+	height: 30px;
+	margin: 15px 0 0 3%;
+	font-size: 16px;
+	border-bottom: 1px dashed #ccc;
+	font-weight: bold;
+}
+
+#hylc {
+	float: left;
+	width: 94%;
+	height: 260px;
+	margin-left: 3%;
+}
+
+#hylr {
+	float: left;
+	width: 94%;
+	height: 260px;
+	margin: 0 0 40px 3%;
+}
+
+.hylytj li {
+	float: left;
+	width: 94%;
+	height: 30px;
+	margin: 0px;
+	margin-left: 3%;
+}
+
+.brand_list_menu {
+	background: #0B76AC;
+	color: white;
+}
+
+#hyfxqk {
+	float: left;
+	width: 94%;
+	height: 240px;
+	margin-left: 3%;
+	border-top: 1px dashed #ccc;
+}
+
+#hyqkydbh {
+	float: left;
+	width: 94%;
+	height: 160px;
+	margin: 0 0 30px 3%;
+	border-top: 1px dashed #ccc;
+}
+
+.jbxx1 .head li {
+	float: left;
+	height: 30px;
+	width: 33.3%;
+	line-height: 30px;
+	color: white;
+	background: #0C80BA;
+}
+
+.jbxx1 .list li {
+	float: left;
+	height: 40px;
+	width: 33.3%;
+	margin-top: 3px;
+	line-height: 40px;
+	background: #E1E1E1;
+}

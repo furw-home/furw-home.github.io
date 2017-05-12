@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>品牌培育</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../../styles/default/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/base.css" />
+		<link rel="stylesheet" href="css/pppy.css" />
+		<script src="../../styles/default/js/jquery-2.1.0.min.js" ></script>
+		<script	src="../../styles/default/js/bootstrap.min.js" ></script>
+		<script src="../../styles/default/js/amazeui.min.js" ></script>
+		<script src="../../styles/default/js/common.js" ></script>
+		<script src="../../styles/default/js/echarts-all.js" ></script>
+		<script src="../../styles/default/js/highcharts.js" ></script>
+		<script src="../../styles/default/js/highcharts-3d.js" ></script>
+		<script src="js/pppy.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<nav class="navbar navbar-fixed-top">
+				<div class="container">
+					<h1>品牌培育</h1>
+					<ul id="menu"></ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container-fluid">
+
+			<div class="content">
+
+				<div class="ppztqk">
+					<div class="pppy_title">
+						<ul>
+							<li style="background: #28B779;color: white;">品牌整体情况</li>
+							<li data-am-smooth-scroll="{position: 690}">行业销售分析</li>
+							<li data-am-smooth-scroll="{position: 1360}">销售区域分析</li>
+							<li data-am-smooth-scroll="{position: 1970}">重点价位分析</li>
+						</ul>
+						<p>数据时间：<span class="datatime"> 2015年 1-5月 </span></p>
+					</div>
+
+					<div class="pppy_content">
+						<div class="content_left">
+							<div class="bnmusxqk">
+								<p class="titles">本年目标实现情况</p>
+								<div class="scwc">
+									<div id="scwc" class="meterChart"></div>
+								</div>
+
+								<div class="syxs">
+									<div id="syxs" class="meterChart"></div>
+								</div>
+								<ul>
+									<li>本年泰山生产完成<span style="color: #4DB14D;font-size: 15px;"> 64.24 </span>万箱</li>
+									<li>距离146万箱还差 <span style="color:#D43F3A;font-size: 15px;"> 89.76 </span>万箱</li>
+								</ul>
+								<ul>
+									<li>本年泰山商业销量收入<span style="color: #4DB14D;font-size: 15px;"> 298.23 </span>亿元，</li>
+									<li>距离600亿还差<span style="color:#D43F3A;font-size: 15px;"> 301.77 </span>亿元</li>
+								</ul>
+							</div>
+							<div class="ndsyxsqk">
+								<div id="ndxyxsqk"></div>
+
+							</div>
+						</div>
+						<div class="content_right">
+							<div class="text_block">
+								<p class="head">生产情况</p>
+								<ul>
+									<li><span class="tab"></span> 1-5月，泰山系列工业产量60.24万箱，同比 增长37.57%，占全部卷烟产量39.47%
+									</li>
+									<li><span class="tab"></span>其中，一类烟产量44.45万箱，同比 增长30.46，二类烟产量15.93万箱，同比增长60.62%
+									</li>
+								</ul>
+							</div>
+							<div class="text_block">
+								<p class="head">销售情况</p>
+								<ul>
+									<li><span class="tab"></span> 1-5月，商业累计销售黄鹤楼卷烟62.60万箱，较同期44.81万箱增加17. 79万箱，同比增加39.70%
+									</li>
+									<li><span class="tab"></span>其中，一类烟产量44.45万箱，同比 增长30.46，二类烟产量15.93万箱，同比增长60.62%
+									</li>
+								</ul>
+							</div>
+							<div class="text_block">
+								<p class="head">调拨收入</p>
+								<ul>
+									<li><span class="tab"></span> 1-5 月泰山品牌实现销售（含税）210.75亿元 ,同比增加52.94亿元，增加33.54%
+									</li>
+									<li><span class="tab"></span> 贡献度由同期的63.88% 升至71.68%,提升7.80个百分点，平均单箱调拨收入34566元 /箱，较同期减少246元/箱。
+									</li>
+								</ul>
+							</div>
+							<div class="cyfx">
+								<p class="head">常用分析</p>
+								<ul>
+									<li>
+										<button type="button" class="btn btn-warning">产销存趋势分析</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-warning">分价类投放情况</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-warning">调拨收入情况</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-warning">商业销售收入情况</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--行业销售分析-->
+				<div class="hyxsfx">
+					<div class="pppy_title">
+						<ul>
+							<li data-am-smooth-scroll="{position: 10}" style="border-left: 1px solid #ddd;">品牌整体情况</li>
+							<li style="background: #28B779;color: white;">行业销售分析</li>
+							<li data-am-smooth-scroll="{position: 1360}">销售区域分析</li>
+							<li data-am-smooth-scroll="{position: 1770}">重点价位分析</li>
+						</ul>
+						<p>数据时间：<span class="datatime"> 2015年 1-5月 </span></p>
+					</div>
+
+					<div class="pppy_content">
+						<div class="content_left">
+							<div class="ppxs_xiang">
+								<p class="titles">主要高档烟品牌商业销售情况（万箱）</p>
+								<div class="ppxs_xiang_table">
+
+									<table class="table">
+										<tr>
+											<td>名次</td>
+											<td>品牌名称</td>
+											<td>销量</td>
+											<td>同比</td>
+											<td>占比</td>
+											<td>占比增减%</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>黄金叶</td>
+											<td>20w</td>
+											<td>10%</td>
+											<td>20%</td>
+											<td>增加3%</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>黄金叶</td>
+											<td>20w</td>
+											<td>10%</td>
+											<td>20%</td>
+											<td>增加3%</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>黄金叶</td>
+											<td>20w</td>
+											<td>10%</td>
+											<td>20%</td>
+											<td>增加3%</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>黄金叶</td>
+											<td>20w</td>
+											<td>10%</td>
+											<td>20%</td>
+											<td>增加3%</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>黄金叶</td>
+											<td>20w</td>
+											<td>10%</td>
+											<td>20%</td>
+											<td>增加3%</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>黄金叶</td>
+											<td>20w</td>
+											<td>10%</td>
+											<td>20%</td>
+											<td>增加3%</td>
+										</tr>
+
+									</table>
+
+								</div>
+
+							</div>
+
+							<div class="ppxs_yiyuan">
+								<p class="titles">主要高档烟品牌商业销售情况（亿元）</p>
+
+							</div>
+						</div>
+						<div class="content_right">
+							<div class="text_block">
+								<p class="head">行类总体情况</p>
+								<ul>
+									<li><span class="tab"></span> 1-5月，泰山系列工业产量60.24万箱，同比 增长37.57%，占全部卷烟产量39.47%
+									</li>
+									<li><span class="tab"></span>其中，一类烟产量44.45万箱，同比 增长30.46，二类烟产量15.93万箱，同比增长60.62%
+									</li>
+								</ul>
+							</div>
+							<div class="text_block">
+								<p class="head">行类分价类情况</p>
+								<ul>
+									<li><span class="tab"></span> 1-5月，商业累计销售泰山卷烟62.60万箱，较同期44.81万箱增加17. 79万箱，同比增加39.70%
+									</li>
+									<li><span class="tab"></span>其中，一类烟产量44.45万箱，同比 增长30.46，二类烟产量15.93万箱，同比增长60.62%
+									</li>
+								</ul>
+							</div>
+							<div class="text_block">
+								<p class="head">行业销售额情况</p>
+								<ul>
+									<li><span class="tab"></span> 1-5 月泰山品牌实现销售（含税）210.75亿元 ,同比增加52.94亿元，增加33.54%
+									</li>
+									<li><span class="tab"></span> 贡献度由同期的63.88% 升至71.68%,提升7.80个百分点，平均单箱调拨收入34566元 /箱，较同期减少246元/箱。
+									</li>
+								</ul>
+							</div>
+							<div class="cyfx">
+								<p class="head">常用分析</p>
+								<ul>
+									<li>
+										<button type="button" class="btn btn-warning">品牌结构分析（分价位）</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-warning">行业品牌销售排行变化</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="xsqyfx">
+
+					<div class="pppy_title">
+						<ul>
+							<li data-am-smooth-scroll="{position: 10}" style="border-left: 1px solid #ddd;">品牌整体情况</li>
+							<li data-am-smooth-scroll="{position: 690}">行业销售分析</li>
+							<li style="background: #28B779;color: white;">销售区域分析</li>
+							<li data-am-smooth-scroll="{position: 1970}">重点价位分析</li>
+						</ul>
+						<p>数据时间：<span class="datatime"> 2015年 1-5月 </span></p>
+					</div>
+
+					<div class="pppy_content">
+
+						<div class="xsqyfx_left">
+							<p class="titles">省际销售情况</p>
+							<div id="map"></div>
+						</div>
+
+						<div class="xsqyfx_right">
+							<div class="sjxsqk">
+								<p class="head">省际销售情况</p>
+								<ul>
+									<li><span class="tab"></span> 1-5 月泰山品牌实现销售（含税）210.75亿元 ,同比增加52.94亿元，增加33.54%
+									</li>
+									<li><span class="tab"></span> 贡献度由同期的63.88% 升至71.68%,提升7.80个百分点，平均单箱调拨收入34566元 /箱，较同期减少246元/箱。
+									</li>
+								</ul>
+							</div>
+							<div class="fsxsxq">
+								<p class="fsxsxq_title">分省销售详情（万箱）</p>
+								<div class="fsxsxq_table"></div>
+							</div>
+
+							<div class="fsxsxq_cyfx">
+								<p class="head">常用分析</p>
+								<ul>
+
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="zdjwfx">
+					<div class="pppy_title">
+						<ul>
+							<li data-am-smooth-scroll="{position: 10}" style="border-left: 1px solid #ddd;">品牌整体情况</li>
+							<li data-am-smooth-scroll="{position: 690}">行业销售分析</li>
+							<li data-am-smooth-scroll="{position: 1360}">销售区域分析</li>
+							<li style="background: #28B779;color: white;">重点价位分析</li>
+						</ul>
+						<p>数据时间：<span class="datatime"> 2015年 1-5月 </span></p>
+					</div>
+
+					<div class="pppy_content">
+						<div class="xsqyfx_left" style="border: 0px;">
+							<div class="zdjwcxfx">
+								<p class="titles">重点价位产销同分析（万箱）</p>
+								<div id="zdjwcxtfx"></div>
+							</div>
+							<div class="zdjwxyqd">
+								<p class="titles">重点价位协议签订情况（万箱）</p>
+								<div id="zdjwcxyqd"></div>
+							</div>
+						</div>
+						<div class="xsqyfx_right">
+							<div class="tbjysxfx">
+								<p class="titles">调拨171以上/批发600以上卷烟销售分析</p>
+							</div>
+
+							<div class="zdjwfx_cyfx">
+								<p class="head">常用分析</p>
+								<ul>
+									<li>
+										<button type="button" class="btn btn-warning">调拨171以上卷烟销售分析</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-warning">批发600以上卷烟分析</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-warning">调拨171以上分品牌分省协议</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-warning">批发600以上分品牌分省协议</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<script>
+			var scwc = echarts.init(document.getElementById('scwc'));
+			scwc.setOption(option);
+			var syxs = echarts.init(document.getElementById('syxs'));
+			syxs.setOption(option);
+			var mapChart = echarts.init(document.getElementById('map'));
+			mapChart.setOption(mapOption);
+			var mapChart = echarts.init(document.getElementById('zdjwcxtfx'));
+			mapChart.setOption(barOption1);
+			var mapChart = echarts.init(document.getElementById('zdjwcxyqd'));
+			mapChart.setOption(barOption1);
+		</script>
+
+	</body>
+
+</html>

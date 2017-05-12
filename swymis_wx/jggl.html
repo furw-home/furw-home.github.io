@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>价格管理</title>
+		<link rel="stylesheet" href="css/amazeui.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/jggl.css" />
+	</head>
+
+	<body>
+		<!--标题栏-->
+		<nav class="nav navbar navbar-fixed-top">
+			<span class="ruturn glyphicon glyphicon-chevron-left"></span> 价格管理
+			<span class="city glyphicon glyphicon-map-marker">湖南</span>
+		</nav>
+
+		<div class="body">
+
+			<div class="jbxx">
+
+				<ul class="brand_list">
+					<li class="brand_list_menu">白沙</li>
+					<li>芙蓉王</li>
+					<li>万宝路</li>
+					<li>东方红</li>
+					<li>芙蓉</li>
+					<li>芙蓉后</li>
+					<li>长沙</li>
+					<li>乒坛</li>
+					<li>红豆</li>
+				</ul>
+
+				<div class="content">
+					<ul class="head">
+						<li>2015年12月2-7</li>
+					</ul>
+					<ul class="list">
+						<li data-am-modal="{target: '#jbxx1', closeViaDimmer: 0, width: 300, height: 425}">
+							<img src="img/user1.png" />
+							<p>张翼海 </p>
+						</li>
+						<li data-am-modal="{target: '#jbxx1', closeViaDimmer: 0, width: 300, height: 425}">
+							<img src="img/user2.png" />
+							<p>李四</p>
+						</li>
+						<li data-am-modal="{target: '#jbxx1', closeViaDimmer: 0, width: 300, height: 425}">
+							<img src="img/user3.png" />
+							<p>王五</p>
+						</li>
+						<li data-am-modal="{target: '#jbxx1', closeViaDimmer: 0, width: 300, height: 425}">
+							<img src="img/user4.png" />
+							<p>赵六</p>
+						</li>
+						<li data-am-modal="{target: '#jbxx1', closeViaDimmer: 0, width: 300, height: 425}">
+							<img src="img/user5.png" />
+							<p>候七</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="jgfx">
+
+				<ul class="brand_list">
+					<li class="brand_list_menu">白沙</li>
+					<li>芙蓉王</li>
+					<li>万宝路</li>
+					<li>东方红</li>
+					<li>芙蓉</li>
+					<li>芙蓉后</li>
+					<li>长沙</li>
+					<li>乒坛</li>
+					<li>红豆</li>
+				</ul>
+				<div class="content">
+					<p>近期价格统计：12.2 - 12.7</p>
+					<div id="jqjgtj"></div>
+
+					<p>近期价格倒挂情况统计：12.2 - 12-7</p>
+					<div id="jgdg"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--底部导航-->
+		<nav class="bottom-menu navbar navbar-fixed-bottom">
+			<ul>
+				<li id="jbxx" class="bottom-first-menu">
+					基本信息
+				</li>
+				<li id="jgfx">
+					价格分析
+				</li>
+			</ul>
+		</nav>
+
+		<!--切换市场-->
+		<div class="citylist" data-mark='1'>
+			<h2>请选择具体市场</h2>
+			<p>城市</p>
+			<ul>
+				<li class="city_munu">常德市</li>
+				<li>长沙市</li>
+				<li>株洲市</li>
+				<li>湘潭市</li>
+				<li>衡阳市</li>
+				<li>邵阳市</li>
+				<li>岳阳市</li>
+				<li>常德市</li>
+				<li>张家界</li>
+				<li>益阳市</li>
+				<li>郴州市</li>
+				<li>永州市</li>
+				<li>怀化市</li>
+				<li>娄底市</li>
+			</ul>
+			<p>区县</p>
+			<ul>
+				<li>武陵区</li>
+				<li>鼎城区 </li>
+				<li>安乡县</li>
+				<li>汉寿县</li>
+				<li>澧县</li>
+				<li>临澧县</li>
+				<li>桃源县</li>
+				<li>石门县</li>
+				<li>津市市</li>
+			</ul>
+		</div>
+
+		<div class="am-modal am-modal-no-btn" tabindex="-1" id="jbxx1">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">张翼海 价格信息
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="jbxx1 am-modal-bd">
+					<ul>
+						<p>日期</p>
+						<p>价钱/盒</p>
+						<li>12-2</li>
+						<li>185</li>
+						<li>12-3</li>
+						<li>185.5</li>
+						<li>12-4</li>
+						<li>185</li>
+						<li>12-5</li>
+						<li>185.5</li>
+						<li>12-6</li>
+						<li>185</li>
+						<li>12-7</li>
+						<li>185.5</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/amazeui.min.js"></script>
+		<script src="js/echarts-all.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/jggl.js"></script>
+	</body>
+
+</html>

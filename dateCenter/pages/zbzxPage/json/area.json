@@ -1,0 +1,158 @@
+[
+	{
+		"name": "济南营销",
+		"children": [
+			{
+				"name": "德州区域",
+				"children": [
+					{
+						"name": "德州"
+					}, {
+						"name": "德州1"
+					}, {
+						"name": "德州2"
+					}, {
+						"name": "德州3"
+					}
+				]
+			}, {
+				"name": "济南区域",
+				"children": [
+					{
+						"name": "济南"
+					}
+				]
+			}, {
+				"name": "莱芜区域",
+				"children": [
+					{
+						"name": "莱芜"
+					}
+				]
+			}, {
+				"name": "聊城区域",
+				"children": [
+					{
+						"name": "聊城"
+					}
+				]
+			}, {
+				"name": "泰安区域",
+				"children": [
+					{
+						"name": "泰安"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "青岛营销",
+		"children": [
+			{
+				"name": "青岛区域",
+				"children": [
+					{
+						"name": "青岛"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "青州营销",
+		"children": [
+			{
+				"name": "青州区域",
+				"children": [
+					{
+						"name": "青州"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "滕州营销",
+		"children": [
+			{
+				"name": "滕州区域",
+				"children": [
+					{
+						"name": "滕州"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "西北大区",
+		"children": [
+			{
+				"name": "西北区域",
+				"children": [
+					{
+						"name": "西北"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "华北大区",
+		"children": [
+			{
+				"name": "华北区域",
+
+				"children": [
+					{
+						"name": "华北"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "华东大区",
+		"children": [
+			{
+				"name": "华东区域",
+				"children": [
+					{
+						"name": "华东"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "东北大区",
+		"children": [
+			{
+				"name": "东北区域",
+				"children": [
+					{
+						"name": "东北"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "中南大区",
+		"children": [
+			{
+				"name": "中南区域",
+				"children": [
+					{
+						"name": "中南"
+					}
+				]
+			}
+		]
+	}, {
+		"name": "南方大区",
+		"children": [
+			{
+				"name": "南方区域",
+				"children": [
+					{
+						"name": "南方"
+					}
+				]
+			}
+		]
+	}
+]

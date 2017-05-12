@@ -1,0 +1,57 @@
+body {
+	border: 0px;
+	overflow: auto;
+}
+
+.query_conditions {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+}
+
+.fieldlist li {
+	float: left;
+	height: 28px;
+	margin: 25px 20px 0 0;
+}
+
+.fieldlist label {
+	width: 62px;
+	text-align: right;
+}
+
+.operation {
+	float: left;
+	width: 96%;
+	margin: 25px 2% 0 0;
+}
+
+.operation button {
+	float: right;
+	margin-left: 10px;
+}
+
+#content {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+
+.query_conditions input {
+	width: 120px;
+}
+
+#plfj_window li {
+	width: 100%;
+}
+
+#plfj_window li label {
+	margin-left: 70px;
+}
+
+#plfj_window button {
+	float: right;
+	margin-right: 110px;
+	margin-top: 20px;
+}

@@ -1,0 +1,14 @@
+<div class="form">
+	<textarea class="eml" onkeyup="SwapTxt()"></textarea>
+	<div class="function">
+		<label class="count">600</label>
+	</div>
+</div>
+
+<!--预览-->
+<script>
+	function SwapTxt() {
+		var txt = $(".eml").val(); //获取文本框里的值 
+		$(".preview_content").html(txt); //在#lyny显示文本框的值	
+	}
+</script>

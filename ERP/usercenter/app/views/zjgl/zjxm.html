@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>质检项目</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/zjxm.css" />
+	</head>
+
+	<body ng-app="zjxmModule" ng-controller="zjxmCtrl" ng-init="init()">
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<form id="retrieve">
+				<ul class="fieldlist">
+					<li>
+						<label>项目编号：</label>
+						<input type="text" class="k-textbox" ng-model="project.itemno" />
+					</li>
+					<li>
+						<label>项目名称：</label>
+						<input type="text" class="k-textbox" ng-model="project.itemname" />
+					</li>
+					<li>
+						<label>项目类型：</label>
+						<input type="text" class="k-textbox" ng-model="project.itemtype" />
+					</li>
+					<li>
+						<label>标准：</label>
+						<input type="text" class="k-textbox" ng-model="project.standard" />
+					</li>
+					<li>
+						<label>档案状态：</label>
+						<input id="state_dazt" value="-2" style="width: 120px;" />
+					</li>
+					<li>
+						<label>创建人：</label>
+						<input type="text" class="k-textbox" ng-model="project.creator" />
+					</li>
+					<li>
+						<button class="btn btn-info" ng-click="empty(project)">清空</button>
+						<button class="btn btn-info" ng-click="search(project)">搜索</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+
+		<!--操作按钮-->
+		<div class="operation">
+			<button class="btn btn-primary" ng-click="add()">新建</button>
+			<button class="btn btn-danger" ng-click="del()">删除</button>
+			<button class="btn btn-warning downCount" ng-click="failure()">失效</button>
+			<button class="btn btn-success" ng-click="see()">激活</button>
+		</div>
+
+		<!--质检项目列表-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<!--新增项目 window-->
+		<div id="add_window" style="display: none;">
+			<form id="add_validForm">
+				<ul class="fieldlist">
+					<li>
+						<label>项目编号：</label>
+						<input type="text" class="k-textbox" ng-model="addProject.ItemNo" placeholder="QA001" datatype="*,/^[0-9a-zA-Z]*$/g" nullmsg="项目编号不能为空！" errormsg="项目编号只能是字母加数字！" />
+					</li>
+					<li>
+						<label>项目名称：</label>
+						<input type="text" class="k-textbox" ng-model="addProject.ItemName" placeholder="必填" datatype="*" nullmsg="项目名称不能为空！" />
+					</li>
+					<li>
+						<label>项目类型：</label>
+						<input type="text" class="k-textbox" ng-model="addProject.ItemType" placeholder="必填" datatype="*" nullmsg="项目名称不能为空！" />
+					</li>
+					<li>
+						<label>项目状态：</label>
+						<input id="state_add" value="1" style="width: 120px;" />
+					</li>
+					<li>
+						<label>显示顺序：</label>
+						<input type="text" class="k-textbox" ng-model="addProject.OrderNo" placeholder="必填" datatype="n" nullmsg="显示顺序不能为空！" errormsg="显示顺序只能为数字！" />
+					</li>
+					<li>
+						<label>标准：</label>
+						<input type="text" class="k-textbox" ng-model="addProject.Standard" placeholder="必填" datatype="*" nullmsg="项目标准不能为空！" />
+					</li>
+					<li style="width: 100%;">
+						<!--显示文本框验证内容-->
+						<span class="createValidMsg"></span>
+						<button style="margin:0 30px 0 0;float: right;" class="btn btn-default" ng-click="save(addProject)">保存</button>
+					</li>
+					<li class="createdAt" style="margin:0;height: 18px;">
+						<span class="founder">XXX</span>创建于<span class="creationTime">2016.9.20</span>
+					</li>
+				</ul>
+			</form>
+		</div>
+
+		<!--编辑项目 window-->
+		<div id="edit_window" style="display: none;">
+			<form id="edit_validForm">
+				<ul class="fieldlist">
+					<li>
+						<label>项目编号：</label>
+						<input type="text" class="k-textbox" ng-model="editProject.ItemNo" datatype="*,/^[0-9a-zA-Z]*$/g" nullmsg="项目编号不能为空！" errormsg="项目编号只能是字母加数字！" />
+					</li>
+					<li>
+						<label>项目名称：</label>
+						<input type="text" class="k-textbox" ng-model="editProject.ItemName" datatype="*" nullmsg="项目名称不能为空！" />
+					</li>
+					<li>
+						<label>项目类型：</label>
+						<input type="text" class="k-textbox" ng-model="editProject.ItemType" />
+					</li>
+					<li>
+						<label>项目状态：</label>
+						<input id="state_edit" value="1" style="width: 120px;" />
+					</li>
+
+					<li>
+						<label>显示顺序：</label>
+						<input type="text" class="k-textbox" ng-model="editProject.OrderNo" datatype="n" nullmsg="显示顺序不能为空！" errormsg="显示顺序只能为数字！" />
+					</li>
+					<li>
+						<label>标准：</label>
+						<input type="text" class="k-textbox" ng-model="editProject.Standard" datatype="*" nullmsg="项目标准不能为空！" />
+					</li>
+					<li style="width: 100%;">
+						<!--显示文本框验证内容-->
+						<span class="editValidMsg"></span>
+						<button style="margin:0 30px 0 0;float: right;" class="btn btn-default" ng-click="ediSave(editProject)">保存</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+
+		<!--操作通知-->
+		<span id="notification" style="display:none;"></span>
+
+		<!--成功模板-->
+		<script id="successTemplate" type="text/x-kendo-template">
+			<div class="upload-success">
+				<img src="../../../lib/images/notification/success-icon.png" />
+				<h3>#= message #</h3>
+			</div>
+		</script>
+
+		<!--失败模板-->
+		<script id="errorTemplate" type="text/x-kendo-template">
+			<div class="wrong-pass">
+				<img src="../../../lib/images/notification/error-icon.png" />
+				<h3>#= title #</h3>
+				<p>#= message #</p>
+			</div>
+		</script>
+
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../modules/zjgl/zjxm.module.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,207 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	margin: auto;
+}
+
+.content_1 {
+	float: left;
+	width: 799px;
+	height: 241px;
+	margin-top: 20px;
+	margin-left: 50px;
+	text-align: center;
+	border: 1px solid #aaa;
+	border-right: 0px;
+}
+
+.content_1 li {
+	width: 100%;
+	float: left;
+}
+
+.content_1 ul:nth-child(1) {
+	float: left;
+	width: 150px;
+	height: 240px;
+	border-right: 1px solid #aaa;
+}
+
+.content_1 ul:nth-child(2) {
+	float: left;
+	width: 390px;
+	height: 240px;
+	border-right: 1px solid #aaa;
+}
+
+.content_1 ul:nth-child(3) li {
+	width: 129px;
+	height: 40px;
+	border: 1px solid #aaa;
+	border-top: 0px;
+	border-left: 0px;
+	line-height: 40px;
+}
+
+.content_2 {
+	float: left;
+	width: 800px;
+	border: 1px solid #aaa;
+	margin-top: 20px;
+	margin-left: 50px;
+	border-bottom: none;
+}
+
+.content_2 .thead  {
+	width: 100%;
+	height: 40px;
+}
+
+.content_2 .thead li {
+	float: left;
+	width: 133px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+.content_2 .tbody ul li {
+	display: block;
+	float: left;
+	width: 133px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+.content_2 .tbody ul li.nobr {
+	border-right: none;
+}
+.content_2 .tbody ul li.font20 {
+	font-size: 20px;
+}
+.content_2 .tbody ul li.cursor {
+	cursor: pointer;
+}
+.content_3 {
+	float: left;
+	width: 	800px;
+	border: 1px solid #aaa;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.content_3 ul:nth-child(1) li{
+	float: left;
+	width: 133px;
+	height: 40px;
+	border: 1px solid #aaa;
+	border-right: 0px;
+	border-top: 0px;
+	line-height: 40px;
+	text-align: center;
+}
+.content_3 ul:nth-child(2){
+	float: left;
+}
+.content_3 ul:nth-child(3){
+	float: left;
+}
+
+.content_4 {
+	float: left;
+	width: 800px;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+.content_4 button {
+	float: right;
+	margin-left: 10px;
+}
+.rel {
+	position: relative;
+}
+#file-list-1 {
+	width: 228px;
+	float: left;
+    line-height: 32px;;
+    text-align: left;
+}
+#file-list-1 .remove_files {
+	position: absolute;
+	right: 0;
+    top: 9px;
+}
+.filename {
+	width: 135px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+.bold {
+	font-weight: bold;
+}
+.mt10 {
+	margin-top: 10px;;
+}
+.fr {
+	float: right;
+}
+.mt25 {
+	margin-top: 25px;;
+}
+.tc {
+	text-align: center;
+}
+
+._body{
+	float: left;
+	width: 100%;
+}
+
+#file-list-2 p{
+	padding-left: 10px;
+	margin-bottom: 10px;
+	width: 337px;
+	line-height: 20px;
+    height: 20px;
+}
+#file-list-2 p a {
+	display: block;
+	width: 315px ;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	float: left;
+}
+#file-list-2 span{
+	float: right;
+	color: #BE0004;
+	cursor: pointer;
+	padding-top: 4px;
+}
+#file-list-3 p{
+	float: left;
+	width: 228px;
+}
+
+#file-list-3 span{
+	float: right;
+	color: #BE0004;
+	cursor: pointer;
+	padding-top: 13px;;
+}
+#file-list-3 a{
+	width: 200px;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

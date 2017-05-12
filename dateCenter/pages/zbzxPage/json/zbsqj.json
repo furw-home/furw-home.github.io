@@ -1,0 +1,591 @@
+[
+	{
+		"id": "QJ_INDEX08001",
+		"code": "INDEX08001",
+		"name": "市场营销",
+		"index_list": [
+			{
+				"name": "上柜率",
+				"isKPI": 1,
+				"changevalue": 0
+			}, {
+				"name": "断货率",
+				"isKPI": 0,
+				"changevalue": 1
+			}, {
+				"name": "在购率",
+				"isKPI": 0,
+				"changevalue": 1
+			}, {
+				"name": "在购率1",
+				"isKPI": 0,
+				"changevalue": 2
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08002",
+		"code": "INDEX08002",
+		"name": "生产控制",
+		"index_list": [
+			{
+				"name": "制丝车间等柜时间类指标",
+				"isKPI": 1,
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "制丝车间等柜时间",
+						"isKPI": 1,
+						"changevalue": 0
+					}, {
+						"name": "叶片线",
+						"isKPI": 0,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "原料投料精度类指标",
+				"changevalue": 0,
+				"index_list": [
+					{
+						"name": "单等级片烟投料精度",
+						"isKPI": 1,
+						"changevalue": 0
+					}, {
+						"name": "单批次片烟投料精度",
+						"isKPI": 0,
+						"changevalue": 0
+					}, {
+						"name": "单批次烟梗投料精度",
+						"isKPI": 1,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "制丝故障停机率类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "制丝故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "梗丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "叶片线故障停机率",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "叶丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "制丝故障停机率类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "制丝故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "梗丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "叶片线故障停机率",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "叶丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "制丝故障停机率类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "制丝故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "梗丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "叶片线故障停机率",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "叶丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "制丝故障停机率类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "制丝故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "梗丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "叶片线故障停机率",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "叶丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08003",
+		"code": "INDEX08003",
+		"name": "生产效能",
+		"index_list": [
+			{
+				"name": "各类设备运行效率",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "卷接设备运行效率",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "包装设备运行效率",
+						"isKPI": 1,
+						"changevalue": 1
+					}
+				]
+			}, {
+				"name": "锅炉吨蒸汽消耗类指标",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "锅炉吨蒸汽天然气消耗",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "锅炉吨蒸汽柴油消耗",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "锅炉吨蒸汽水消耗",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "年度（月度）日均产量",
+				"isKPI": 0,
+				"changevalue": 2
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08004",
+		"code": "INDEX08004",
+		"name": "生产消耗",
+		"index_list": [
+			{
+				"name": "各类能源单耗类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "电单耗",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "水单耗",
+						"isKPI": 1,
+						"changevalue": 1
+					}
+				]
+			}, {
+				"name": "单箱耗烟叶量",
+				"isKPI": 0,
+				"changevalue": 1
+			}, {
+				"name": "单箱耗嘴棒量",
+				"isKPI": 0,
+				"changevalue": 1
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08005",
+		"code": "INDEX08005",
+		"name": "设备运维",
+		"index_list": [
+			{
+				"name": "设备运维1",
+				"changevalue": 0,
+				"index_list": [
+					{
+						"name": "设备运维1.1",
+						"isKPI": 1,
+						"changevalue": 0
+					}, {
+						"name": "设备运维1.2",
+						"isKPI": 0,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "设备运维2",
+				"changevalue": 0,
+				"index_list": [
+					{
+						"name": "设备运维2.1",
+						"isKPI": 0,
+						"changevalue": 0
+					}, {
+						"name": "设备运维2.2",
+						"isKPI": 1,
+						"changevalue": 0
+					}, {
+						"name": "设备运维2.3",
+						"isKPI": 1,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "设备运维3",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "设备运维3.1",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "设备运维3.2",
+						"isKPI": 0,
+						"changevalue": 0
+					}, {
+						"name": "设备运维3.3",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "设备运维3.4",
+						"isKPI": 0,
+						"changevalue": 1
+					}
+				]
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08006",
+		"code": "INDEX08006",
+		"name": "设备费用",
+		"index_list": [
+			{
+				"name": "设备费用1",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "设备费用1.1",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "设备费用1.2",
+						"isKPI": 1,
+						"changevalue": 1
+					}
+				]
+			}, {
+				"name": "设备费用2",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "设备费用2.1",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "设备费用2.2",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "设备费用2.3",
+						"isKPI": 1,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "设备费用3",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "设备费用3.1",
+						"isKPI": 1,
+						"changevalue": 1
+					}, {
+						"name": "设备费用3.2",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "设备费用3.3",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "设备费用3.4",
+						"isKPI": 0,
+						"changevalue": 1
+					}
+				]
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08007",
+		"code": "INDEX08007",
+		"name": "备件管理",
+		"index_list": [
+			{
+				"name": "备件管理1",
+				"changevalue": 0,
+				"index_list": [
+					{
+						"name": "备件管理1.1",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "备件管理1.2",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "备件管理2",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "备件管理2.1",
+						"isKPI": 0,
+						"changevalue": 0
+					}, {
+						"name": "备件管理2.2",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "备件管理2.3",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "备件管理3",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "备件管理3.1",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "备件管理3.2",
+						"isKPI": 1,
+						"changevalue": 1
+					}, {
+						"name": "备件管理3.3",
+						"isKPI": 1,
+						"changevalue": 0
+					}, {
+						"name": "备件管理3.4",
+						"isKPI": 0,
+						"changevalue": 0
+					}
+				]
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08008",
+		"code": "INDEX08008",
+		"name": "产品质量",
+		"index_list": [
+			{
+				"name": "产品质量1",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "产品质量1.1",
+						"isKPI": 0,
+						"changevalue": 0
+					}, {
+						"name": "产品质量1.2",
+						"isKPI": 0,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "产品质量2",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "产品质量2.1",
+						"isKPI": 0,
+						"changevalue": 2
+					}, {
+						"name": "产品质量2.2",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "产品质量2.3",
+						"isKPI": 1,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "产品质量3",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "产品质量3.1",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "产品质量3.2",
+						"isKPI": 1,
+						"changevalue": 1
+					}, {
+						"name": "产品质量3.3",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "产品质量3.4",
+						"isKPI": 0,
+						"changevalue": 1
+					}
+				]
+			}
+		]
+	}, {
+		"id": "QJ_INDEX08009",
+		"code": "INDEX08009",
+		"name": "能以质量",
+		"index_list": [
+			{
+				"name": "制丝车间等柜时间类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "制丝车间等柜时间",
+						"isKPI": 1,
+						"changevalue": 2
+					}, {
+						"name": "叶片线",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}, {
+				"name": "原料投料精度类指标",
+				"changevalue": 1,
+				"index_list": [
+					{
+						"name": "单等级片烟投料精度",
+						"isKPI": 1,
+						"changevalue": 0
+					}, {
+						"name": "单批次片烟投料精度",
+						"isKPI": 0,
+						"changevalue": 0
+					}, {
+						"name": "单批次烟梗投料精度",
+						"isKPI": 0,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "制丝故障停机率类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "制丝故障停机率",
+						"isKPI": 1,
+						"changevalue": 1
+					}, {
+						"name": "梗丝线故障停机率",
+						"isKPI": 1,
+						"changevalue": 1
+					}, {
+						"name": "叶片线故障停机率",
+						"isKPI": 1,
+						"changevalue": 1
+					}, {
+						"name": "叶丝线故障停机率",
+						"isKPI": 1,
+						"changevalue": 1
+					}
+				]
+			}
+		]
+	}, {
+		"id": "QJ_INDEX080010",
+		"code": "INDEX080010",
+		"name": "质量评价",
+		"index_list": [
+			{
+				"name": "制丝车间等柜时间类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "制丝车间等柜时间",
+						"changevalue": 2,
+						"isKPI": 0
+					}, {
+						"name": "叶片线",
+						"isKPI": 0,
+						"changevalue": 0
+					}
+				]
+			}, {
+				"name": "原料投料精度类指标",
+				"changevalue": 2,
+				"index_list": [
+					{
+						"name": "单等级片烟投料精度",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "单批次片烟投料精度",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "单批次烟梗投料精度",
+						"isKPI": 1,
+						"changevalue": 1
+					}
+				]
+			}, {
+				"name": "制丝故障停机率类指标",
+				"index_list": [
+					{
+						"name": "制丝故障停机率",
+						"isKPI": 0,
+						"changevalue": 1
+					}, {
+						"name": "梗丝线故障停机率",
+						"isKPI": 1,
+						"changevalue": 0
+					}, {
+						"name": "叶片线故障停机率",
+						"isKPI": 1,
+						"changevalue": 1
+					}, {
+						"name": "叶丝线故障停机率",
+						"isKPI": 0,
+						"changevalue": 2
+					}
+				]
+			}
+		]
+	}
+]

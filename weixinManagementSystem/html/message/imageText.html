@@ -1,0 +1,71 @@
+<div class="image_text">
+	<label>标题</label>
+	<input class="title" type="text" onkeyup="SwapTxt()" />
+
+	<label>封面图片</label>
+
+	<div class="uploader green">
+		<input type="text" class="filename" readonly/>
+		<input type="button" name="file" class="push-button" value="浏览..." />
+		<input class="img" type="file" size="30" onchange="showPreview(this)" />
+	</div>
+	<p> 推荐尺寸：900像素x500像素 </p>
+
+	<div class="image_text_picture">
+		<img id="portrait" src="" />
+		<a class="del_picture">删除</a>
+	</div>
+
+	<label>作者(选填)</label>
+	<input class="author" type="text" />
+
+	<label>原文链接(选填)</label>
+	<input class="link" type="text" />
+
+	<label>摘要(摘要只在发送消息为单图文时显示)</label>
+	<textarea class="abstract" type="text" onkeyup="SwapTxt()" />
+</div>
+
+<script>
+	function showPreview(source) {
+		var file = source.files[0];
+		if (window.FileReader) {
+			var fr = new FileReader();
+			fr.onloadend = function(e) {
+				document.getElementById("portrait").src = e.target.result;
+				document.getElementById("image_text_img").src = e.target.result;
+				$(".image_text_picture").css("display", "block");
+			};
+			fr.readAsDataURL(file);
+		}
+	}
+	$(function() {
+		$("input[type=file]").change(function() {
+			$(this).parents(".uploader").find(".filename").val($(this).val());
+		});
+		$("input[type=file]").each(function() {
+			if ($(this).val() == "") {
+				$(this).parents(".uploader").find(".filename").val("请选择图片...");
+			}
+		});
+		$(".del_picture").click(function() {
+			$("#portrait").attr("src", "");
+			$("#image_text_img").attr("src", "img/1.png");
+			$(".filename").val("请选择文件...");
+			$(".image_text_picture").css("display", "none");
+		});
+	});
+
+	function SwapTxt() {
+		var txt = $(".title").val(); //获取文本框里的值 
+		$(".image_text_title").html(txt); //在#lyny显示文本框的值	
+		var txt = $(".abstract").val(); //获取文本框里的值 
+		$(".image_text_abstract").html(txt); //在#lyny显示文本框的值	
+		if ($(".title").val().length == 0) {
+			$(".image_text_title").html("标题");
+		}
+		if ($(".abstract").val().length == 0) {
+			$(".image_text_abstract").html("摘要");
+		}
+	}
+</script>

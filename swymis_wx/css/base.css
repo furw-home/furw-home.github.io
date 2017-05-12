@@ -1,0 +1,136 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+.nav {
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	color: whitesmoke;
+	background: #2C353D;
+	border: 0px;
+}
+
+.nav .ruturn {
+	left: 0px;
+	position: absolute;
+	margin-left: 10px;
+	line-height: 45px;
+	cursor: pointer;
+}
+
+.nav .city {
+	position: absolute;
+	right: 0px;
+	margin-right: 10px;
+	line-height: 45px;
+	cursor: pointer;
+}
+
+.nav .tool1 {
+	position: absolute;
+	right: 0px;
+	margin-right: 10px;
+	line-height: 45px;
+	cursor: pointer;
+}
+
+.bottom-menu {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background: #2C353D;
+	color: white;
+}
+
+.bottom-first-menu {
+	color: white;
+	background: mediumseagreen;
+}
+
+.citylist {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	width: 200px;
+	height: 100vh;
+	margin-top: -100vh;
+	padding: 50px 0 50px 0;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background: rgba(0, 0, 0, 0.8);
+	filter: alpha(opacity=80);
+}
+
+.citylist h2 {
+	margin-top: 25px;
+	font-size: 17px;
+	text-align: center;
+	color: whitesmoke;
+}
+
+.citylist p {
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+	padding: 0 10px 0 5px;
+	color: #F7ECB5;
+	border-bottom: 1px dashed #F7ECB5;
+}
+
+.citylist .title {
+	margin-top: 50px;
+}
+
+.citylist label {
+	width: 100%;
+	color: white;
+	padding-left: 10px;
+}
+
+.citylist ul {
+	float: left;
+	width: 100%;
+}
+
+.citylist ul li {
+	float: left;
+	width: 60px;
+	margin: 5px 0 5px 5px;
+	color: white;
+	cursor: pointer;
+	text-align: center;
+}
+
+.city_munu {
+	color: white;
+	background: mediumseagreen;
+}

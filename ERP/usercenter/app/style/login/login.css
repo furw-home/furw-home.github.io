@@ -1,0 +1,120 @@
+body {
+	background-image: url(../../images/login/bg.jpg);
+}
+
+.login {
+	width: 500px;
+	height: 290px;
+	margin: auto;
+	margin-top: 16%;
+	text-align: center;
+}
+
+.login h1 {
+	color: white;
+	opacity: 0.8;
+	text-align: left;
+}
+
+.login h1 img{
+	width: 160px;
+	margin-left: 155px;
+}
+
+.login div {
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.login div input {
+	position: relative;
+	width: 300px;
+	height: 40px;
+	padding-left: 10px;
+	color: #666;
+	border: 0px;
+	font-size: 16px;
+	/*border-radius: 3px;*/
+	background: rgba(255, 255, 255, 0.5);
+	filter: alpha(opacity=50);
+}
+
+.login div button {
+	width: 310px;
+	height: 40px;
+	border: 0px;
+	font-size: 14px;
+	/*border-radius: 3px;*/
+	text-align: center;
+	line-height: 40px;
+	background: white;
+	cursor: pointer;
+	color: #666;
+	letter-spacing: 10px;
+	font-size: 16px;
+}
+
+.msg {
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+}
+
+.browser_hint_bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+.browser_hint {
+	display: none;
+	left: 50%;
+	top: 50%;
+	position: fixed;
+	margin: -140px 0 0 -225px;
+	width: 450px;
+	height: 250px;
+	border-radius: 5px;
+	font-size: 12px;
+	background: #fff;
+}
+
+.browser_hint h3 {
+	margin: 20px 0 30px 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 40px;
+	color: #333;
+}
+
+.browser_hint p a {
+	float: left;
+	width: 90px;
+	display: block;
+	text-align: center;
+	color: #333;
+}
+
+.browser_hint p a:hover {
+	color: #c00;
+}
+
+.browser_hint p img {
+	width: 50px;
+	height: 50px;
+	border: none;
+}
+
+.browser_hint p span {
+	display: block;
+}

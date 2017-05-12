@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>绩效分配</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../../lib/css/ztree/zTreeStyle.css" />
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/jxgl/jxfp.css" />
+	</head>
+
+	<body ng-app="jxfpModule" ng-controller="jxfpCtrl" ng-init="init()">
+
+		<h3 class="_title"><span id="dep1"></span> - 提成详细</h3>
+		<!--部门绩效统计-->
+		<div class="total">
+			<ul>
+				<li>一级部门</li>
+				<li class="dep1"></li>
+			</ul>
+			<ul>
+				<li>二级部门</li>
+				<li class="dep2"></li>
+			</ul>
+			<!--<ul>
+				<li>bd提成</li>
+				<li class="bd"></li>
+			</ul>
+			<ul>
+				<li>bd部门提成</li>
+				<li class="bm"></li>
+			</ul>
+			<ul>
+				<li>bd费用池子</li>
+				<li class="chizi"></li>
+			</ul>
+			<ul>
+				<li>PM</li>
+				<li class="pm"></li>
+			</ul>-->
+			<ul>
+				<li>总提成</li>
+				<li class="zong" style="color: red;"></li>
+			</ul>
+		</div>
+
+		<!--操作按钮-->
+		<div class="operation">
+			<span><span id="dep2"></span> - 人员列表</span>
+			<button class="btn btn-warning" ng-click="tzje()">调整金额</button>
+			<!--<button class="btn btn-warning" ng-click="qtfy()">其他费用</button>-->
+			<button class="btn btn-warning" ng-click="zjry()">增加人员</button>
+		</div>
+
+		<!--部门人员-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<!--调整金额-->
+		<div id="tzje_window" style="display: none;">
+			<form id="save_validForm">
+				<ul class="fieldlist">
+					<p>
+						<label>调整额度：</label>
+						<input type="text" class="k-textbox" ng-model="project1.othermoney" datatype="*,/^[+-]?\d+(\.\d+)?$/" nullmsg="其他费用不能为空！" errormsg="请填写数字或小数！" />
+					</p>
+					<p style="height: 120px;">
+						<label style="float: left;">调整备注：</label>
+						<textarea ng-model="project1.remark" class="k-textbox" datatype="*" nullmsg="备注信息不能为空！"></textarea>
+					</p>
+
+					<li style="height: 100px; width: 400px;float: left;">
+						<label style="float: left; height: 30px;width: 80px; line-height: 30px;">上传图片：</label>
+						<div id="container_1" style="float:left; width: 280px;">
+							<button type="button" class="btn btn-warning" id="browse_1" style="margin-right: 20px;">选取文件</button>
+							<button type="button" class="btn btn-success" id="upload-btn_1" style="">上传</button>
+						</div>
+						<div id="file-list_1" style="border-bottom: 1px solid #ccc; float: left;margin-left: 80px;width: 280px; height: 40px; margin-top:10px;">
+						</div>
+					</li>
+
+					<p style="height: 30px;margin-top: 0px;">
+						<span class="editValidMsg1"></span>
+					</p>
+
+					<p style="text-align: center;width: 100%;margin-top: 10px;">
+						<button class="btn btn-primary" ng-click="bctzje(project1)">保存</button>
+						<button class="btn btn-primary" ng-click="close()">取消</button>
+					</p>
+				</ul>
+			</form>
+		</div>
+
+		<!--其他费用-->
+		<div id="qtfy_window" style="display: none;">
+
+			<form id="save_validForm1">
+				<ul class="fieldlist">
+					<p>
+						<label>bd部门提成：</label>
+						<input type="text" class="k-textbox" ng-model="project3.bm" datatype="*,/^[+-]?\d+(\.\d+)?$/" errormsg="请填写数字或小数！" />
+					</p>
+					<p>
+						<label>bd费用池子：</label>
+						<input type="text" class="k-textbox" ng-model="project3.BDPond" datatype="*,/^[+-]?\d+(\.\d+)?$/" errormsg="请填写数字或小数！" />
+					</p>
+					<p>
+						<label>PM：</label>
+						<input type="text" class="k-textbox" ng-model="project3.pm" datatype="*,/^[+-]?\d+(\.\d+)?$/" errormsg="请填写数字或小数！" />
+					</p>
+
+					<p style="height: 30px;margin-top: 15px;">
+						<span class="editValidMsg2"></span>
+					</p>
+
+					<p style="text-align: center;width: 100%;margin-top: 10px;">
+						<button class="btn btn-primary" ng-click="bcqtfy(project3)">保存</button>
+						<button class="btn btn-primary" ng-click="close1()">取消</button>
+					</p>
+				</ul>
+			</form>
+		</div>
+
+		<!--增加人员-->
+		<div id="zjry_window" style="display: none;">
+			<div class="conditions">
+				<ul class="fieldlist">
+					<p>
+						<label>姓名：</label>
+						<input type="text" class="k-textbox" ng-model="project2.username" />
+					</p>
+					<div class="down_tree">
+						<label>所属部门：</label>
+						<div id="bm">
+							<ul>
+								<input style="accelerator: 150px;" id='multiSelect' class='multiSelect k-textbox' type='text' value='' disabled="disabled" />
+								<button id='menuBtn1' type="button" class="btn btn-link">请选择</button>
+							</ul>
+							<div id='multiselectContent' class='multiselectContent'>
+								<ul id='multiSelectTree' class='ztree'></ul>
+							</div>
+						</div>
+					</div>
+					<p>
+						<button class="btn btn-warning" ng-click="s_user(project2)">查询</button>
+					</p>
+				</ul>
+			</div>
+			<div id="content1">
+				<div id="user_grid"></div>
+			</div>
+			<div class="foot">
+				<button class="btn btn-primary" ng-click="save_user(project2)">新增</button>
+				<button class="btn btn-primary" ng-click="close_user()">取消</button>
+			</div>
+		</div>
+
+		<!--操作通知-->
+		<span id="notification" style="display:none;"></span>
+
+		<!--成功模板-->
+		<script id="successTemplate" type="text/x-kendo-template">
+			<div class="upload-success">
+				<img src="../../../lib/images/notification/success-icon.png" />
+				<h3>#= message #</h3>
+			</div>
+		</script>
+
+		<!--失败模板-->
+		<script id="errorTemplate" type="text/x-kendo-template">
+			<div class="wrong-pass">
+				<img src="../../../lib/images/notification/error-icon.png" />
+				<h3>#= title #</h3>
+				<p>#= message #</p>
+			</div>
+		</script>
+
+		<!--图片-->
+		<div class="photo">
+			<div class="picture">
+				<span ng-clicl="photo_close">×</span>
+				<img src="" />
+			</div>
+		</div>
+
+		<!--js-->
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../../lib/js/ztree/jquery.ztree.core.min.js"></script>
+		<script src="../../../lib/js/ztree/jquery.ztree.excheck.js"></script>
+		<script src="../../../lib/js/plupload/plupload.full.min.js"></script>
+		<script src="../../../lib/js/plupload/moxie.min.js"></script>
+		<script src="../../../lib/js/plupload/upload_jxfp.js"></script>
+		<script src="../../../lib/js/jquery/jquery.base64.js" ></script>
+		<script src="../../modules/jxgl/jxfp.module.js"></script>
+	</body>
+
+</html>

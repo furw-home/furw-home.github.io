@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>质检汇总表</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/zjhzb.css" />
+	</head>
+
+	<body ng-app="zjhzbModule" ng-controller="zjhzbCtrl" ng-init="init()">
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<form>
+				<ul class="fieldlist">
+					<li>
+						<label>质检日期：</label>
+						<input id="start_dataTime" style="width: 120px;" />
+						<span>至</span>
+						<input id="end_dataTime" style="width: 120px;" />
+					</li>
+					<li>
+						<label>质检级别：</label>
+						<input id="level" value="-2" style="width: 120px;" />
+					</li>
+					<li>
+						<label>是否接收：</label>
+						<input id="isReceive" value="-2" style="width: 120px;" />
+					</li>
+					<li>
+						<label>供应商：</label>
+						<input type="text" class="k-textbox" ng-model="project.Supplier" />
+					</li>
+					<li>
+						<button class="btn btn-info" ng-click="search(project)">搜索</button>
+						<button class="btn btn-success" ng-click="export(project)">导出</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+
+		<!--操作按钮-->
+		<div class="operation"></div>
+
+		<!--质检模版列表-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../modules/zjgl/zjhzb.module.js"></script>
+	</body>
+
+</html>

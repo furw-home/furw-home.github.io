@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>生产经营</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../../styles/default/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/base.css" />
+		<link rel="stylesheet" href="css/scjy.css" />
+		<script src="../../styles/default/js/jquery-2.1.0.min.js" ></script>
+		<script	src="../../styles/default/js/bootstrap.min.js" ></script>
+		<script src="../../styles/default/js/amazeui.min.js" ></script>
+		<script src="../../styles/default/js/common.js" ></script>
+		<script src="../../styles/default/js/echarts-all.js" ></script>
+		<script src="../../styles/default/js/highcharts.js" ></script>
+		<script src="../../styles/default/js/highcharts-3d.js" ></script>
+		<script src="js/scjy.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<nav class="navbar navbar-fixed-top">
+				<div class="container">
+					<h1>生产经营</h1>
+					<ul id="menu"></ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="container-fluid">
+
+			<div class="content">
+				<div class="jjxyqk">
+					<div class="scjy_title">
+						<ul>
+							<li style="background: #28B779;color: white;">经济效益情况</li>
+							<li data-am-smooth-scroll="{position: 875}">经济运营情况</li>
+							<li data-am-smooth-scroll="{position: 1745}">销售战略地图</li>
+							<li data-am-smooth-scroll="{position: 2280}">精准营销分析</li>
+						</ul>
+						<p>数据时间：<span class="datatime"> 2015年 1-6月 </span></p>
+					</div>
+
+					<div class="jjxyqk_content">
+						<div class="jjxyqk_content_left">
+							<div class="bnlsqk">
+								<p class="content_title">本年实现税利情况（亿元）</p>
+								<div class="bnlsqk_charts">
+
+									<div class="nlesr">
+										<p class="bnlsqk_charts_title">年累计收入</p>
+										<ul>
+											<li>本期：<span class="up">172.67 亿元</span></li>
+											<li>同期：<span class="drop">141.82 亿元</span></li>
+										</ul>
+										<div id="nlesr_chart"></div>
+									</div>
+									<div class="nljsl">
+										<p class="bnlsqk_charts_title">年累计税率</p>
+										<ul>
+											<li>本期：<span class="up">131.67 亿元</span></li>
+											<li>同期：<span class="drop">102.82 亿元</span></li>
+										</ul>
+										<div id="nljsl_chart"></div>
+									</div>
+									<div class="nljlr">
+										<p class="bnlsqk_charts_title">年累计利润</p>
+										<ul>
+											<li>本期：<span class="up">16.67 亿元</span></li>
+											<li>同期：<span class="drop">15.58 亿元</span></li>
+										</ul>
+										<div id="nljlr_chart"></div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="lnlsqk">
+								<div id="lnlsqk_chart"></div>
+							</div>
+
+						</div>
+
+						<div class="jjxyqk_content_right">
+							<div class="zycwzbdb">
+								<p class="zycwzbdb_title">主要财务指标对比一</p>
+								<p class="case">单位：元</p>
+								<div class="tables">
+									<table class="table table-bordered">
+										<tr class="table_head">
+											<td>工业企业</td>
+											<td>单箱收入</td>
+											<td>单箱税利</td>
+											<td>单箱利润</td>
+											<td>单箱成本</td>
+										</tr>
+
+										<tr>
+											<td>湖北中烟</td>
+											<td>1679.9.3</td>
+											<td>12116.26</td>
+											<td>1966.01</td>
+											<td>3558.94</td>
+										</tr>
+
+										<tr>
+											<td>云南中烟</td>
+											<td>161707.65</td>
+											<td>12619.26</td>
+											<td>1966.01</td>
+											<td>4768.21</td>
+										</tr>
+										<tr>
+											<td>上海烟草</td>
+											<td>33147.23</td>
+											<td>12619.26</td>
+											<td>2406.26</td>
+											<td>4145.10</td>
+										</tr>
+										<tr>
+											<td>湖南中烟</td>
+											<td>19049.37</td>
+											<td>16629.19</td>
+											<td>2984.19</td>
+											<td>3797.47</td>
+										</tr>
+										<tr>
+											<td>江苏中烟</td>
+											<td>21996.98</td>
+											<td>20006.23</td>
+											<td>4234.73</td>
+											<td>4186.10</td>
+										</tr>
+										<tr>
+											<td>河南中烟</td>
+											<td>11598.56</td>
+											<td>8616.18</td>
+											<td>1644.93</td>
+											<td>3406.37</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+
+							<div class="zycwzbdb">
+								<div class="zycwzbdb">
+									<p class="zycwzbdb_title">主要财务指标对比二</p>
+									<p class="case">单位：亿元</p>
+									<div class="tables">
+										<table class="table table-bordered">
+											<tr class="table_head">
+												<td>工业企业</td>
+												<td>单箱收入</td>
+												<td>单箱税利</td>
+												<td>单箱利润</td>
+												<td>单箱成本</td>
+											</tr>
+
+											<tr>
+												<td>湖北中烟</td>
+												<td>1679.9.3</td>
+												<td>12116.26</td>
+												<td>1966.01</td>
+												<td>3558.94</td>
+											</tr>
+
+											<tr>
+												<td>云南中烟</td>
+												<td>161707.65</td>
+												<td>12619.26</td>
+												<td>1966.01</td>
+												<td>4768.21</td>
+											</tr>
+											<tr>
+												<td>上海烟草</td>
+												<td>33147.23</td>
+												<td>12619.26</td>
+												<td>2406.26</td>
+												<td>4145.10</td>
+											</tr>
+											<tr>
+												<td>湖南中烟</td>
+												<td>19049.37</td>
+												<td>16629.19</td>
+												<td>2984.19</td>
+												<td>3797.47</td>
+											</tr>
+											<tr>
+												<td>江苏中烟</td>
+												<td>21996.98</td>
+												<td>20006.23</td>
+												<td>4234.73</td>
+												<td>4186.10</td>
+											</tr>
+											<tr>
+												<td>河南中烟</td>
+												<td>11598.56</td>
+												<td>8616.18</td>
+												<td>1644.93</td>
+												<td>3406.37</td>
+											</tr>
+										</table>
+									</div>
+
+								</div>
+
+								<div class="jxyqk">
+									<p class="jxyqk_title">常用分析</p>
+									<ul>
+										<li>
+											<button type="button" class="btn btn-warning">税利利润情况</button>
+										</li>
+										<li>
+											<button type="button" class="btn btn-warning">单箱效益情况</button>
+										</li>
+										<li>
+											<button type="button" class="btn btn-warning">成绩费用情况</button>
+										</li>
+										<li>
+											<button type="button" class="btn btn-warning">科技项目综合分析</button>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="jjyxqk">
+						<div class="scjy_title">
+							<ul>
+								<li style="border-left: 1px solid #ddd;" data-am-smooth-scroll="{position: 10}">经济效益情况</li>
+								<li style="background: #28B779;color: white;" data-am-smooth-scroll="{position: 690}">经济运营情况</li>
+								<li data-am-smooth-scroll="{position: 1745}">销售战略地图</li>
+								<li data-am-smooth-scroll="{position: 2280}">精准营销分析</li>
+							</ul>
+							<p>数据时间：<span class="datatime"> 2015年 1-6月 </span></p>
+						</div>
+
+						<div class="jjyxqk_left">
+							<div class="nlj">
+								<div class="nljcl">
+									<p class="nlj_title">年累计产量：159.65万箱</p>
+									<div id="nljcl_chart"></div>
+								</div>
+								<div class="nljxl">
+									<p class="nlj_title">年累计销量：157.44万箱</p>
+									<div id="nljxl_chart"></div>
+								</div>
+								<div class="qmkc">
+									<p class="nlj_title">期末库存2.35万箱</p>
+									<div id="qmkc_chart"></div>
+								</div>
+							</div>
+							<div class="gjlxsqk">
+								<div id="gjlxsqk_chart"></div>
+							</div>
+
+							<div class="cxqsfx">
+								<div id="cxqsfx_chart"></div>
+							</div>
+
+						</div>
+						<div class="jjyxqk_right">
+							<div class="scqk">
+								<p class="jjyxqk_title">生产情况</p>
+								<ul>
+									<li>
+										<p class="icon"><span class="glyphicon glyphicon-align-right"></span></p>
+										<p class="scqk_content">本企业年累计生产卷烟159.68万箱，同比减少39.68万箱，降低19.91%;</p>
+									</li>
+									<li>
+										<p class="icon"><span class="glyphicon glyphicon-align-right"></span></p>
+										<p class="scqk_content">
+											省内自产年累计生产卷烟121.95万箱，同比减少32.26万箱 ,降低20.92%
+										</p>
+									</li>
+									<li>
+										<p class="icon"><span class="glyphicon glyphicon-align-right"></span></p>
+										<p class="scqk_content">
+											省外联营年累计生产卷烟37.70万箱，同比减少7.42万箱，降低16.45%万箱；
+										</p>
+									</li>
+									<li style="border: 0px;">
+										<p class="icon"><span class="glyphicon glyphicon-align-right"></span></p>
+										<p class="scqk_content">
+											生产低档卷烟19.14万箱，完成全年低档烟生产基数65万箱的29/44%;
+										</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="gyxsqk">
+								<p class="jjyxqk_title">工业生产情况</p>
+								<ul>
+									<li>
+										<p class="icon"><span class="glyphicon glyphicon-align-center"></span></p>
+										<p class="scqk_content">
+											本企业年累计工业调拨157.44万箱，同比减少43.83万箱，降低21.78%；
+										</p>
+									</li>
+									<li>
+										<p class="icon"><span class="glyphicon glyphicon-align-center"></span></p>
+										<p class="scqk_content">
+											黄鹤楼系列调拨61.14万箱，同比增加1.90万箱，增长3.20%;
+										</p>
+									</li>
+									<li style="border: 0px;">
+										<p class="icon"><span class="glyphicon glyphicon-align-center"></span></p>
+										<p class="scqk_content">
+											红金龙系列调拨92.37万箱，同比减少44.23万箱，降低32.38%;
+										</p>
+									</li>
+								</ul>
+							</div>
+
+							<div class="kcqk">
+								<p class="jjyxqk_title">库存情况</p>
+								<ul>
+									<li>
+										本期工业库存0万箱，同比减少4.71万箱，低于控库指标6万箱；
+									</li>
+								</ul>
+							</div>
+
+							<div class="cyfx">
+								<p class="jjyxqk_title">常用分析</p>
+								<ul>
+									<button type="button" class="btn btn-warning">工业产销存</button>
+									<button type="button" class="btn btn-warning">全国调拨形势</button>
+									<button type="button" class="btn btn-warning">商业进销存动态表</button>
+									<button type="button" class="btn btn-warning">经济运行情况月分析</button>
+									<button type="button" class="btn btn-warning">经济运行情况累计月分析</button>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="xszldt">
+						<div class="scjy_title">
+							<ul>
+								<li style="border-left: 1px solid #ddd;" data-am-smooth-scroll="{position: 10}">经济效益情况</li>
+								<li data-am-smooth-scroll="{position: 875}">经济运营情况</li>
+								<li style="background: #28B779;color: white;" data-am-smooth-scroll="{position: 1745}">销售战略地图</li>
+								<li data-am-smooth-scroll="{position: 2280}">精准营销分析</li>
+							</ul>
+							<p>数据时间：<span class="datatime"> 2015年 1-6月 </span></p>
+						</div>
+
+						<div class="xszldt_left">
+							<p class="xszldt_title">全国战略地图 —<span>各销区一二类烟销量第一名品牌</span> </p>
+							<div id="mapChart"></div>
+						</div>
+
+						<div class="xszldt_right">
+							<div class="zblx">
+								<div class="checkbox">
+									<label style="color: #28B779;font-weight: bold;">卷烟类型：</label>
+									<label class="radio-inline">
+										<input onfocus="this.blur()" type="radio" name="radioOptions" id="radio1" value="option1"> 销量
+									</label>
+									<label class="radio-inline">
+										<input onfocus="this.blur()" type="radio" name="radioOptions" id="radio2" value="option2"> 增量
+									</label>
+									<label class="radio-inline">
+										<input onfocus="this.blur()" type="radio" name="radioOptions" id="radio3" value="option3"> 增幅
+									</label>
+								</div>
+							</div>
+							<div class="jypp">
+								<div id="select">
+									<label>卷烟品牌：</label>
+									<select>
+										<option value="h">黄鹤楼</option>
+										<option value="y">玉溪</option>
+										<option value="h">红塔山</option>
+										<option value="l">利群</option>
+									</select>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="jzyxfx">
+						<div class="scjy_title">
+							<ul>
+								<li style="border-left: 1px solid #ddd;" data-am-smooth-scroll="{position: 10}">经济效益情况</li>
+								<li data-am-smooth-scroll="{position: 875}">经济运营情况</li>
+								<li data-am-smooth-scroll="{position: 1745}">销售战略地图</li>
+								<li style="background: #28B779;color: white;" data-am-smooth-scroll="{position: 2280}">精准营销分析</li>
+							</ul>
+							<p>数据时间：<span class="datatime"> 2015年 1-6月 </span></p>
+						</div>
+
+						<div class="jzyxfx_left">
+							<div class="drgk">
+								<p class="jzyxfx_title">当日概况</p>
+							</div>
+
+							<div class="zxszs">
+								<p class="jzyxfx_title">周销售走势</p>
+							</div>
+
+							<div class="dygk">
+								<p class="jzyxfx_title">当月概况</p>
+							</div>
+						</div>
+
+						<div class="jzyxfx_right">
+							<div class="qnlj">
+								<p class="jzyxfx_right_title">全年累计</p>
+								<ul>
+									<li>截止2012年0715年，全国零售户购进黄鹤楼750594箱 ，其中，省内263830，省外486913箱；
+									</li>
+									<li>省外前五名省份为：</li>
+									<li>河南，四川，江苏，河北，山东</li>
+									<li>购进量均在29800箱以上，其中河南省最高，为48585箱；</li>
+									<li>省外前5名城市为：</li>
+									<li>北京，成都，南阳，重庆，天津</li>
+									<li>购进量均在7000箱以上，其中北京市最高，为15239箱。</li>
+								</ul>
+							</div>
+							<div class="ydbg">
+								<p class="jzyxfx_right_title">月度报告</p>
+								<ul>
+									<li><a href="###">2012年5月黄鹤楼品牌规格5...</a></li>
+									<li><a href="###">2012年5月黄鹤楼品牌规格5...</a></li>
+									<li><a href="###">2012年5月黄鹤楼品牌规格5...</a></li>
+									<li><a href="###">2012年5月黄鹤楼品牌规格5...</a></li>
+									<li><a href="###">2012年5月黄鹤楼品牌规格5...</a></li>
+									<li><a href="###">2012年5月黄鹤楼品牌规格5...</a></li>
+								</ul>
+							</div>
+
+							<div class="xxl">
+								<p class="jzyxfx_right_title">消息栏</p>
+								<ul>
+									<li>2012年06月份省外市情况</li>
+									<li>购进情况--同比增长前3名省份为： 天津，青海，宁夏，涨幅均超过80%;
+									</li>
+									<li>户均销售额--较同期增加的前3名省份为： 天津，内蒙古，北京，均超过1250元;
+									</li>
+									<li>市场份额--和上月比较份额增加的 前3名省份为：内蒙古，海南，天津，均超过6.39%
+									</li>
+									<li>销货率--较同期增加的 前3名省份为： 天津，青海，大连，均 超过15.13%
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<script>
+				var nlesr_chart = echarts.init(document.getElementById('nlesr_chart'));
+				nlesr_chart.setOption(barOption);
+				var nljsl_chart = echarts.init(document.getElementById('nljsl_chart'));
+				nljsl_chart.setOption(barOption);
+				var nljlr_chart = echarts.init(document.getElementById('nljlr_chart'));
+				nljlr_chart.setOption(barOption);
+				var lnlsqk_chart = echarts.init(document.getElementById('nljcl_chart'));
+				lnlsqk_chart.setOption(option);
+				var lnlsqk_chart = echarts.init(document.getElementById('nljxl_chart'));
+				lnlsqk_chart.setOption(option);
+				var lnlsqk_chart = echarts.init(document.getElementById('qmkc_chart'));
+				lnlsqk_chart.setOption(option);
+				var mapChart = echarts.init(document.getElementById('mapChart'));
+				mapChart.setOption(mapOption);
+			</script>
+
+	</body>
+
+</html>

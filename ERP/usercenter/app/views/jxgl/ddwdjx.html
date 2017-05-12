@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单维度绩效</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/jxgl/ddwdjx.css" />
+	</head>
+
+	<body ng-app="ddwdjxModule" ng-controller="ddwdjxCtrl" ng-init="init()">
+
+		<div id="_body2">
+			<h1>正在刷新...</h1>
+		</div>
+
+		<div class="head">
+			<ul class="year">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" data-toggle="dropdown"><span class="years"></span> <span class="caret"></span> </button>
+					<ul class="dropdown-menu" role="menu"></ul>
+				</div>
+			</ul>
+			<!--月份-->
+			<ul class="month"></ul>
+		</div>
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<p>
+					<label>订单编号：</label>
+					<input type="text" class="k-textbox" ng-model="project.OrderCode" />
+					<p>
+						<label>客户账号：</label>
+						<input type="text" class="k-textbox" ng-model="project.username" />
+					</p>
+					<p>
+						<label>公司名称：</label>
+						<input type="text" class="k-textbox" ng-model="project.companyname" />
+					</p>
+					<p>
+						<label class="xdbd">下单BD：</label>
+						<input id="xdbd" value="可多选" style="width: 200px;float: right;margin-left: 3px;max-height: 28px;overflow-y: auto;" />
+					</p>
+					<p>
+						<label>物流解决方案：</label>
+						<input id="wljjfa" value="可多选" style="width: 200px;float: right;max-height: 28px;overflow-y: auto;" />
+					</p>
+					<p>
+						<label>承印费金额：</label>
+						<!--<input id="currency" type="number" min="" max="" style="width: 98px;" ng-model="project.Minfouritemmoney"/>
+						<input id="currency1" type="number" min="" max="" style="width: 98px;"  ng-model="project.Maxfouritemmoney"/>-->
+						<input type="text" class="k-textbox" style="width: 91px;" ng-model="project.Minfouritemmoney" />
+						<span>至</span>
+						<input type="text" class="k-textbox" style="width: 91px;" ng-model="project.Maxfouritemmoney" />
+					</p>
+					<p>
+						<label>物流费金额：</label>
+						<!--<input id="currency2" type="number" value="" min="" max="" style="width: 90px;" />-->
+						<input type="text" class="k-textbox" value="" style="width: 91px;" ng-model="project.Mindeliveryfee" />
+						<span>至</span>
+						<!--<input id="currency3" type="number" value="" min="" max="" style="width: 90px;" />-->
+						<input type="text" class="k-textbox" value="" style="width: 91px;" ng-model="project.Maxdeliveryfee" />
+					</p>
+					<p>
+						<label>订单类型：</label>
+						<input id="ddlx" value="可多选" style="width: 200px;float: right;margin-left: 3px;max-height: 28px;overflow-y: auto;" />
+					</p>
+					<p>
+						<label>所属部门：</label>
+						<input id="ssbm" value="可多选" style="width: 200px;float: right;margin-left: 3px;max-height: 28px;overflow-y: auto;" />
+					</p>
+					<p>
+						<label>备注信息：</label>
+						<input type="text" class="k-textbox" ng-model="project.remark" />
+					</p>
+					<p>
+						<label>补充信息：</label>
+						<input id="isRemark" value="" style="width: 200px;float: right;margin-left: 3px;max-height: 28px;overflow-y: auto;" />
+					</p>
+			</ul>
+		</div>
+
+		<!--操作按钮-->
+		<div class="operation">
+			<button class="btn btn-warning" style="float: left;width: 90px;" ng-click="retrieve(project)">查询</button>
+			<button class="btn btn-primary" ng-click="bcqtxx()">补充其他信息</button>
+			<button class="btn btn-primary" style="width: 90px;" ng-click="export(project)">导出</button>
+			<button class="btn btn-primary" style="width: 90px;" ng-click="theImport()">导入</button>
+			<button class="btn btn-primary" style="width: 90px;" disabled="disabled" id="refresh" ng-click="refresh()">刷新</button>
+		</div>
+		<!--disabled-->
+		<div class="_title">
+			数据存储时间：<span></span>
+		</div>
+
+		<!--表格-->
+		<div class="contnet">
+			<div id="grid"></div>
+		</div>
+
+		<!--补充其他信息-->
+		<div id="bcqtxx_window" style="display: none;">
+			<form id="save_validForm">
+				<ul class="fieldlist">
+					<p>
+						<label>其他费用：</label>
+						<input type="text" class="k-textbox" ng-model="project1.money" datatype="*,/^[+-]?\d+(\.\d+)?$/" nullmsg="其他费用不能为空！" errormsg="费用只能只能为数字跟小数！" />
+					</p>
+					<p style="height: 120px;">
+						<label style="float: left;">备注信息：</label>
+						<textarea ng-model="project1.remark" class="k-textbox" datatype="*" nullmsg="备注信息不能为空！"></textarea>
+					</p>
+
+					<li style="height: 100px; width: 400px;float: left;">
+						<label style="float: left; height: 30px;width: 92px; line-height: 30px;">上传：</label>
+						<div id="container_1" style="float:left; width: 280px;">
+							<button type="button" class="btn btn-warning" id="browse_1" style="margin-right: 20px;">选取文件</button>
+							<button type="button" class="btn btn-success" id="upload-btn_1" style="">上传</button>
+						</div>
+						<div id="file-list_1" style="border-bottom: 1px solid #ccc; float: left;margin-left: 92px;width: 280px; height: 40px; margin-top:10px;">
+						</div>
+					</li>
+
+					<p style="height: 30px;margin-top: 0px;">
+						<span class="editValidMsg1"></span>
+					</p>
+					<p style="text-align: center;width: 100%;">
+						<button class="btn btn-primary" ng-click="bctjbc(project1)">保存</button>
+						<button class="btn btn-primary" ng-click="close()">取消</button>
+					</p>
+				</ul>
+			</form>
+		</div>
+
+		<!--导入-->
+		<div id="import_window" style="display: none;">
+
+			<ul class="fieldlist1">
+				<li>
+					<button type="button" class="btn btn-warning" id="browse" style="float: left;">选取文件</button>
+					<div id="file-list" style="float: left;"></div>
+					<span>请选择要导入的文件！</span>
+				</li>
+				<li style="margin-left: 120px;margin-top: 5px;">
+					<a href="../../images/其他费用导入模版.xls">下载模版</a>
+				</li>
+			</ul>
+
+			<div class="caoz">
+				<button type="button" class="btn btn-success" id="upload-btn">导入</button>
+				<button type="button" class="btn btn-primary" ng-click="_close()">取消</button>
+			</div>
+		</div>
+
+		<!--查看日志-->
+		<div id="log_window" style="display: none;">
+			<div id="logGrid"></div>
+		</div>
+
+		<!--操作通知-->
+		<span id="notification" style="display:none;"></span>
+
+		<!--成功模板-->
+		<script id="successTemplate" type="text/x-kendo-template">
+			<div class="upload-success">
+				<img src="../../../lib/images/notification/success-icon.png" />
+				<h3>#= message #</h3>
+			</div>
+		</script>
+
+		<!--失败模板-->
+		<script id="errorTemplate" type="text/x-kendo-template">
+			<div class="wrong-pass">
+				<img src="../../../lib/images/notification/error-icon.png" />
+				<h3>#= title #</h3>
+				<p>#= message #</p>
+			</div>
+		</script>
+
+		<!--图片-->
+		<div class="photo">
+			<div class="picture">
+				<span ng-clicl="photo_close">×</span>
+				<img src="" />
+			</div>
+		</div>
+
+	</body>
+
+	<!--js-->
+	<script src="../../../lib/js/loadjsfile.js"></script>
+	<script src="../../../lib/js/bootstrap/bootstrap.min.js"></script>
+	<script src="../../../lib/js/plupload/plupload.full.min.js"></script>
+	<script src="../../../lib/js/plupload/upload_ddwd.js"></script>
+	<script src="../../modules/jxgl/ddwdjx.module.js"></script>
+
+</html>

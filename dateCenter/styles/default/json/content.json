@@ -1,0 +1,264 @@
+[
+	{
+		"menuId": "5001",
+		"pid": "",
+		"menuName": "首页",
+		"icon": "glyphicon glyphicon-home",
+		"url": "../../index.html",
+		"childs": [
+			[
+				{
+					"menuId": "500101",
+					"pid": "5001",
+					"menuName": "销量排行",
+					"url": "xiaoliangpaihang",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500102",
+					"pid": "5001",
+					"menuName": "库存情况",
+					"url": "kucunqingkuang",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500103",
+					"pid": "5001",
+					"menuName": "关键指标",
+					"url": "guanjianzhibiao",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500104",
+					"pid": "5001",
+					"menuName": "销量概况",
+					"url": "xiaolianggaikuang",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500105",
+					"pid": "5001",
+					"menuName": "工商存销比",
+					"url": "gongshangcunxiaobi",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500106",
+					"pid": "5001",
+					"menuName": "库存积压短缺的牌号",
+					"url": "kucunjiyapaihao",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500107",
+					"pid": "5001",
+					"menuName": "质量消耗",
+					"url": "zhiliangxiaohao",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500108",
+					"pid": "5001",
+					"menuName": "品牌分析",
+					"url": "pinpaifenxi",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500109",
+					"pid": "5001",
+					"menuName": "滕州烟草销量情况",
+					"url": "tengzhouyancaoxiaoliangqingkuang",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500110",
+					"pid": "5001",
+					"menuName": "业务管理",
+					"url": "3333",
+					"childs": [
+						[]
+					]
+				}
+			]
+		]
+	}, {
+		"menuId": "5002",
+		"pid": "",
+		"menuName": "个人中心",
+		"url": "/dateCenter/pages/grzxPage/grzx.html",
+		"childs": [
+			[
+				{
+					"menuId": "500201",
+					"pid": "5002",
+					"menuName": "领导关注",
+					"url": "lindaoguangzhu",
+					"childs": [
+						[
+							{
+								"menuId": "50020101",
+								"pid": "500201",
+								"menuName": "关注主页",
+								"url": "../ldgzPage/gzsy.html",
+								"childs": [
+									[]
+								]
+							}, {
+								"menuId": "50020102",
+								"pid": "500201",
+								"menuName": "品牌培养",
+								"url": "../ldgzPage/pppy.html",
+								"childs": [
+									[]
+								]
+							}, {
+								"menuId": "50020103",
+								"pid": "500201",
+								"menuName": "营销专题",
+								"url": "../ldgzPage/scjy.html",
+								"childs": [
+									[]
+								]
+							}, {
+								"menuId": "50020104",
+								"pid": "500201",
+								"menuName": "生成专题",
+								"url": "shengchengzhuanti",
+								"childs": [
+									[]
+								]
+							}, {
+								"menuId": "50020105",
+								"pid": "500201",
+								"menuName": "物资专题",
+								"url": "wuzizhuanti",
+								"childs": [
+									[]
+								]
+							}, {
+								"menuId": "50020106",
+								"pid": "500201",
+								"menuName": "财务专题",
+								"url": "caiwuzhuanti",
+								"childs": [
+									[]
+								]
+							}
+						]
+					]
+				}, {
+					"menuId": "500202",
+					"pid": "5002",
+					"menuName": "管理主题",
+					"url": "guanlizhuti",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500203",
+					"pid": "5002",
+					"menuName": "业务主题",
+					"url": "yewuzhuti",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500204",
+					"pid": "5002",
+					"menuName": "基础功能",
+					"url": "yewuzhuti",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500205",
+					"pid": "5002",
+					"menuName": "消息提醒",
+					"url": "xiaoxitixing",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500206",
+					"pid": "5002",
+					"menuName": "关注",
+					"url": "guangzhu",
+					"childs": [
+						[]
+					]
+				}
+			]
+		]
+	}, {
+		"menuId": "5004",
+		"pid": "",
+		"menuName": "全景视图",
+		"url": "http://furuiwei.net",
+		"childs": [
+			[]
+		]
+	}, {
+		"menuId": "5008",
+		"pid": "",
+		"menuName": "指标中心",
+		"url": "/dateCenter/pages/zbzxPage/zbzx.html",
+		"childs": [
+			[]
+		]
+	}, {
+		"menuId": "5007",
+		"pid": "",
+		"menuName": "主题中心",
+		"url": "/dateCenter/pages/ztzxPage/ztzx.html",
+		"childs": [
+			[]
+		]
+	}, {
+		"menuId": "5005",
+		"pid": "",
+		"class": "user",
+		"menuName": "Administrator",
+		"url": "menu.html",
+		"childs": [
+			[
+				{
+					"menuId": "500501",
+					"pid": "5001",
+					"menuName": "个人资料",
+					"url": "xiaoliangpaihang",
+					"icon": "glyphicon glyphicon-user",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500502",
+					"pid": "5001",
+					"menuName": "消息",
+					"url": "kucunqingkuang",
+					"icon": "glyphicon glyphicon-envelope",
+					"childs": [
+						[]
+					]
+				}, {
+					"menuId": "500503",
+					"pid": "5001",
+					"menuName": "退出",
+					"url": "/dateCenter/login.html",
+					"icon": "glyphicon glyphicon-share-alt",
+					"childs": [
+						[]
+					]
+				}
+			]
+		]
+	}
+]

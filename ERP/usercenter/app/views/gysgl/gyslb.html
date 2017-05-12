@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+		<title>供应商列表</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/gysgl/bootstrap-select.css" />
+		<link rel="stylesheet" href="../../style/gysgl/gyslb.css" />
+	</head>
+
+	<body ng-app="gyslbModule" ng-controller="gyslbCtrl" ng-init="init()">
+		<!-- 搜索条件 -->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<li title="公司名称">
+					<input type="text" class="k-textbox" placeholder="公司名称" style="width: 150px;" />
+				</li>
+				<li title="供应商编号">
+					<input type="text" class="k-textbox" placeholder="供应商编号" style="width: 150px;" />
+				</li>
+				<li title="创建人">
+					<input type="text" class="k-textbox" placeholder="创建人" style="width: 150px;" />
+				</li>
+				<li title="主营业务">
+					<select id="search" class="selectpicker" multiple data-live-search="true">
+						<option>石家庄</option>
+						<option>Ble</option>
+						<option>Bla</option>
+						<option>石家庄ss</option>
+						<option>石家庄aa</option>
+						<option>石家庄ddd</option>
+						<option>石家庄ss</option>
+						<option>石家庄aa</option>
+						<option>石家庄ddd</option>
+						<option>石家庄ss</option>
+						<option>石家庄aa</option>
+						<option>石家庄ddd</option>
+						<option>石家庄ss</option>
+						<option>石家庄aa</option>
+						<option>石家庄ddd</option>
+					</select>
+				</li>
+				<li title="所在省">
+					<input id="province" value="1" style="width: 150px;" />
+				</li>
+				<li title="所在市">
+					<input id="city" value="1" style="width: 150px;" />
+				</li>
+				<li title="所属类别">
+					<input id="category" value="1" style="width: 150px;" />
+				</li>
+				<li title="创建时间">
+					<input id="datepicker1" placeholder="创建时间" style="width: 132px;" />
+					<label style="width: 50px;text-align: center;">至</label>
+					<input id="datepicker2" placeholder="创建时间" style="width: 132px;" />
+				</li>
+				<li title="审批状态">
+					<input id="status" value="1" style="width: 150px;" />
+				</li>
+				<li title="企业规模">
+					<input id="scale" value="1" style="width: 150px;" />
+				</li>
+				<li title="数据来源">
+					<input id="data_source" value="1" style="width: 150px;" />
+				</li>
+				<li title="修改人">
+					<input type="text" class="k-textbox" placeholder="修改人" style="width: 150px;" />
+				</li>
+				<li title="付款方式">
+					<input id="payment" value="1" style="width: 150px;" />
+				</li>
+				<li title="注册基金">
+					<input id="register_fund" value="1" style="width: 150px;" />
+				</li>
+				<li title="供应商信息来源">
+					<input id="gys_message_source" value="1" style="width: 150px;" />
+				</li>
+				<li title="最后修改时间">
+					<input id="datepicker" placeholder="最后修改时间" style="width: 132px;" />
+					<label style="width: 50px;text-align: center;">至</label>
+					<input id="datepicker3" placeholder="最后修改时间" style="width: 132px;" />
+				</li>
+				<li title="合作类型">
+					<input id="consociation_type" value="1" style="width: 150px;" />
+				</li>
+				<li title="">
+					<button type="button" class="btn btn-info">清空</button>
+					<button type="button" class="btn btn-info">搜索</button>
+				</li>
+			</ul>
+		</div>
+		<!-- 数据列表 -->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+	</body>
+	<script src="../../../lib/js/loadjsfile.js"></script>
+	<script src="../../script/gysgl/bootstrap-select.js"></script>
+	<!--<script src="../../script/home/index.js"></script>-->
+	<script src="../../modules/gysgl/gyslb.module.js"></script>
+
+</html>

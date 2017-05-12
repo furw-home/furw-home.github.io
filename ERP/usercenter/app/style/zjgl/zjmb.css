@@ -1,0 +1,234 @@
+body {
+	border: 0px;
+}
+
+.query_conditions {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+}
+
+.fieldlist li {
+	float: left;
+	height: 28px;
+	margin: 25px 20px 0 0;
+}
+
+.fieldlist label {
+	width: 62px;
+	text-align: right;
+}
+
+.operation {
+	float: left;
+	width: 96%;
+	margin: 35px 2% 0 0;
+}
+
+.operation button {
+	float: right;
+	margin-left: 10px;
+}
+
+#content {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 20px;
+}
+
+.head1 {
+	float: left;
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #ddd;
+}
+
+.head1 ul {
+	float: left;
+	width: 100%;
+	height: 50px;
+}
+
+.tree_content {
+	float: left;
+	width: 43%;
+	height: 290px;
+	margin-top: 10px;
+	overflow: auto;
+	border: 1px solid #ccc;
+}
+
+.action_buttons {
+	float: left;
+	width: 10%;
+	height: 290px;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+.zjxmbm {
+	float: left;
+	width: 350px;
+	height: 290px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
+
+.action_buttons span {
+	float: left;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	color: #777;
+}
+
+#tree {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.zjxmbm .thead {
+	float: left;
+	height: 35px;
+	width: 100%;
+}
+
+.zjxmbm .thead li {
+	float: left;
+	width: 49.7%;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px solid #ccc;
+}
+
+.zjxmbm .thead li:nth-child(1) {
+	border-right: 1px solid #ccc;
+}
+
+.zjxmbm .tbody {
+	width: 349;
+	height: 290px;
+	overflow: auto;
+}
+
+.zjxmbm .tbody ul {
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #ddd;
+}
+
+.zjxmbm .tbody li {
+	float: left;
+	width: 49%;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	cursor: pointer;
+}
+
+.tbody .hove {
+	background: #ddd;
+	border: 0px;
+}
+
+.zjxmbm .tbody_edit {
+	width: 349;
+	height: 290px;
+	overflow: auto;
+}
+
+.zjxmbm .tbody_edit ul {
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #ddd;
+}
+
+.zjxmbm .tbody_edit li {
+	float: left;
+	width: 49%;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	cursor: pointer;
+}
+
+.tbody_edit .hove {
+	background: #ddd;
+	border: 0px;
+}
+
+.query_conditions input {
+	width: 120px;
+}
+
+
+/*滚动条美化*/
+
+
+/*整体部分*/
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+
+/*滑动轨道*/
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	border-radius: 0px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+
+/*滑块*/
+
+::-webkit-scrollbar-thumb {
+	/*border-radius: 8px;*/
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+/*滑块效果*/
+
+::-webkit-scrollbar-thumb:hover {
+	border-radius: 8px;
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.4);
+}
+
+
+/*滚动条美化结束*/
+
+#add_window input {
+	width: 100px;
+}
+
+#edit_window input {
+	width: 100px;
+}
+
+.createdAt {
+	float: left;
+	margin: 0;
+	height: 18px;
+	clear: both;
+	line-height: 18px;
+	color: #777;
+	margin-top: 8px;
+}
+
+.founder {
+	margin-right: 5px;
+}
+
+.creationTime {
+	margin-left: 5px;
+}

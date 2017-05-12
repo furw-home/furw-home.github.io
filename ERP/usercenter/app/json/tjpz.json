@@ -1,0 +1,35 @@
+[
+	{
+		"conditions": "打样单",
+		"remark": "有打样信息",
+		"checked": "true"
+	}, {
+		"conditions": "战略客户",
+		"remark": "客户档案中有战略客户标签",
+		"checked": "true"
+	}, {
+		"conditions": "客户首单",
+		"remark": "新客户首单",
+		"checked": "true"
+	}, {
+		"conditions": "供应商首单",
+		"remark": "供应商首单",
+		"checked": "true"
+	}, {
+		"conditions": "大单",
+		"remark": "交易金额大于5万",
+		"checked": "true"
+	}, {
+		"conditions": "送宝丰仓",
+		"remark": "送宝丰仓",
+		"checked": "true"
+	}, {
+		"conditions": "送汉威仓",
+		"remark": "送汉威仓",
+		"checked": "true"
+	},{
+		"conditions": "质检用户",
+		"remark": "用户质检字段明确指定需要质检",
+		"checked": "true"
+	}
+]

@@ -1,0 +1,51 @@
+[
+	{
+		"month": "1月",
+		"children": [
+			{
+				"value": "2500.67",
+				"color": "#3388FF"
+			}
+		]
+	}, {
+		"month": "2月",
+		"children": [
+			{
+				"value": "2500.87",
+				"color": "#3388FF"
+			}
+		]
+	}, {
+		"month": "3月",
+		"children": [
+			{
+				"value": "2501.12",
+				"color": "#FE8463"
+			}
+		]
+	}, {
+		"month": "4月",
+		"children": [
+			{
+				"value": "2509.09",
+				"color": "#FE8463"
+			}
+		]
+	}, {
+		"month": "5月",
+		"children": [
+			{
+				"value": "2500.98",
+				"color": "#3388FF"
+			}
+		]
+	}, {
+		"month": "6月",
+		"children": [
+			{
+				"value": "2500.47",
+				"color": "#3388FF"
+			}
+		]
+	}
+]

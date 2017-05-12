@@ -1,0 +1,118 @@
+<div class="entrance">
+	<p class="head">发消息</p>
+	<h4>请选择一个应用发消息</h4>
+
+	<!--应用列表-->
+	<ul>
+		<img src="img/bebo.png" alt="泰山品牌产品推广" title="泰山品牌产品推广" />
+		<li class="app_name" title="泰山品牌产品推广">泰山品牌产品推广</li>
+	</ul>
+
+	<ul>
+		<img src="img/2.jpg" alt="问候消息推送" title="问候消息推送" />
+		<li class="app_name" title="问候消息推送">问候消息推送</li>
+	</ul>
+</div>
+
+<div class="preview">
+	<nav class="head">预览 </nav>
+	<div class="preview_area">
+
+	</div>
+</div>
+
+<div class="push_message">
+
+	<!--标题栏-->
+	<nav class="head">
+		<div class="head_title">
+			<label><img src="" /></label>
+			<label class="name"></label>
+		</div>
+	</nav>
+
+	<!--指定发送人-->
+	<div class="top">
+		<label class="text_name">发送给：</label>
+		<div class="addUserText">
+			<ul class="user_text"></ul>
+			<label class="addUser" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 550, height: 585}">
+				＋
+			</label>
+			<label class="addAll">
+				全选成员
+			</label>
+		</div>
+
+		<div class="check_all ">
+			<div class="member">
+				<img src="" />
+				<p class="check_all_name"></p>
+				<a class="cancel">取消全选</a>
+			</div>
+
+		</div>
+
+		<!--选择成员-->
+		<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">选择发送范围
+					<a href="javascript: void(0)" class="am-close" data-am-modal-close>&times;</a>
+				</div>
+				<div class="am-modal-bd">
+
+					<div class="am-modal-content">
+						<div class="search">
+							<ul class="add"></ul>
+						</div>
+						<ul class="head">
+							<li class="am-modal-firsts">部门</li>
+							<li>成员</li>
+						</ul>
+
+						<div class="range_content">
+
+							<!--部门成员树行列表-->
+							<div class="member_tree">
+								<div class="zTreeDemoBackground left">
+									<ul id="treeDemo" class="ztree"></ul>
+								</div>
+							</div>
+
+							<!--选中成员显示区域-->
+							<div class="member_list">
+							</div>
+
+						</div>
+
+						<footer>
+							<button onfocus="this.blur()" id="sub" type="button" class="am-btn am-btn-primary" data-am-modal-close>确定</button>
+						</footer>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--消息类型tab-->
+		<nav class="tabs">
+			<ul>
+				<li id="word" class="tab_menu tab_firsts"><i class="icon-pencil"></i>文字</li>
+				<li id="image_text" class="tab_menu"><i class="icon-file-alt"></i> 图文</li>
+				<li id="picture" class="tab_menu"><i class="icon-picture"></i>图片</li>
+				<li id="file" class="tab_menu"><i class="icon-folder-open-alt"></i>文件</li>
+				<li id="video" class="tab_menu"><i class="icon-desktop"></i>视频</li>
+				<li id="sound" class="tab_menu"><i class="icon-headphones"></i>语音</li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<div class="message_content"></div>
+
+	<div class="submit">
+		<button>发送</button>
+	</div>
+
+</div>

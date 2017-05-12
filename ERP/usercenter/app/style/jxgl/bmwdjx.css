@@ -1,0 +1,220 @@
+body {
+	border: 0px;
+}
+
+.head {
+	float: left;
+	margin-top: 10px;
+}
+
+.year {
+	float: left;
+	margin: 10px 0px 0px 10px;
+}
+
+.year .btn {
+	height: 30px;
+	background: #878787;
+	color: white;
+	border: 0px;
+}
+
+.month {
+	float: left;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-right: 1px solid #1EA4DD;
+}
+
+.month li {
+	float: left;
+	width: 70px;
+	height: 30px;
+	border: 1px solid #1EA4DD;
+	border-right: 0px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	border-radius: 0px;
+	background: #777;
+	color: white;
+}
+
+.dropdown-menu> li> a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 1.42857143;
+	color: white;
+	white-space: nowrap;
+}
+
+.dropdown-menu> li> a:hover,
+.dropdown-menu> li> a:focus {
+	color: #262626;
+	text-decoration: none;
+	background-color: #f5f5f5;
+}
+
+.hove {
+	background: #1EA4DD;
+	color: white;
+	border: 0px;
+}
+
+.query_conditions {
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+}
+
+.fieldlist p {
+	float: left;
+	height: 30px;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+.fieldlist input {
+	width: 160px;
+	height: 29px;
+}
+
+.fieldlist label {
+	width: 70px;
+	height: 30px;
+	text-align: right;
+}
+
+#bcqtxx_window textarea {
+	width: 300px;
+	height: 100px;
+	resize: none;
+	margin-left: 3px;
+}
+
+#bcqtxx_window input {
+	width: 300px;
+}
+
+#bcqtxx_window button {
+	width: 90px;
+}
+
+.editValidMsg1 {
+	width: 120px;
+	margin-left: 30px;
+}
+
+.operation {
+	float: left;
+	width: 98%;
+	margin: 30px 0 0 1%;
+}
+
+.operation button {
+	float: right;
+}
+
+.ml10 {
+	margin-left: 10px;
+}
+
+#content {
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.k-grid-header {
+	padding-right: 0px;
+}
+
+.k-grid-content {
+	overflow-y: hidden;
+}
+
+
+/*滚动条美化*/
+
+
+/*整体部分*/
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+
+/*滑动轨道*/
+/*
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	border-radius: 0px;
+	background: rgba(0, 0, 0, 0.1);
+}*/
+
+
+/*滑块*/
+
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+/*滑块效果*/
+
+::-webkit-scrollbar-thumb:hover {
+	/*border-radius: 8px;*/
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.4);
+}
+
+
+/*滚动条美化结束*/
+
+
+/*查看图片*/
+
+.photo {
+	width: 800px;
+	margin: auto;
+	display: none;
+}
+
+.picture {
+	width: 800px;
+	height: 400px;
+	position: absolute;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.5);
+	filter: alpha(opacity=50);
+	padding: 50px;
+	margin: auto;
+	text-align: center;
+	margin-top: 10vh;
+}
+
+.picture img {
+	width: auto;
+	height: auto;
+	max-width: 800px;
+	max-height: 300px;
+}
+
+.picture span {
+	float: right;
+	color: white;
+	font-size: 50px;
+	cursor: pointer;
+	margin-right: -35px;
+	margin-top: -65px;
+}

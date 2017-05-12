@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>ERP系统登陆</title>
+		<link rel="stylesheet" href="style/base.css" />
+		<!--<link rel="stylesheet" href="../lib/css/checked/checkbix.min.css" />-->
+		<link rel="stylesheet" href="style/login/login.css" />
+	</head>
+
+	<body ng-app="loginModule" ng-controller="loginCtrl" ng-init="init()">
+
+		<div class="login">
+			<h1 style="text-align: center;">
+				某某某 后台管理系统
+				<!--<img src="images/index/mod_logo.png" />-->
+			</h1>
+			<div>
+				<input type="text" placeholder="账号" id="username" ng-model="user.name" />
+			</div>
+			<div>
+				<input type="password" placeholder="密码" id="password" ng-model="user.pwd" />
+			</div>
+			<div style="margin-bottom: 30px;">
+				<button type="button" class="_btn" ng-click="login(user)">登陆</button>
+			</div>
+			<p style="color: white;">
+				账号：admin 密码：123
+			</p>
+			<!--<div style="width: 300px;margin-left: -10px;">
+				<input id="mycheckbox" type="checkbox" class="checkbix" data-text="记住密码" data-color="orange"> <span style="color: white;"></span>
+			</div>-->
+		</div>
+		<!-- 浏览器低于IE10弹框 -->
+		<div class="browser_hint_bg" id="browser_hint_bg"></div>
+		<div class="browser_hint" id="browser_hint">
+			<h3>您使用的浏览器版本过低<br/>请升级浏览器或下载如下浏览器</h3>
+			<p>
+				<a class="c-btn c-btn-primary OP_LOG_BTN" href="https://www.baidu.com/link?url=GXt5C-rV3RXuR2QZGNeIj_TjfmqpW9bdg58mRIIAv3sjzd1VlOVgRgq7FqwbtTww2wlmSa3G2lvJEYu-yOvCObF1Fq4osCXWFJIA4Sbf9xS&amp;wd=&amp;eqid=83ed15c600003a99000000035822d0be" target="_blank"><img src="images/login/chrome.png" alt="chrome" /><span>chrome</span></a>
+				<a href="http://down.360safe.com/cse/360cse_official.exe" target="_blank"><img src="images/login/360.png" alt="360极速浏览器" target="_blank" /><span>360极速</span></a>
+				<a href="https://www.baidu.com/link?url=MW-090yfRRcfkHNfEKhSgU4Jq1GrX_5FuxiJ04d3zbHMIFds-bE3J4XoFDzyKIk2s6SGmcKjz-DQvGupULhlv9U_05fkajYHurjU72S-8US&amp;wd=&amp;eqid=fc005ddb000062b7000000035822d22b" target="_blank"><img src="images/login/firefox.png" alt="Firefox火狐" /><span>Firefox火狐</span></a>
+				<a href="https://www.baidu.com/link?url=FLmsNVdFJ7O7GpuQGt0dvY5gaBXD91LhgOztwok7KLJk499UspkLnRRaTXUlXGxxAQvW2ytyZKfrLv4F20nKYzDO7GYcKxdOjfUgMaeN_Wu&amp;wd=&amp;eqid=fd147a6f00006fe3000000035822d276" target="_blank"><img src="images/login/safari.png" alt="Safari" /><span>Safari</span></a>
+				<a down="1" sid="11508" href="http://sw.bos.baidu.com/sw-search-sp/software/0fd046b2e4f47/Opera_41.0.2353.46_setup.exe" target="_blank"><img src="images/login/opera.png" alt="Opera" /><span>Opera</a>
+			</p>
+		</div>
+		<!--提示消息-->
+		<div class="msg"></div>
+		
+		<script src="http://nbcjs1.98ep.com/nbcssjs/publicjs/jquery-2.1.0.js"></script>
+		<script src="http://nbcjs1.98ep.com/nbcssjs/publicjs/jquery.cookie.js"></script>
+		<script src="http://nbcjs1.98ep.com/nbcssjs/publicjs/jquery.base64.js"></script>
+		<script src="http://nbcjs2.98ep.com/nbcssjs/publicjs/angular.min.js"></script>
+
+		<script src="config.js"></script>
+		<script src="../lib/common/service/util.service.js"></script>
+		<script src="script/login/login.js"></script>
+		<script src="modules/login/login.module.js"></script>
+
+		<!--<script src="../lib/js/jquery/jquery-2.1.0.js"></script>-->
+		<!--<script src="../lib/js/checked/checkbix.min.js"></script>-->
+		<!--<script>
+			Checkbix.init();
+		</script>-->
+		<!--<script src="../lib/js/jquery/jquery.cookie.js"></script>
+		<script src="../lib/js/jquery/jquery.base64.js"></script>
+		<script src="../lib/js/angular/angular.min.js"></script>
+		<script src="config.js"></script>
+		<script src="../lib/common/service/util.service.js"></script>
+		<script src="script/login/login.js"></script>
+		<script src="modules/login/login.module.js"></script>-->
+
+	</body>
+
+</html>

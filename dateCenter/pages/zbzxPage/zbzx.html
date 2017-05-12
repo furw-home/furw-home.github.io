@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>指标中心</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../../styles/default/css/amazeui.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/zTreeStyle.css" />
+		<link rel="stylesheet" href="../../styles/default/css/base.css" />
+		<link rel="stylesheet" href="css/zbzx.css" />
+		<link rel="stylesheet" href="css/qj.css" />
+	
+	</head>
+
+	<body>
+		<div class="body">
+			<!--顶部导航-->
+			<header>
+				<nav class="navbar navbar-fixed-top">
+					<div class="container">
+						<h1>滕州卷烟厂数据中心</h1>
+						<ul id="menu"></ul>
+					</div>
+				</nav>
+			</header>
+
+			<div class="head">
+				<h2>指标中心</h2>
+				<ul>
+					<li id="INDEX08001" data-bg="FA8786" class="menu">
+						<p class="sckz_menu menu_first"><i class="am-icon-shopping-cart"></i></p>
+						<label>生产控制</label>
+					</li>
+					<li id="INDEX08002" data-bg="5CB85C" class="menu">
+						<p class="scxh_menu"><i class="am-icon-gavel"></i></p>
+						<label>生产消耗</label>
+					</li>
+					<li id="INDEX08003" data-bg="337AB7" class="menu">
+						<p class="scxn_menu"><i class="am-icon-flash"></i></p>
+						<label>生产效能</label>
+					</li>
+					<li id="INDEX08004" data-bg="F0AD4E" class="menu">
+						<p class="sczl_menu"><i class="am-icon-recycle"></i></p>
+						<label>生产质量</label>
+					</li>
+					<li id="INDEX08005" data-bg="5BC0DE" class="menu">
+						<p class="gyzl_menu"><i class="am-icon-cny"></i></p>
+						<label>工艺质量</label>
+					</li>
+					<li id="INDEX08006" data-bg="D87598" class="menu">
+						<p class="zlpj_menu"><i class="am-icon-truck"></i></p>
+						<label>质量评价</label>
+					</li>
+					<li id="INDEX08007" data-bg="7D79BC" class="menu">
+						<p class="sbfy_menu"><i class="am-icon-sitemap"></i></p>
+						<label>设备费用</label>
+					</li>
+					<li id="INDEX08008" data-bg="3AADA6" class="menu">
+						<p class="sbyw_menu"><i class="am-icon-users"></i></p>
+						<label>设备运维</label>
+					</li>
+					<li id="INDEX08009" data-bg="9C4588" class="menu">
+						<p class="bjgl_menu"><i class="am-icon-plug"></i></p>
+						<label>备件管理</label>
+					</li>
+					<li id="INDEX08010" data-bg="8BABB6" class="menu">
+						<p class="scyx_menu"><i class="am-icon-exchange"></i></p>
+						<label>市场营销</label>
+					</li>
+				</ul>
+			</div>
+
+			<!--容器区域-->
+			<div class="main">
+				<div class="content_head">
+					<p>当前位置：</p>
+					<ul>
+						<li class="position">生产控制</li>
+					</ul>
+
+					<div class="search_index">
+						<input type="text" placeholder="请输入您要检索的指标" />
+					</div>
+					<div class="switch">
+						<div class="dropdown">
+							<a href="###" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="switch_name">大卡片</span>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-lrdabelledby="dropdownMenu1">
+								<li class="big_card"><a href="#">大卡片</a></li>
+								<li class="small_card"><a href="#">小卡片</a></li>
+								<li class="card_list"><a href="#">列表</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!--指标卡片显示区域-->
+				<div class="content" data-page='10'></div>
+			</div>
+
+			<!--左侧边栏-->
+			<div class="left_sidebar" data-type="close">
+				<div class="left_sidebar_head">
+					<p>指标树</p>
+					<span>全景</span>
+				</div>
+				<div class="left_sidebar_icon">
+					<i class="glyphicon glyphicon-cog"></i>
+				</div>
+				<ul id="tree" class="ztree"></ul>
+			</div>
+
+			<!--指标全景视图-->
+			<div class="qj">
+
+			</div>
+
+			<!--定位 页面头部 或 底部-->
+			<div class="orientate"></div>
+
+			<!--显示总结卡片-->
+			<div id="popmenu">
+				<p>×</p>
+				<span>111</span>
+			</div>
+
+			<!-- 添加指标 -->
+			<div class="modal fade" id="addIndex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">添加指标</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary">保存</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 编辑指标 -->
+			<div class="modal fade" id="editIndex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel">编辑指标</h4>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+							<button type="button" class="btn btn-primary">保存</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="../../styles/default/js/jquery-2.1.0.min.js"></script>
+			<script src="../../styles/default/js/bootstrap.min.js"></script>
+			<script src="../../styles/default/js/amazeui.min.js"></script>
+			<script src="../../styles/default/js/jquery.ztree.core-3.5.min.js"></script>
+			<script src="../../styles/default/js/common.js"></script>
+			<script src="js/zbzx.js"></script>
+			<script src="js/qj.js"></script>
+		</div>
+	</body>
+
+</html>

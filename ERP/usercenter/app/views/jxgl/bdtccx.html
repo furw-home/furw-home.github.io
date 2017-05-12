@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>BD提成查询</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/jxgl/bdtccx.css" />
+	</head>
+
+	<body ng-app="bdtccxModule" ng-controller="bdtccxCtrl" ng-init="init()">
+
+		<!--日期选择-->
+		<div class="head">
+			<ul class="year">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" data-toggle="dropdown"><span class="years"></span> <span class="caret"></span> </button>
+					<ul class="dropdown-menu" role="menu"></ul>
+				</div>
+			</ul>
+			<!--月份-->
+			<ul class="month"></ul>
+		</div>
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<p>
+					<label>所属部门：</label>
+					<input id="ssbm_bd" value="可多选" style="width: 200px;float: right;margin-left: 3px;max-height: 28px;overflow-y: auto;" />
+				</p>
+				<p>
+					<label>BD姓名：</label>
+					<input type="text" class="k-textbox" ng-model="project.BDname" />
+				</p>
+			</ul>
+		</div>
+
+		<!--操作按钮-->
+		<div class="operation">
+			<button class="btn btn-warning" style="float: left;width: 90px;" ng-click="retrieve(project)">查询</button>
+			<button class="btn btn-primary" style="width: 90px;" ng-click="export(project)">导出</button>
+		</div>
+
+		<!--BD提成查询-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+	</body>
+	<script src="../../../lib/js/loadjsfile.js"></script>
+	<script src="../../../lib/js/bootstrap/bootstrap.min.js"></script>
+	<script src="../../modules/jxgl/bdtccx.module.js"></script>
+
+</html>

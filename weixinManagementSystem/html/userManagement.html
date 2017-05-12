@@ -1,0 +1,206 @@
+<!--左侧成员树形列表-->
+<div class="left_tree">
+	<p class="head">组织架构
+		<div class="btn-group add-user-btn">
+			<button data-toggle="dropdown" class="btn dropdown-toggle">
+				<span class="addUser">＋</span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 550, height: 600}">新增成员</a>
+				</li>
+				<li><a class="import" href="#">批量导入</a>
+				</li>
+				<li class="divider"></li>
+				<li><a href="#">设置成员</a>
+				</li>
+			</ul>
+		</div>
+	</p>
+
+	<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+		<div class="am-modal-dialog">
+			<div class="am-modal-hd">新增成员
+				<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+			</div>
+			<div class="am-modal-bd">
+				<div class="add_user_content">
+					<ul>
+						<li>
+							<p class="head_sculpture">
+
+							</p>
+						</li>
+						<li>
+							<label>姓名 <span>(必填)</span> </label>
+							<input type="text" name="name" />
+						</li>
+						<li>
+							<label>账号 <span>(必填)</span></label>
+							<input type="text" name="" placeholder="成员唯一表示 , 不可更改 , 不支持中文" />
+						</li>
+						<li>
+							<label>性别</label>
+							<select name="" id="">
+								<option value="">请选择性别</option>
+								<option value="">男</option>
+								<option value="">女</option>
+								<option value="">其他可能</option>
+							</select>
+						</li>
+						<p class="line"></p>
+
+						<li>
+							<label><span>身份验证信息 (以下三种信息不可同时为空)</span></label>
+							<label>微信号</label>
+							<input type="text" name="" placeholder="允许微信扫描的匹配关注" />
+						</li>
+
+						<li>
+							<label>手机</label>
+							<input type="text" name="" placeholder="允许手机对应的微信与员工扫描的微信匹配关注" />
+						</li>
+
+						<li>
+							<label>邮箱</label>
+							<input type="text" name="" placeholder="若未匹配到员工的微信,则通过邮箱来验证身份" />
+						</li>
+						<p class="line"></p>
+						<li>
+							<label>所在部门<span> (必填)</span></label>
+							<input type="text" name="" />
+						</li>
+
+						<li>
+							<label>职位</label>
+							<input type="text" name="" />
+						</li>
+					</ul>
+
+				</div>
+				<div class="add_user_foot">
+					<button type="button" class="save">保存</button>
+					<button type="button" class="add_save_next">保存并添加下一个</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="user_tree">
+
+		<ul id="treeDemo" class="ztree division_tree"></ul>
+
+		<div id="rMenu">
+			<ul>
+				<li id="m_add">添加子部门</li>
+				<li id="m_rename">重命名</li>
+				<li id="m_del">删除</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="am-modal am-modal-prompt" tabindex="-1" id="my-prompt">
+	<div class="am-modal-dialog">
+		<div class="am-modal-hd">新建部门</div>
+		<div class="am-modal-bd division">
+			<div>
+				<label>部门名称</label>
+				<input type="text" class="am-modal-prompt-input" value="" placeholder="部门名称不能超过32个字">
+			</div>
+		</div>
+		<div class="am-modal-footer">
+			<span class="am-modal-btn" data-am-modal-cancel>取消</span>
+			<span class="am-modal-btn" data-am-modal-confirm>提交</span>
+		</div>
+	</div>
+</div>
+
+<!--右侧成员列表显示-->
+<div class="right_content">
+	<p class="head">
+		<div class="btn-group user-all">
+			<button data-toggle="dropdown" class="btn dropdown-toggle">
+				<span class="user_title">全部成员 (14)</span><span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu">
+				<li><a href="#">全部成员 (14)</a>
+				</li>
+				<li><a href="#">已关注 (11)</a>
+				</li>
+				<li><a href="#">未关注 (3)</a>
+				</li>
+				<li><a href="#">已禁用 (0)</a>
+				</li>
+			</ul>
+		</div>
+	</p>
+
+	<div class="user_list">
+		<ul class="user_list_head">
+			<li class="checks">
+				<input type="checkbox" /> </li>
+			<li class="user"> 姓名</li>
+			<li class="number">账号</li>
+			<li class="job">职位</li>
+			<li class="phone">手机</li>
+			<li class="email">邮箱</li>
+			<li class="state">状态</li>
+		</ul>
+
+		<div class="member_lists"></div>
+	</div>
+
+</div>
+
+<div class="the_sidebar">
+	<p class="head">详细资料<span class="the_sidebar_close">×</span></p>
+	<div class="the_sidebar_content">
+		<img src="img/psa.png" />
+		<label class="is_follow">未关注</label>
+		<label class="member_name"></label>
+		<span class="icon-user"></span>
+		<label class="department"></label>
+
+		<ul>
+			<li>
+				<label>账号</label>
+				<label class="zh"></label>
+			</li>
+			<li>
+				<label>手机</label>
+				<label class="sj"></label>
+			</li>
+			<li>
+				<label>微信</label>
+				<label class="wx"></label>
+			</li>
+			<li>
+				<label>邮箱</label>
+				<label class="yx"></label>
+			</li>
+			<li>
+				<label>部门</label>
+				<label class="bm"></label>
+			</li>
+		</ul>
+
+		<div class="the_sidebar_foot">
+			<button type="button" class="btn btn-primary">置顶</button>
+			<button type="button" class="btn btn-success">修改</button>
+			<button type="button" class="btn btn-info">邀请关注</button>
+			<button type="button" class="btn btn-warning">禁用</button>
+			<div class="dropup">
+				<button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					更多
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu more_menu" aria-labelledby="dropdownMenu2">
+					<li><a href="#">移动</a></li>
+					<li><a href="#">删除</a></li>
+					<li><a href="#">日志</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,281 @@
+body {
+	border: 0px;
+}
+
+._title {
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #444;
+}
+
+.conditions{
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+	height: 70px;
+}
+
+
+.operation {
+	float: left;
+	width: 98%;
+	margin: 50px 0 0 1%;
+}
+
+.operation span{
+	font-size: 18px;
+	color: #444;
+}
+
+.operation button {
+	float: right;
+	margin-left: 20px;
+	color: #000;
+}
+
+#content {
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#content1 {
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+	margin-top: 15px;
+}
+.foot{
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+.foot button{
+	width: 100px;
+	text-align: center;
+}
+
+.k-grid-header {
+	padding-right: 0px;
+}
+
+.k-grid-content {
+	overflow-y: hidden;
+}
+
+
+/*部门绩效统计*/
+
+.total {
+	float: left;
+	margin-top: 10px;
+	margin-left: 1%;
+	border: 1px solid #ADD3E5;
+	border-right: 0px;
+	border-bottom: 0px;
+}
+
+.total ul {
+	float: left;
+	height: 60px;
+}
+
+.total ul li:first-child {
+	background: #D0E3EE;
+}
+
+.total li {
+	float: left;
+	width: 100%;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #ADD3E5;
+	border-top: 0px;
+	border-left: 0px;
+}
+
+
+/*滚动条美化*/
+
+
+/*整体部分*/
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+
+/*滑动轨道*/
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	border-radius: 0px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+
+/*滑块*/
+
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+
+/*滑块效果*/
+
+::-webkit-scrollbar-thumb:hover {
+	/*border-radius: 8px;*/
+	-webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.4);
+}
+
+
+/*滚动条美化结束*/
+
+/*查看图片*/
+
+.photo {
+	width: 800px;
+	margin: auto;
+	display: none;
+}
+
+.picture {
+	width: 800px;
+	height: 400px;
+	position: absolute;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.5);
+	filter: alpha(opacity=50);
+	padding: 50px;
+	margin: auto;
+	text-align: center;
+}
+
+.picture img {
+	width: auto;
+	height: auto;
+	max-width: 800px;
+	max-height: 300px;
+}
+
+.picture span {
+	float: right;
+	color: white;
+	font-size: 50px;
+	cursor: pointer;
+	margin-right: -35px;
+	margin-top: -65px;
+}
+
+/*绩效分配window*/
+
+.fieldlist p {
+	float: left;
+	height: 30px;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+.fieldlist label {
+	width: 80px;
+	height: 30px;
+	text-align: right;
+}
+
+#tzje_window textarea {
+	width: 300px;
+	height: 100px;
+	resize: none;
+	margin-left: 3px;
+}
+
+#tzje_window input {
+	width: 300px;
+	height: 30px;
+}
+
+#tzje_window button {
+	width: 90px;
+}
+
+#qtfy_window input {
+	width: 280px;
+	height: 30px;
+}
+
+#qtfy_window button {
+	width: 90px;
+}
+
+.editValidMsg1 {
+	width: 120px;
+	margin-left: 30px;
+}
+
+.editValidMsg2 {
+	width: 120px;
+	margin-left: 30px;
+}
+
+
+
+
+/*下拉树*/
+
+.down_tree {
+	float: left;
+	width: 350px;
+	margin-top: 20px;
+}
+
+.down_tree label {
+	float: left;
+	width: 90px;
+	margin-top: 15px;
+}
+
+.down_tree input {
+	float: left;
+	width: 150px;
+	margin-top: 10px;
+}
+
+.down_tree button {
+	float: left;
+	width: 45px;
+	line-height: 20px;
+	height: 30px;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+#bm {
+	float: left;
+	width: 235px;
+}
+
+.multiselectContent {
+	float: left;
+	width: 245px;
+	height: 330px;
+	border: 1px solid #777;
+	margin-top: 38px;
+	background: #F1F1F1;
+	position: absolute;
+	z-index: 9999;
+	display: none;
+	overflow: auto;
+	background: rgba(255, 255, 255, 0.9);
+	filter: alpha(opacity=90);
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>指标详情页</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/dateCenter/styles/default/css/amazeui.min.css" />
+		<link rel="stylesheet" href="/dateCenter/styles/default/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/dateCenter/styles/default/css/zTreeStyle.css" />
+		<link rel="stylesheet" href="/dateCenter/styles/default/css/jquery-ui-1.8.16.custom.css" />
+		<link rel="stylesheet" href="/dateCenter/styles/default/css/ui.jqgrid.css" />
+		<!--公共样式-->
+		<link rel="stylesheet" href="/dateCenter/styles/default/css/base.css" />
+		<!--指标详情css-->
+		<link rel="stylesheet" href="../css/detailed.css" />
+		<!--指标全景树 css-->
+		<link rel="stylesheet" href="../css/qj.css" />
+		<!--工具栏css-->
+		<link rel="stylesheet" href="/dateCenter/styles/default/css/toolbar.css" />
+	</head>
+
+	<body>
+		<div class="body">
+			<!--顶部导航-->
+			<header>
+				<nav class="navbar navbar-fixed-top">
+					<div class="container">
+						<h1>滕州卷烟厂数据中心</h1>
+						<ul id="menu"></ul>
+					</div>
+				</nav>
+			</header>
+
+			<div class="head">
+				<h2>指标中心</h2>
+			</div>
+
+			<!--容器区域-->
+			<div class="main">
+				<div class="content_head">
+					<p>当前位置：</p>
+					<ul>
+						<li class="position">生产控制</li>
+					</ul>
+				</div>
+
+				<!--指标卡片显示区域-->
+				<div class="content">
+					<div class="overview_area">指标概览区 : 描述指标近期的状态 , 异常还是波动 , 引起关注</div>
+					<div class="data_tracking">数据跟踪区</div>
+					<div class="analysis_chart">
+						<p class='chart_title'><span></span><i class='glyphicon glyphicon-menu-hamburger'></i></p>
+					</div>
+
+					<div class="abnormal">
+						<p class="abnormal_title"><span></span><i class="glyphicon glyphicon-menu-hamburger"></i></p>
+					</div>
+
+					<!--表格布局1-->
+					<section>
+						<div class="list1"></div>
+					</section>
+
+					<!--表格布局2-->
+					<section>
+						<div class="list2"></div>
+					</section>
+
+					<!--表格布局3-->
+					<section>
+						<div class="list3"></div>
+					</section>
+
+					<!--表格布局4-->
+					<section>
+						<div class="list4"></div>
+					</section>
+
+					<!--表格布局5-->
+					<section>
+						<div class="list5"></div>
+					</section>
+
+					<!--指标推送区-->
+					<div class="dynamic_index"></div>
+				</div>
+			</div>
+
+			<div class="status_bar">状态栏
+				<span class="closes">×</span>
+			</div>
+			<div class="early_warning_bar">预警栏
+				<span class="closes">×</span>
+			</div>
+
+			<!--左侧边栏(指标树)-->
+			<div class="left_sidebar">
+
+				<div class="left_sidebar_head">
+					<p>指标树</p>
+					<span>全景</span>
+				</div>
+
+				<div class="left_sidebar_icon">
+					<i class="glyphicon glyphicon-cog"></i>
+				</div>
+
+				<ul id="tree" class="ztree"></ul>
+			</div>
+
+			<!--指标全景视图-->
+			<div class="qj"></div>
+
+			<script src="/dateCenter/styles/default/js/jquery-2.1.0.min.js"></script>
+			<script src="/dateCenter/styles/default/js/amazeui.min.js"></script>
+			<script src="/dateCenter/styles/default/js/bootstrap.min.js"></script>
+			<script src="/dateCenter/styles/default/js/echarts-all.js"></script>
+			<script src="/dateCenter/styles/default/js/jquery.ztree.core-3.5.min.js"></script>
+			<script src="/dateCenter/styles/default/js/grid.locale-cn.js"></script>
+			<script src="/dateCenter/styles/default/js/jquery.jqGrid.min.js"></script>
+			<script src="/dateCenter/styles/default/js/common.js"></script>
+			<script src="template1.js"></script>
+			<!--指标全景树Js-->
+			<script src="../js/qj.js"></script>
+			<!--工具栏js-->
+			<script src="/dateCenter/styles/default/js/toolbar.js"></script>
+		</div>
+		<div class="status_bar_icon"></div>
+		<div class="early_warning_bar_icon"></div>
+	</body>
+
+</html>

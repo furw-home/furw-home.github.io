@@ -1,0 +1,359 @@
+.bottom-menu li {
+	float: left;
+	width: 20%;
+	height: 49px;
+	padding-top: 8px;
+	font-size: 13px;
+	cursor: pointer;
+	margin-top: -1px;
+}
+
+.bottom-menu label {
+	margin: 0px;
+	width: 100%;
+}
+
+.csgk {
+	width: 100%;
+	height: 100vh;
+	padding: 50px 0 50px 0;
+	display: block;
+	overflow: auto;
+}
+
+.ddycgk {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	padding: 50px 0 50px 0;
+	overflow: auto;
+}
+
+.zdda {
+	width: 100%;
+	height: 100vh;
+	display: none;
+	padding: 50px 0 60px 0;
+	text-align: center;
+	overflow: auto;
+}
+
+.zdda_gz {
+	width: 100%;
+	height: 60px;
+	background: #E5E5E5;
+}
+
+.zdda_gz li {
+	float: left;
+	width: 25%;
+	height: 60px;
+	line-height: 28px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.zdda_gz p {
+	font-size: 20px;
+	text-align: center;
+	color: #777;
+}
+
+.yh {
+	float: left;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.yh .head {
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+	font-size: 15px;
+}
+
+.yh img {
+	width: 100%;
+}
+
+.swyda {
+	width: 100%;
+	height: 100vh;
+	display: none;
+}
+
+.zyjp {
+	width: 100%;
+	height: 100vh;
+	display: none;
+}
+
+.title {
+	float: left;
+	width: 94%;
+	height: 40px;
+	margin-left: 3%;
+	font-size: 15px;
+	line-height: 45px;
+	font-weight: 100px;
+	border-bottom: 1px dashed #aaa;
+	color: mediumseagreen;
+}
+
+.gk {
+	float: left;
+	line-height: 23px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.cskkgk {
+	float: left;
+	padding: 10px;
+	line-height: 25px;
+}
+
+.gsjj {
+	float: left;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.lxfs {
+	float: left;
+	width: 100%;
+	padding-left: 10px;
+}
+
+.lxfs li {
+	float: left;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.lxfs p {
+	float: left;
+	margin-top: 10px;
+}
+
+.cpjg {
+	float: left;
+	width: 100%;
+	background: #eee;
+	margin-bottom: 20px;
+}
+
+.cpjg p {
+	float: left;
+	margin: 0px;
+	width: 100%;
+	padding-left: 10px;
+	margin: 10px 0 10px 0;
+}
+
+.cpjg li {
+	float: left;
+	width: 16.66%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.lshgc {
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	background: #eee;
+}
+
+.color {
+	color: #46B8DA;
+}
+
+.lshgc p {
+	float: left;
+	margin: 0px;
+	width: 100%;
+	padding-left: 10px;
+	margin: 10px 0 10px 0;
+}
+
+.lshgc li {
+	float: left;
+	width: 16.66%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+/*市务员档案*/
+
+.userList {
+	float: left;
+	width: 20%;
+	height: 98vh;
+	padding: 50px 0 50px 0;
+	color: #777;
+	background: #F2F6F5;
+}
+
+.userList li {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #9D9D9D;
+	cursor: pointer;
+}
+
+.userList_menu {
+	background: #0B76AC;
+	color: white;
+}
+
+.userinfo {
+	float: left;
+	width: 80%;
+	height: 100vh;
+	padding: 50px 0 50px 0;
+	overflow: auto;
+	box-shadow: 1px 1px 15px #888;
+}
+
+.personal_info li {
+	float: left;
+	width: 50%;
+	height: 30px;
+	padding-left: 15px;
+	line-height: 30px;
+}
+
+.userinfo p {
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 15px;
+}
+
+.userinfo label {
+	width: 94%;
+	margin: 5px 0 0 3%;
+	color: #D9534F;
+	font-size: 16px;
+	border-bottom: 1px solid #777;
+}
+
+.education {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.education li {
+	float: left;
+	width: 100%;
+	padding: 0 15px 0 15px;
+}
+
+.education p {
+	width: 100%;
+	float: left;
+	color: #66AFE9;
+}
+
+.working_experience li {
+	width: 100%;
+	padding: 10px;
+}
+
+.job_evaluation {
+	margin-bottom: 30px;
+}
+
+.job_evaluation li {
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 10px;
+	color: #666;
+}
+
+.job_evaluation span {
+	color: #CE8483;
+}
+
+
+/*主要竞品*/
+
+.brand {
+	float: left;
+	width: 20%;
+	height: 98vh;
+	padding: 50px 0 50px 0;
+	color: #777;
+	background: #F2F6F5;
+}
+
+.brand li {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #9D9D9D;
+	cursor: pointer;
+}
+
+.standard {
+	float: left;
+	width: 80%;
+	height: 100vh;
+	padding: 50px 0 50px 0;
+	overflow: auto;
+	box-shadow: 1px 1px 15px #999;
+}
+
+.standard h3 {
+	float: left;
+	margin: 10px 0 0 10px;
+	width: 90px;
+	height: 150px;
+}
+
+.standard h3 img {
+	margin-top: 5px;
+	width: 100%;
+}
+
+.standard_info {
+	float: left;
+	margin-top: 15px;
+	padding-left: 10px;
+	line-height: 26px;
+	font-size: 13px;
+}
+
+.standard label {
+	width: 94%;
+	height: 25px;
+	margin: 5px 0 0 3%;
+	border-bottom: 2px dashed #F0AD4E;
+}
+
+.standard .zyschd li {
+	padding: 10px;
+}
+
+.am-g {
+	text-align: left;
+}
+.bfjl2 ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+.bfjl2 li{
+	height: 30px;
+	line-height: 30px;
+}
+.zxpp2 tr{
+	height: 30px;
+	line-height: 30px;
+}

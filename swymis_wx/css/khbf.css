@@ -1,0 +1,323 @@
+body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.bottom-menu li {
+	float: left;
+	width: 25%;
+	height: 50px;
+	margin-top: -1px;
+	padding-top: 9px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.bottom-menu label {
+	margin: 0px;
+	width: 100%;
+}
+
+.bfjl {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	display: block;
+}
+
+.zfjl {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	display: none;
+}
+
+.xtyhc {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	display: none;
+}
+
+.rgzzj {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	display: none;
+}
+
+.rgzzj .personnel_list li {
+	font-size: 13px;
+}
+
+.personnel_list {
+	float: left;
+	width: 20%;
+	height: 98vh;
+	padding: 50px 0 50px 0;
+	background: #F1F5F4;
+}
+
+.personnel_list li {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	border-bottom: 1px solid #9D9D9D;
+}
+
+.personnel_list_menu {
+	background: #0B76AC;
+	color: white;
+}
+
+.content {
+	float: left;
+	height: 98vh;
+	width: 80%;
+	padding: 50px 0 50px 0;
+	overflow: auto;
+	box-shadow: 1px 1px 15px #999;
+}
+
+.content .tab {
+	float: left;
+	width: 90%;
+	margin: 5px 0 0 5%;
+	color: #666;
+}
+
+.content .tab li {
+	float: left;
+	width: 50%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	border: 1px solid #5BC0DE;
+}
+
+.tab_menu {
+	background: #5BC0DE;
+	color: white;
+}
+
+.zdh {
+	float: left;
+	width: 96%;
+	margin-left: 2%;
+	overflow: auto;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.zdh ul {
+	float: left;
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+	line-height: 40px;
+	font-size: 13px;
+	color: #666;
+	background: #eee;
+}
+
+.head_title {
+	float: left;
+	width: 96%;
+	height: 30px;
+	margin: 10px 0 0 2%;
+	line-height: 30px;
+	cursor: pointer;
+	text-align: center;
+	color: #00BFFF;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+
+.head_title .bh {
+	float: left;
+	width: 40%;
+}
+
+.head_title .mc {
+	float: left;
+	width: 40%;
+}
+
+.head_title .lb {
+	float: left;
+	width: 20%;
+}
+
+.zdh .bh {
+	float: left;
+	width: 40%;
+}
+
+.zdh .mc {
+	float: left;
+	width: 40%;
+}
+
+.zdh .lb {
+	float: left;
+	width: 20%;
+}
+
+.zffx {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.zffx li {
+	float: left;
+	width: 33.3%;
+	color: #666;
+	text-align: center;
+	font-weight: bold;
+}
+
+.zffx li p {
+	margin: auto;
+	width: 70px;
+	height: 70px;
+	padding-top: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 13px;
+	border: 1px solid #F0AD4E;
+	border-radius: 50px;
+}
+
+.zfjl_list li {
+	float: left;
+	width: 95%;
+	height: 40px;
+	margin: 5px 0 0 2.5%;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 14px;
+	background: #eee;
+	line-height: 40px;
+	font-size: 13px;
+	border-bottom: 1px solid #eee;
+	font-weight: bold;
+}
+
+.bfjl1 {
+	font-size: 14px;
+	text-align: left;
+}
+
+.bfjl1 li {
+	float: left;
+	width: 50%;
+	height: 30px;
+	margin-top: 3px;
+	line-height: 30px;
+	background: #E1E1E1;
+	padding-left: 10px;
+}
+
+.bfjl1 span {
+	color: #009CDA;
+}
+
+.xtyhcjl {
+	margin-top: 20px;
+}
+
+.xtyhcjl li {
+	float: left;
+	width: 50%;
+	height: 30px;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.xtyhcjl p {
+	float: left;
+	height: 30px;
+	padding-left: 10px;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.title {
+	float: left;
+	width: 96%;
+	margin: 0 0 0 10px;
+	text-align: left;
+	color: #0B6FA2;
+	border-bottom: 1px solid #ccc;
+	font-weight: bold;
+}
+
+.jhwc {
+	width: 100%;
+	display: block;
+}
+
+.jhwc .head {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.zywt {
+	display: none;
+	width: 100%;
+}
+
+.jhwc li {
+	float: left;
+	width: 33.3%;
+	height: 80px;
+	margin-top: 10px;
+	padding-top: 5px;
+}
+
+.jhwc img {
+	width: 50px;
+	height: 50px;
+}
+
+.jhwc li p {
+	text-align: center;
+	color: #888;
+}
+
+.zywt .head {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.zywt li {
+	float: left;
+	width: 33.3%;
+	height: 80px;
+	padding-top: 5px;
+	margin-top: 10px;
+}
+
+.zywt img {
+	width: 50px;
+	height: 50px;
+}
+
+.zywt li p {
+	text-align: center;
+}

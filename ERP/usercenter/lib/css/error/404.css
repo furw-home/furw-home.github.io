@@ -1,0 +1,44 @@
+h1,
+h3 {
+	font-weight: 300
+}
+
+h1 {
+	font-size: 30px
+}
+
+h3 {
+	font-size: 16px
+}
+
+h3 {
+	font-weight: 600
+}
+
+.gray-bg {
+	background-color: white
+}
+
+.middle-box {
+	max-width: 400px;
+	z-index: 100;
+	margin: 0 auto;
+}
+
+.middle-box h1 {
+	font-size: 170px;
+	color: #676A6C;
+}
+
+.middle-box h3 {
+	color: #676A6C;
+}
+
+.middle-box p {
+	color: #676A6C;
+	font-size: 14px;
+}
+
+.text-center {
+	text-align: center;
+}

@@ -1,0 +1,227 @@
+.app_list {
+	height: 88vh;
+	display: block;
+}
+.my_application p {
+	height: 37px;
+	width: 100%;
+	margin-top: 15px;
+	padding-left: 30px;
+	font-size: 14px;
+	color: #777;
+}
+.app_list ul {
+	float: left;
+	width: 100px;
+	margin: 0 0 30px 30px;
+}
+.app_list ul:nth-child(2) {
+	margin-left: 50px;
+}
+.app_list img {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.app_list li {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.my_application ul {
+	float: left;
+	width: 100px;
+	margin-left: 30px;
+}
+.my_application ul:nth-child(2) {
+	margin-left: 50px;
+}
+.my_application img {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.my_application li {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.add_app img {
+	border: 1px dashed #ddd;
+	border-radius: 50px;
+}
+.app_edit {
+	height: 88vh;
+	display: none;
+}
+.back {
+	float: left;
+	margin-left: 10px;
+}
+.head .btn {
+	height: 30px;
+	width: 60px;
+	line-height: 10px;
+	font-size: 17px;
+	border-radius: 0px;
+	color: #777;
+	border: 1px solid #ccc;
+	background: whitesmoke;
+}
+.delete_app {
+	float: right;
+	margin-right: 10px;
+}
+.logo {
+	width: 100px;
+	height: 100px;
+	border: 1px dashed #ccc;
+	margin: 20px auto;
+	cursor: pointer
+}
+.outside {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 1003;
+}
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+.logo p {
+	height: 25px;
+	width: 99%;
+	position: relative;
+	z-index: 1006;
+	margin: auto;
+	margin-top: -27px;
+	background: #0F9FDB;
+	color: white;
+	background: rgba(70, 130, 180, 0.6);
+	filter: alpha(opacity=60);
+}
+.advice {
+	font-size: 14px;
+	color: #666;
+}
+.add_app_content {
+	width: 70%;
+	margin: auto;
+	overflow: auto;
+}
+.add_app_content label {
+	float: left;
+	width: 50%;
+	margin: 15px 0 5px 0;
+	text-align: left;
+	font-weight: 100;
+	font-size: 14px;
+	color: #444;
+}
+.add_app_content span {
+	float: right;
+	margin: 16px 0 5px 0;
+	font-weight: 100;
+	font-size: 13px;
+	color: #ED3D31;
+	display: none;
+}
+.add_app_content input {
+	width: 100%;
+	height: 35px;
+	border: 1px solid #ccc;
+	font-size: 13px;
+}
+.add_app_content .describe {
+	margin: 0px;
+	width: 100%;
+}
+.add_app_content .describe {
+	height: 90px;
+}
+.add_app_content button {
+	width: 100%;
+	margin-top: 20px;
+}
+.logo input {
+	position: relative;
+	z-index: 1007;
+	height: 100px;
+	width: 100px;
+	opacity: 0;
+	cursor: pointer;
+}
+.app_edit_content {
+	height: 82vh;
+	overflow: auto;
+}
+.app_edit_content p {
+	float: left;
+	padding-top: 20px;
+	width: 130px;
+	height: 50px;
+	font-size: 14px;
+}
+.app_edit_content span {
+	float: left;
+	font-size: 14px;
+	color: #666;
+	margin-top: 20px;
+}
+.app_edit_content a {
+	float: right;
+	font-size: 14px;
+	color: #666;
+	margin: 20px 20px 0 0;
+	color: #009CDA;
+}
+.application_logo {
+	width: 70%;
+	height: 70px;
+	margin: auto;
+	border-bottom: 1px solid #ddd;
+}
+.application_logo img {
+	margin-top: 5px;
+	width: 60px;
+	height: 60px;
+}
+.application_names {
+	width: 70%;
+	height: 70px;
+	margin: auto;
+	border-bottom: 1px solid #ddd;
+}
+.application_id {
+	width: 70%;
+	height: 70px;
+	margin: auto;
+	border-bottom: 1px solid #ddd;
+}
+.application_introduce {
+	width: 70%;
+	height: 70px;
+	margin: auto;
+	border-bottom: 1px solid #ddd;
+}
+.application_range {
+	width: 70%;
+	height: 70px;
+	margin: auto;
+	border-bottom: 1px solid #ddd;
+}
+.application_realm_name {
+	width: 70%;
+	height: 70px;
+	margin: auto;
+	border-bottom: 1px solid #ddd;
+}

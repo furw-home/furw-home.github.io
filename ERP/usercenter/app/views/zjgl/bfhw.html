@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>宝丰汉威</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/dzjlb.css" />
+	</head>
+
+	<body ng-app="djclbModule" ng-controller="djclbCtrl" ng-init="init()">
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<li>
+					<label>订单编号：</label>
+					<input type="text" class="k-textbox" ng-model="project.ordercode" />
+				</li>
+				<li>
+					<label>订单名称：</label>
+					<input type="text" class="k-textbox" ng-model="project.ordername" />
+				</li>
+				<li>
+					<label>订单状态：</label>
+					<input id="order_state" value="-2" style="width: 120px;" />
+				</li>
+				<li>
+					<label style="width: 95px;">预计发货时间：</label>
+					<input id="start_dataTime" style="width: 120px;" />
+					<span>至</span>
+					<input id="end_dataTime" style="width: 120px;" />
+				</li>
+				<li>
+					<label>供应商：</label>
+					<input type="text" class="k-textbox" ng-model="project.supplier" />
+				</li>
+				<li>
+					<label style="width: 75px;">供应商城市：</label>
+					<input type="text" class="k-textbox" style="width: 120px;" ng-model="project.supplier_city" />
+				</li>
+				<li>
+					<label>物流方案：</label>
+					<input id="logis_solution" value="-2" style="width: 120px;" />
+				</li>
+				<li>
+					<label>质检级别：</label>
+					<input id="quality_checkLevel" value="-2" style="width: 120px;" />
+				</li>
+				<li style="font-weight: bold;">
+					<input id="_checkbox" type="checkbox" style="width: 20px;padding-top: 20px;"/>系统代审
+				</li>
+				<li>
+					<button class="btn btn-info" ng-click="empty(project)">清空</button>
+					<button class="btn btn-info" ng-click="search(project)">搜索</button>
+				</li>
+				
+			</ul>
+		</div>
+
+		<!--操作按钮-->
+		<div class="operation">
+			<button class="btn btn-primary" ng-click="plzj()">批量质检</button>
+			<button class="btn btn-warning" ng-click="jxzj()">进行质检</button>
+			<button class="btn btn-success" ng-click="tjdd()">添加订单</button>
+			<button class="btn btn-warning" ng-click="zjfa()">质检方案</button>
+			<button class="btn btn-success" ng-click="export(project)">导出</button>
+			<button class="btn btn-info" ng-click="rwlq()">同步订单</button>
+		</div>
+
+		<!--质检模版列表-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<!--质检方案 window-->
+		<div id="zjfa_window" style="display: none;">
+			<ul class="fieldlist">
+				<li>
+					<label>质检模版：</label>
+					<input id="template_zjfa" value="1" style="width: 263px;" />
+				</li>
+				<li style="height: 90px;">
+					<label style="float: left;">备注：</label>
+					<textarea ng-model="project_zjfa.remark"></textarea>
+				</li>
+				<li>
+					<button class="btn btn-info" ng-click="zjfa_save(project_zjfa)">确认</button>
+				</li>
+			</ul>
+		</div>
+
+		<!--添加订单 window-->
+		<div id="tjdd_window" style="display: none;">
+
+			<div class="head">
+				<ul class="fieldlist">
+					<li>
+						<label>订单编号：</label>
+						<input type="text" class="k-textbox" ng-model="order.ordercode" />
+					</li>
+					<li>
+						<label style="width: 75px;">订单名称：</label>
+						<input type="text" class="k-textbox" ng-model="order.ordername" />
+					</li>
+					<li>
+						<label>订单状态：</label>
+						<input id="order_state_add" value="-2" style="width: 120px;" />
+					</li>
+					<li>
+						<label>供应商：</label>
+						<input type="text" class="k-textbox" ng-model="order.supplier" />
+					</li>
+					<li>
+						<label style="width: 75px;">供应商城市：</label>
+						<input type="text" class="k-textbox" style="width: 120px;" ng-model="order.supplier_city" />
+					</li>
+					<li>
+						<label>物流方案：</label>
+						<input id="logis_solution_add" value="-2" style="width: 120px;" />
+					</li>
+					<li>
+						<button class="btn btn-info" ng-click="search_order(order)">搜索</button>
+					</li>
+				</ul>
+			</div>
+
+			<div class="_body">
+				<p>选择订单</p>
+				<span></span>
+				<button class="btn btn-info" ng-click="add_order()">确定</button>
+			</div>
+
+			<div id="cont1">
+				<div id="order_grid"></div>
+			</div>
+		</div>
+
+		<!--批量质检 window-->
+		<div id="plzj_window" style="display: none;">
+			<ul class="fieldlist">
+				<li>
+					<label>选择质检模版：</label>
+					<input id="template_plzj" value="1" style="width: 263px;" />
+				</li>
+				<li>
+					<label>是否接收：</label>
+					<input id="isReceive" value="1" style="width: 263px;" />
+				</li>
+				<li style="height: 90px;">
+					<label style="float: left;">备注：</label>
+					<textarea ng-model="project_plzj.remark"></textarea>
+				</li>
+				<li style="height: 100px;">
+					<label style="float: left; height: 30px; line-height: 30px;">上传文件：</label>
+					<div id="container_1" style="float:left;">
+						<button type="button" class="btn btn-success" id="upload-btn">上传</button>
+						<button type="button" class="btn btn-primary" id="browse" style="margin:0px;margin-right: 20px;">选取文件</button>
+					</div>
+					<div id="file-list" style="border-bottom: 1px solid #ccc; float: left;margin-left: 120px; margin-top: 20px;width: 260px; height: 50px;">
+					</div>
+				</li>
+				<li>
+					<button class="btn btn-info" ng-click="plzj_save(project_plzj)">确认</button>
+				</li>
+			</ul>
+		</div>
+
+		<!--操作通知-->
+		<span id="notification" style="display:none;"></span>
+
+		<!--成功模板-->
+		<script id="successTemplate" type="text/x-kendo-template">
+			<div class="upload-success">
+				<img src="../../../lib/images/notification/success-icon.png" />
+				<h3>#= message #</h3>
+			</div>
+		</script>
+
+		<!--失败模板-->
+		<script id="errorTemplate" type="text/x-kendo-template">
+			<div class="wrong-pass">
+				<img src="../../../lib/images/notification/error-icon.png" />
+				<h3>#= title #</h3>
+				<p>#= message #</p>
+			</div>
+		</script>
+
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../../lib/js/plupload/plupload.full.min.js"></script>
+		<script src="../../../lib/js/plupload/moxie.min.js"></script>
+		<script src="../../../lib/js/plupload/upload_djclb.js"></script>
+		<!--TAB 页-->
+		<!--<script src="../../script/createTab.js"></script>-->
+
+		<script src="../../modules/zjgl/bfhw.module_v1.js"></script>
+	</body>
+
+</html>

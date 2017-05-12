@@ -1,0 +1,43 @@
+<div class="file">
+	<label>文件</label>
+	<br />
+	<div class="uploader green">
+		<input type="text" class="filename" readonly/>
+		<input type="button" name="file" class="push-button" value="浏览..." />
+		<input type="file" size="30" onchange="showPreview(this)" />
+	</div>
+
+	<div class="file_preview">
+		<p id="file_text"></p>
+		<a class="del_picture">删除</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+	function showPreview(source) {
+		var file = source.files[0];
+		if (window.FileReader) {
+			var fr = new FileReader();
+			fr.onloadend = function(e) {
+				document.getElementById("file_text").innerHTML = e.target.result;
+				$(".file_preview").css("display", "block");
+			};
+			fr.readAsDataURL(file);
+		}
+	}
+	$(function() {
+		$("input[type=file]").change(function() {
+			$(this).parents(".uploader").find(".filename").val($(this).val());
+		});
+		$("input[type=file]").each(function() {
+			if ($(this).val() == "") {
+				$(this).parents(".uploader").find(".filename").val("请选择文件...");
+			}
+		});
+		$(".del_picture").click(function() {
+			$("#file_text").val("");
+			$(".filename").val("请选择文件...");
+			$(".file_preview").css("display", "none");
+		})
+	});
+</script>

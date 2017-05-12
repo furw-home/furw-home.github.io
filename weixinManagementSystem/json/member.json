@@ -1,0 +1,377 @@
+[
+	{
+		"name": "滕州营销",
+		"open": true,
+		"children": [
+			{
+				"name": "区域 1",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}, {
+						"name": "张三",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}, {
+						"name": "张三",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}, {
+				"name": "区域 2",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三2",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵2",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬2",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四2",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}, {
+				"name": "区域 3",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三3",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵3",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬3",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四3",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}, {
+				"name": "区域 4",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三4",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵4",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬4",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四4",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}, {
+				"name": "区域 5",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三5",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵5",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬5",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四5",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}, {
+				"name": "区域 6",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三6",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵6",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬6",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四6",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}, {
+				"name": "区域 7",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三7",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵7",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬7",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四7",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}, {
+				"name": "区域 8",
+				"img": "img/psg.png",
+				"children": [
+					{
+						"name": "张三8",
+						"img": "img/psd.png",
+						"ccountNumber": "zhangsan",
+						"position": "产品经理",
+						"phone": "13256430456",
+						"email": "zhangsan@163.com",
+						"state": "在职"
+					}, {
+						"name": "小赵8",
+						"img": "img/psa.png",
+						"ccountNumber": "xiaozhao",
+						"position": "营销",
+						"phone": "18896535456",
+						"email": "xiaozhao@163.com",
+						"state": "出差"
+					}, {
+						"name": "凡小芬8",
+						"img": "img/psc.png",
+						"ccountNumber": "fanxiaofen",
+						"position": "人事",
+						"phone": "15523458765",
+						"email": "fanxiaofen@163.com",
+						"state": "在职"
+					}, {
+						"name": "李四8",
+						"img": "img/psf.png",
+						"ccountNumber": "李四",
+						"position": "销售",
+						"phone": "18223651865",
+						"email": "lisi@163.com",
+						"state": "在职"
+					}
+				]
+			}
+		]
+	}
+]

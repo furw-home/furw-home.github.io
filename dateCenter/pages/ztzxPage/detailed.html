@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>主题详细页</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="../../styles/default/css/amazeui.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../styles/default/css/jquery-ui-1.8.16.custom.css" />
+		<link rel="stylesheet" href="../../styles/default/css/ui.jqgrid.css" />
+		<link rel="stylesheet" href="../../styles/default/css/zTreeStyle.css" />
+		<link rel="stylesheet" href="../../styles/default/css/base.css" />
+		<link rel="stylesheet" href="css/detailed.css" />
+		<!--工具栏css-->
+		<link rel="stylesheet" href="../../styles/default/css/toolbar.css" />
+	</head>
+
+	<body>
+
+		<div class="body">
+			<!--顶部导航-->
+			<header>
+				<nav class="navbar navbar-fixed-top">
+					<div class="container">
+						<h1>滕州卷烟厂数据中心</h1>
+						<ul id="menu"></ul>
+					</div>
+				</nav>
+			</header>
+
+			<div class="head">
+				<h2>指标中心</h2>
+				<!--当前主题的 指标导航-->
+				<div class="index_nav">
+					<div class="am-slider am-slider-default am-slider-carousel" data-am-flexslider="{itemWidth: 200, itemMargin: 5, slideshow: false}">
+						<ul class="am-slides">
+							<li class="nav_first jlfx">
+								<p>山东中烟三类以上销量构成</p>
+								<div id="jlfx"></div>
+							</li>
+							<li class="xqfx">
+								<p>山东中烟省内省外销量构成</p>
+								<div id="xqfx"></div>
+							</li>
+							<li class="qsbhqy">
+								<p>山东中烟月销量趋势</p>
+								<div id="qsbhqy"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--容器区域-->
+			<div class="main">
+				<div class="content_head">
+					<p>当前位置：</p>
+					<ul>
+						<li class="position">商业销售概况分析</li>
+					</ul>
+				</div>
+
+				<!--指标卡片显示区域-->
+				<div class="content">
+
+					<div class="chart_bar">
+						<p class="chart_title">中烟销售年度累计同比分析
+							<<i class="glyphicon glyphicon-menu-hamburger"></i>
+						</p>
+						<div id="bar" class="charts"></div>
+					</div>
+
+					<div class="fxjg">
+						山东中烟累计销售xx万箱，较同期增加（减少）xx万箱，提高（降低）xx个百分点。销量在行业中排名第8，较排名第6的浙江中烟少xx万箱，较排名第9的江苏中烟多xx万箱。
+					</div>
+
+					<section>
+						<div class="list1">
+							<table id="list1"></table>
+						</div>
+					</section>
+
+					<!--分割线-->
+					<div class="dividing_line">
+						<p class="dividing_line_name">1.按价类分析</p>
+						<span></span>
+					</div>
+
+					<div class="list2">
+						<table id="list2"></table>
+					</div>
+
+					<!--三类以上销量构成-->
+					<div class="slyixlgc">
+						<p class="slyixlgc_title">三类以上销量构成</p>
+						<div id="slyixlgc">
+
+						</div>
+					</div>
+
+					<!--分割线-->
+					<div class="dividing_line">
+						<p class="dividing_line_name">2.按牌号分析</p>
+						<span></span>
+					</div>
+
+					<section>
+						<div class="list	">
+							<table id="list3"></table>
+						</div>
+					</section>
+
+					<!--分割线-->
+					<div class="dividing_line">
+						<p class="dividing_line_name">3.按销区分析</p>
+						<span></span>
+					</div>
+
+					<!--省内外销量构成-->
+					<div class="snwxl">
+						<p class="snwxl_title">省内外销量构成</p>
+						<div id="snwxl">
+
+						</div>
+					</div>
+					<!--省内销区销量构成-->
+					<div class="xqxlgc">
+						<p class="xqxlgc_title">省内销区销量构成</p>
+						<div id="xqxlgc">
+
+						</div>
+					</div>
+					<!--省外销量构成-->
+					<div class="swxlgc">
+						<p class="swxlgc_title">省外销量构成</p>
+						<div id="swxlgc">
+
+						</div>
+					</div>
+
+					<section>
+						<div class="list4">
+							<table id="list4"></table>
+						</div>
+					</section>
+
+					<!--分割线-->
+					<div class="dividing_line">
+						<p class="dividing_line_name">4.趋势变化</p>
+						<span></span>
+					</div>
+
+					<!--趋势变化 图标-->
+					<div class="qsbh_tb">
+						<p class="chart_title">山东中烟、月度、销量趋势变化 <span class="glyphicon glyphicon-random"></span></p>
+						<div id="qsbh" class="qsbh_chart"></div>
+					</div>
+
+					<!--趋势变化 表格-->
+					<div class="qsbh_bg">
+						<ul>
+							<li>月份</li>
+							<li>1月</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+						</ul>
+						<ul>
+							<li>销量</li>
+							<li>5</li>
+							<li>10</li>
+							<li>15</li>
+							<li>2</li>
+							<li>5</li>
+							<li>11</li>
+							<li>6</li>
+							<li>10</li>
+							<li>10</li>
+							<li>4</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<!--锚点导航-->
+			<div class="anchor_nav">
+				<ul>
+					<li class="top">回到顶部</li>
+					<li class="ajgfl">1.按价格分类</li>
+					<li class="appfl">2.按品牌分类</li>
+					<li class="axqfl">3.按销区分类</li>
+					<li class="aqsbh">4.趋势变化</li>
+				</ul>
+			</div>
+			<!--左侧边栏-->
+			<div class="left_sidebar">
+				<div class="left_sidebar_icon">
+					<i class="glyphicon glyphicon-cog"></i>
+				</div>
+
+				<ul id="tree" class="ztree"></ul>
+			</div>
+
+			<script src="../../styles/default/js/jquery-2.1.0.min.js"></script>
+			<script src="../../styles/default/js/amazeui.min.js"></script>
+			<script src="../../styles/default/js/bootstrap.min.js"></script>
+			<script src="../../styles/default/js/echarts-all.js"></script>
+			<script src="../../styles/default/js/highcharts.js"></script>
+			<script src="../../styles/default/js/grid.locale-cn.js"></script>
+			<script src="../../styles/default/js/jquery.jqGrid.min.js"></script>
+			<script src="../../styles/default/js/jquery.ztree.core-3.5.min.js"></script>
+			<script src="../../styles/default/js/common.js"></script>
+			<script src="js/detailed.js"></script>
+			<!--工具栏js-->
+			<script src="../../styles/default/js/toolbar.js"></script>
+		</div>
+	</body>
+
+</html>

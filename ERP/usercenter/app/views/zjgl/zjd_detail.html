@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>质检单详情</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/zjd.css" />
+		<style>
+			.k-textbox {
+				width: 128px;
+				border: none;
+				text-align: center;
+				height: 35px;
+			}
+		</style>
+	</head>
+
+	<body ng-app="zjd_detailModule" ng-controller="zjd_detailCtrl" ng-init="init()">
+
+		<div class="_body">
+			<div class="content_4">
+				<button type="button" class="btn btn-success" ng-click="returnBack()">返回</button>
+				<button type="button" class="btn btn-info" ng-click="export()">导出</button>
+			</div>
+		</div>
+
+		<div class="_body">
+
+			<div class="content_1">
+				<ul>
+					<li class="bold" style="height: 40px; line-height: 40px; border-bottom: 1px solid #aaa;">质检单号</li>
+					<li class="bold" style="height: 200px; line-height: 100px;">订单信息:</li>
+				</ul>
+				<ul>
+					<li style="width: 130px;height: 39px; line-height: 40px;border-right: 1px solid #aaa;">
+						<input disabled="disabled" type="text" style="width: 128px;border: none;text-align: center;height: 35px;" class="k-textbox" ng-model="project.qcode" /></li>
+					<li class="bold" style="width: 129px;height: 39px; line-height: 40px;border-right: 1px solid #aaa;">质检模板</li>
+					<li style="width: 129px;height: 39px; line-height: 40px;">
+						<input disabled="disabled" type="text" class="k-textbox" ng-model="project.templateList" />
+					</li>
+					<li style="width: 100%; height: 200px;border-top: 1px solid #aaa;">
+						<textarea ng-model="project.orderinfo" style="resize: none;width:389px;height: 199px;border: none;padding: 20px;outline: none;"></textarea>
+					</li>
+				</ul>
+				<ul>
+					<li class="bold">质检级别</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.qualitylevel" /></li>
+					<li class="bold">供应商</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.supplier" /></li>
+					<li class="bold">质检时间</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.qc_time" /></li>
+					<li class="bold">订单号</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.ordercode" /></li>
+					<li class="bold">质检水平</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.samplingLevel" /></li>
+					<li class="bold">质检数量</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.qualityamount" /></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="_body">
+			<div class="content_2">
+				<ul class="thead">
+					<li class="bold">质检项目</li>
+					<li class="bold">阳光标准</li>
+					<li class="bold">实际情况</li>
+					<li class="bold">问题数量</li>
+					<li class="bold">项目备注</li>
+					<li class="bold" style="border-right: none;">操作</li>
+				</ul>
+				<div class="tbody">
+					<div id="zjxm_body"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="_body" style="margin-bottom: 80px;">
+
+			<div class="content_3">
+				<ul>
+					<li class="bold" style="border-left: 0px;">质检员</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.qcperson" /></li>
+					<li class="bold">主管签字</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.leaderSign" /></li>
+					<li class="bold">是否接收</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.isrecieve" /></li>
+					<li class="bold" style="border-left: 0px;">留样数量</li>
+					<li><input disabled="disabled" type="text" class="k-textbox" ng-model="project.reservedAmount" /></li>
+					<li class="bold">质检表</li>
+					<li style="width: 399px;" class="zjbfj_file">
+						<div id="file-list-1" style="line-height: 40px;width: 399px;text-align: center;"></div>
+					</li>
+				</ul>
+				<ul>
+					<li class="bold tc" style="width: 133px;height: 100px;border-bottom:1px solid #aaa;float: left;line-height: 100px;">备注</li>
+					<li style="width: 665px;height: 100px;border-left:solid #aaa 1px;float: left;border-bottom:1px solid #aaa;">
+						<textarea ng-model="project.remark" style="resize: none;width:654px;height: 89px;border: none;padding: 20px;outline: none;"></textarea>
+					</li>
+				</ul>
+				<ul>
+					<li class="bold tc" style="width: 133px;float: left;padding-top: 20px;padding-bottom: 17px;">附件</li>
+					<li style="width: 665px;border-left:solid #aaa 1px;float: left;">
+						<div id="file-list" style="min-height: 54px;"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</body>
+
+	<script src="../../../lib/js/loadjsfile.js"></script>
+	<script src="../../../lib/js/plupload/plupload.full.min.js"></script>
+	<script src="../../../lib/js/plupload/moxie.min.js"></script>
+	<!--<script src="../../script/removeTab.js.js"></script>-->
+	<script src="../../modules/zjgl/zjd_detail.module.js"></script>
+
+</html>

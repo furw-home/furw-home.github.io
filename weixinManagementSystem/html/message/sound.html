@@ -1,0 +1,21 @@
+<div class="sound">
+	<label>语音</label>
+	<div class="uploader green">
+		<input type="text" class="filename" readonly/>
+		<input type="button" name="file" class="push-button" value="上传..." />
+		<input type="file" size="30" onchange="showPreview(this)" />
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		$("input[type=file]").change(function() {
+			$(this).parents(".uploader").find(".filename").val($(this).val());
+		});
+		$("input[type=file]").each(function() {
+			if ($(this).val() == "") {
+				$(this).parents(".uploader").find(".filename").val("请选择语音...");
+			}
+		});
+	});
+</script>

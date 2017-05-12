@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>部门维度绩效</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/jxgl/bmwdjx.css" />
+	</head>
+
+	<body ng-app="bmwdjxModule" ng-controller="bmwdjxCtrl" ng-init="init()">
+
+		<!--日期选择-->
+		<div class="head">
+			<ul class="year">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" data-toggle="dropdown"><span class="years"></span> <span class="caret"></span> </button>
+					<ul class="dropdown-menu" role="menu"></ul>
+				</div>
+			</ul>
+			<!--月份-->
+			<ul class="month"></ul>
+		</div>
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<p>
+					<label>一级部门：</label>
+					<input id="yjbm" value="可多选" style="width: 200px;float: right;margin-left: 3px;max-height: 28px;overflow-y: auto;" />
+				</p>
+				<p>
+					<label>二级部门：</label>
+					<input id="ejbm" value="可多选" style="width: 200px;float: right;margin-left: 3px;max-height: 28px;overflow-y: auto;" />
+				</p>
+			</ul>
+		</div>
+		
+
+		<!--操作按钮-->
+		<div class="operation">
+			<button class="btn btn-warning" style="float: left;width: 90px;" ng-click="retrieve()">查询</button>
+			<button class="btn btn-warning" style="float: left; margin-left: 50px; width: 90px;" ng-click="open111()">新窗口测试</button>
+			<button class="btn btn-primary" style="width: 90px;" ng-click="export()">导出</button>
+			<button class="btn btn-primary" style="width: 110px;margin-right: 20px; " ng-click="rltzed()">录入调整额度</button>
+			<button class="btn btn-primary" style="width: 90px;margin-right: 20px;" ng-click="fp()">分配</button>
+		</div>
+
+		<!--BD提成查询-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<!--补充其他信息-->
+		<div id="bcqtxx_window" style="display: none;">
+			<form id="save_validForm">
+				<ul class="fieldlist">
+					<p>
+						<label>调整额度：</label>
+						<input type="text" class="k-textbox" ng-model="project1.money" datatype="*,/^[+-]?\d+(\.\d+)?$/" nullmsg="其他费用不能为空！" errormsg="费用只能只能为数字跟小数！" />
+					</p>
+					<p style="height: 120px;">
+						<label style="float: left;">调整备注：</label>
+						<textarea ng-model="project1.remark" class="k-textbox" datatype="*" nullmsg="备注信息不能为空！"></textarea>
+					</p>
+
+					<li style="height: 100px; width: 400px;float: left;">
+						<label style="float: left; height: 30px;width: 70px; line-height: 30px;">上传图片：</label>
+						<div id="container_1" style="float:left; width: 280px;">
+							<button type="button" class="btn btn-warning" id="browse_1" style="margin-right: 20px;">选取文件</button>
+							<button type="button" class="btn btn-success" id="upload-btn_1" style="">上传</button>
+						</div>
+						<div id="file-list_1" style="border-bottom: 1px solid #ccc; float: left;margin-left: 70px;width: 280px; height: 40px; margin-top:10px;">
+						</div>
+					</li>
+
+					<p style="height: 30px;margin-top: 0px;">
+						<span class="editValidMsg1"></span>
+					</p>
+
+					<p style="text-align: center;width: 100%;">
+						<button class="btn btn-primary" ng-click="bctjbc(project1)">保存</button>
+						<button class="btn btn-primary" ng-click="close()">取消</button>
+					</p>
+				</ul>
+			</form>
+		</div>
+
+		<!--操作通知-->
+		<span id="notification" style="display:none;"></span>
+
+		<!--成功模板-->
+		<script id="successTemplate" type="text/x-kendo-template">
+			<div class="upload-success">
+				<img src="../../../lib/images/notification/success-icon.png" />
+				<h3>#= message #</h3>
+			</div>
+		</script>
+
+		<!--失败模板-->
+		<script id="errorTemplate" type="text/x-kendo-template">
+			<div class="wrong-pass">
+				<img src="../../../lib/images/notification/error-icon.png" />
+				<h3>#= title #</h3>
+				<p>#= message #</p>
+			</div>
+		</script>
+		
+		<!--图片-->
+		<div class="photo">
+			<div class="picture">
+				<span ng-clicl="photo_close">×</span>
+				<img src="" />
+			</div>
+		</div>
+
+	</body>
+
+	<script src="../../../lib/js/loadjsfile.js"></script>
+	<script src="../../../lib/js/bootstrap/bootstrap.min.js"></script>
+	<script src="../../../lib/js/plupload/plupload.full.min.js"></script>
+	<script src="../../../lib/js/plupload/moxie.min.js"></script>
+	<script src="../../../lib/js/plupload/upload_bmjx.js"></script>
+	<script src="../../../lib/js/jquery/jquery.base64.js" ></script>
+
+	<!--TAB 页-->
+	<script src="../../script/createTab.js"></script>
+	<script src="../../modules/jxgl/bmwdjx.module.js"></script>
+
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>物料管理</title>
+		<link rel="stylesheet" href="css/amazeui.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/wlgl.css" />
+	</head>
+
+	<body>
+		<!--标题栏-->
+		<nav class="nav navbar navbar-fixed-top">
+			<span class="ruturn glyphicon glyphicon-chevron-left"></span> 物料管理
+			<span class="tool1 glyphicon glyphicon-plus"></span>
+		</nav>
+
+		<div class="wksyqd">
+
+			<ul class="condition">
+				<li style="border-left: 0px;" data-am-modal="{target: '#date2', closeViaDimmer: 0, width: 300, height: 425}">
+					<label>12.2-12.7</label> <span class="glyphicon glyphicon-triangle-bottom"></span> </li>
+				<li data-am-modal="{target: '#dq2', closeViaDimmer: 0, width: 300, height: 425}">
+					<label>武陵区</label> <span class="glyphicon glyphicon-triangle-bottom"></span></li>
+				<li data-am-modal="{target: '#lp2', closeViaDimmer: 0, width: 300, height: 425}">
+					<label>打火机</label> <span class="glyphicon glyphicon-triangle-bottom"></span></li>
+			</ul>
+
+			<ul class="wksyqd_head">
+				<li>时间</li>
+				<li>进/出/存</li>
+				<li>数量</li>
+				<li>确认人</li>
+			</ul>
+
+			<ul class="wwksyqd_list">
+				<li>12 - 2</li>
+				<li>进</li>
+				<li>10000</li>
+				<li>张汉都</li>
+			</ul>
+			<ul class="wwksyqd_list">
+				<li>12 - 3</li>
+				<li>出</li>
+				<li>2000</li>
+				<li>张汉都</li>
+			</ul>
+			<ul class="wwksyqd_list">
+				<li>12 - 4</li>
+				<li>进</li>
+				<li>10000</li>
+				<li>张汉都</li>
+			</ul>
+			<ul class="wwksyqd_list">
+				<li>12 - 5</li>
+				<li>出</li>
+				<li>2000</li>
+				<li>张汉都</li>
+			</ul>
+			<ul class="wwksyqd_list">
+				<li>12 - 6</li>
+				<li>进</li>
+				<li>10000</li>
+				<li>张汉都</li>
+			</ul>
+			<ul class="wwksyqd_list">
+				<li>12 - 7</li>
+				<li>出</li>
+				<li>2000</li>
+				<li>张汉都</li>
+			</ul>
+		</div>
+
+		<div class="wklx">
+			<ul class="condition">
+				<li style="border-left: 0px;" data-am-modal="{target: '#date2', closeViaDimmer: 0, width: 300, height: 425}">
+					<label>12.2-12.7</label> <span class="glyphicon glyphicon-triangle-bottom"></span> </li>
+				<li data-am-modal="{target: '#dq2', closeViaDimmer: 0, width: 300, height: 425}">
+					<label>武陵区</label> <span class="glyphicon glyphicon-triangle-bottom"></span></li>
+				<li data-am-modal="{target: '#lp2', closeViaDimmer: 0, width: 300, height: 425}">
+					<label>打火机</label> <span class="glyphicon glyphicon-triangle-bottom"></span></li>
+			</ul>
+
+			<p style="margin-top: 50px;">物科使用同比变化计量表</p>
+			<div id="barChart" class="wklx_tb"></div>
+
+			<p>物科使用区域分布图</p>
+			<div id="pieChart" class="wklx_qyfb"></div>
+
+			<p>物科使用环比变化计量表 [ 近3个月 ]</p>
+			<div id="ringChart" class="wklx_hbbl"></div>
+		</div>
+
+		<div class="kcbj">
+			<ul class="head">
+				<li>礼品</li>
+				<li>库存量</li>
+				<li>预警值</li>
+			</ul>
+			<ul class="list">
+				<li>
+					<p>
+						<img src="img/dahuoji.jpg" />
+					</p>
+				</li>
+				<li style="color: #4AAA4A;line-height: 80px;">
+					<p>2000</p>
+				</li>
+				<li style="color: #CE8483;line-height: 80px;">
+					<p>2402</p>
+				</li>
+			</ul>
+
+			<ul class="list">
+				<li>
+					<p>
+						<img src="img/yanhuigang.jpg" />
+					</p>
+				</li>
+				<li style="color: #4AAA4A;line-height: 80px;">
+					<p>2000</p>
+				</li>
+				<li style="color: #CE8483;line-height: 80px;">
+					<p>2402</p>
+				</li>
+			</ul>
+		</div>
+
+		<!--底部导航-->
+		<nav class="bottom-menu navbar navbar-fixed-bottom">
+			<ul>
+				<li id="wksyqd" class="bottom-first-menu">
+					<label>物科</label>
+					<label>使用清单</label>
+				</li>
+				<li id="wklx">
+					<label>物科</label>
+					<label>流向</label>
+				</li>
+				<li id="kcbj">
+					<label>库存</label>
+					<label>报警</label>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="tool" data-mark='1'>
+			<p class="add" data-am-modal="{target: '#add', closeViaDimmer: 0, width: 300, height: 425}">添加</p>
+			<p class="select" data-am-modal="{target: '#select', closeViaDimmer: 0, width: 300, height: 425}">查询</p>
+		</div>
+
+		<div class="am-modal am-modal-no-btn" tabindex="-1" id="add">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">增加
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="add1 am-modal-bd">
+					<div>
+						<label>地区：</label>
+						武陵区
+					</div>
+					<div>
+						<label>礼品：</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>进/出/存：</label>
+						<select>
+							<option>进</option>
+							<option>出</option>
+							<option>存</option>
+						</select>
+					</div>
+					<div>
+						<label>数量：</label>
+						<input type="text" />
+					</div>
+
+					<button>提交</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-modal am-modal-no-btn" tabindex="-1" id="select">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">查询
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="select1 am-modal-bd">
+
+					<div>
+						<label>时间：</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>礼品：</label>
+						<input type="text" />
+					</div>
+					<div>
+						<label>区域：</label>
+						<input type="text" />
+					</div>
+
+					<button>查询</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-modal am-modal-no-btn" tabindex="-1" id="date2">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">选择日期
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="date2 am-modal-bd">
+					<p>
+						<input type="text" class="am-form-field" placeholder="日历组件" data-am-datepicker="{theme: 'success'}" readonly/>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-modal am-modal-no-btn" tabindex="-1" id="dq2">
+			<div class="am-modal-dialog">
+				<div class="am-modal-hd">选择城市
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="dq2 am-modal-bd">
+					<ul>
+						<li>长沙市</li>
+						<li>常德市</li>
+						<li>湘潭市</li>
+						<li>衡阳市</li>
+						<li>邵阳市</li>
+						<li>岳阳市</li>
+						<li>张家界市</li>
+						<li>益阳市</li>
+						<li>怀化市</li>
+						<li>永州市</li>
+						<li>娄底市</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="am-modal am-modal-no-btn" tabindex="-1" id="lp2">
+			<div class="am-modal-dialog" style="background: white;">
+				<div class="am-modal-hd">选择礼品
+					<a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+				</div>
+				<div class="lp2 am-modal-bd" style="background: white;">
+					<ul>
+						<li>
+							<p>
+								<img src="img/dahuoji.jpg" />
+							</p>
+						</li>
+						<li>
+							<p>
+								<img src="img/yanhuigang.jpg" />
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/amazeui.min.js"></script>
+		<script src="js/echarts-all.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/wlgl.js"></script>
+	</body>
+
+</html>

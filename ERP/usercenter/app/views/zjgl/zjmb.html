@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>质检模版</title>
+		<script src="../../../lib/css/loadcssfile.js"></script>
+		<link rel="stylesheet" href="../../../lib/css/ztree/zTreeStyle.css" />
+		<link rel="stylesheet" href="../../style/base.css" />
+		<link rel="stylesheet" href="../../style/zjgl/zjmb.css" />
+	</head>
+
+	<body ng-app="zjmbModule" ng-controller="zjmbCtrl" ng-init="init()">
+
+		<!--查询条件-->
+		<div class="query_conditions">
+			<ul class="fieldlist">
+				<li>
+					<label>模版编号：</label>
+					<input type="text" class="k-textbox" ng-model="tmp.templateno" />
+				</li>
+				<li>
+					<label>模版名称：</label>
+					<input type="text" class="k-textbox" ng-model="tmp.templatename" />
+				</li>
+				<li>
+					<label>模版状态：</label>
+					<input id="state" value="-2" style="width: 120px;" />
+				</li>
+				<li>
+					<label>创建人：</label>
+					<input type="text" class="k-textbox" ng-model="tmp.creator" />
+				</li>
+				<li>
+					<button class="btn btn-info" ng-click="empty(tmp)">清空</button>
+					<button class="btn btn-info" ng-click="search(tmp)">搜索</button>
+				</li>
+			</ul>
+		</div>
+
+		<!--操作按钮-->
+		<div class="operation">
+			<button class="btn btn-primary" ng-click="add()">新建</button>
+			<button class="btn btn-danger" ng-click="del()">删除</button>
+			<button class="btn btn-warning downCount" ng-click="failure()">失效</button>
+			<button class="btn btn-success" ng-click="activation()">激活</button>
+		</div>
+
+		<!--质检模版列表-->
+		<div id="content">
+			<div id="grid"></div>
+		</div>
+
+		<!--新增模版 window-->
+		<div id="add_window" style="display: none;">
+			<form id="add_validForm">
+				<div class="head1">
+					<div class="query_conditions">
+						<ul class="fieldlist">
+							<li>
+								<label>模版编号：</label>
+								<input type="text" class="k-textbox" ng-model="addProject.templateno" placeholder="必填" datatype="*,/^[0-9a-zA-Z]*$/g" nullmsg="模版编号不能为空！" errormsg="模版编号只能是字母加数字！"/>
+							</li>
+							<li>
+								<label>模版名称：</label>
+								<input type="text" class="k-textbox" ng-model="addProject.templatename" placeholder="必填" datatype="*" nullmsg="模版名称不能为空！" />
+							</li>
+							<li>
+								<label>显示顺序：</label>
+								<input type="text" class="k-textbox" ng-model="addProject.orderno" placeholder="必填" datatype="n" nullmsg="显示顺序不能为空！" errormsg="显示顺序只能为数字！" />
+							</li>
+							<li>
+								<label>模版状态：</label>
+								<input id="mb_state" value="1" style="width: 120px;" />
+							</li>
+						</ul>
+						<span class="createValidMsg" style="float: left"></span>
+					</div>
+				</div>
+				<div class="operation" style="margin-top: 15px;">
+					<button class="btn btn-primary" ng-click="mb_save(addProject)">保存</button>
+					<button class="btn btn-warning" ng-click="down()">下移</button>
+					<button class="btn btn-success" ng-click="up()">上移</button>
+					<p>包括质检项目</p>
+				</div>
+			</form>
+
+			<div class="tree_content">
+				<ul id="tree" class="ztree"></ul>
+			</div>
+			<div class="action_buttons">
+				<span class="glyphicon glyphicon-chevron-right" style="margin-top: 100px;" ng-click="add_node()"></span>
+				<span class="glyphicon glyphicon-chevron-left" ng-click="rm_node()"></span>
+			</div>
+			<div class="zjxmbm">
+				<div class="tbody"></div>
+			</div>
+			<div class="createdAt">
+				<span class="founder">XXX</span>创建于<span class="creationTime">2016.9.20</span>
+			</div>
+		</div>
+
+		<!--修改模版 window-->
+		<div id="edit_window" style="display: none;">
+			<form id="edit_validForm">
+				<div class="head1">
+					<div class="query_conditions">
+						<ul class="fieldlist">
+							<li>
+								<label>模版编号：</label>
+								<input type="text" class="k-textbox" ng-model="editProject.templateno" placeholder="必填" datatype="*,/^[0-9a-zA-Z]*$/g" nullmsg="模版编号不能为空！" errormsg="模版编号只能是字母加数字！" />
+							</li>
+							<li>
+								<label>模版名称：</label>
+								<input type="text" class="k-textbox" ng-model="editProject.templatename" placeholder="必填" datatype="*" nullmsg="模版名称不能为空！" />
+							</li>
+							<li>
+								<label>显示顺序：</label>
+								<input type="text" class="k-textbox" ng-model="editProject.orderno" placeholder="必填" datatype="n" nullmsg="显示顺序不能为空！" errormsg="显示顺序只能为数字！" />
+							</li>
+							<li>
+								<label>模版状态：</label>
+								<input id="mb_state_edit" value="1" style="width: 120px;" />
+							</li>
+						</ul>
+						<span class="editValidMsg" style="float: left"></span>
+					</div>
+				</div>
+				<div class="operation" style="margin-top: 15px;">
+					<button class="btn btn-primary" ng-click="mb_save_edit(editProject)">保存</button>
+					<button class="btn btn-warning" ng-click="down_1()">下移</button>
+					<button class="btn btn-success" ng-click="up_1()">上移</button>
+					<p>包括质检项目</p>
+				</div>
+			</form>
+
+			<div class="tree_content">
+				<ul id="tree_edit" class="ztree"></ul>
+			</div>
+			<div class="action_buttons">
+				<span class="glyphicon glyphicon-chevron-right" style="margin-top: 100px;" ng-click="edit_node()"></span>
+				<span class="glyphicon glyphicon-chevron-left" ng-click="rm_node_1()"></span>
+			</div>
+			<div class="zjxmbm">
+				<div class="tbody_edit"></div>
+			</div>
+		</div>
+
+		<!--操作通知-->
+		<span id="notification" style="display:none;"></span>
+
+		<!--成功模板-->
+		<script id="successTemplate" type="text/x-kendo-template">
+			<div class="upload-success">
+				<img src="../../../lib/images/notification/success-icon.png" />
+				<h3>#= message #</h3>
+			</div>
+		</script>
+
+		<!--失败模板-->
+		<script id="errorTemplate" type="text/x-kendo-template">
+			<div class="wrong-pass">
+				<img src="../../../lib/images/notification/error-icon.png" />
+				<h3>#= title #</h3>
+				<p>#= message #</p>
+			</div>
+		</script>
+
+		<script src="../../../lib/js/loadjsfile.js"></script>
+		<script src="../../../lib/js/ztree/jquery.ztree.core.min.js" ></script>
+		<script src="../../../lib/js/ztree/jquery.ztree.excheck.js"></script>
+		<script src="../../modules/zjgl/zjmb.module.js"></script>
+	</body>
+
+</html>
